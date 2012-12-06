@@ -5,17 +5,6 @@
 <title><?php echo $title; ?> · Oricode - Twitter Bootstrap</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="<?php echo $description; ?>">
-<!--<link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
-<link href="/Oricode/mbase/css/reset-min.css" rel="stylesheet" />
-<link href="/Oricode/mbase/css/common-min.css" rel="stylesheet" />
-
-<link href="/Oricode/mbase/css/topbar.css" rel="stylesheet" />
-
-<link href="/Oricode/mbase/css/ui-lvmama.css" rel="stylesheet" />
-<link href="/Oricode/mbase/css/ui-components.css" rel="stylesheet" />
-<link href="/Oricode/mbase/css/lv-bought.css" rel="stylesheet" />
-<link href="/Oricode/mbase/css/artDialog.css" rel="stylesheet" />-->
 
 <meta name="author" content="Authors of Bootstrap">
 <link href="assets/css/reset.css" rel="stylesheet">
@@ -55,15 +44,15 @@
 			<a class="brand" href="./index.php">Bootstrap</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li <?php if(isset($page) && $page == 'home') echo 'class="active"' ?>> <a href="./index.php">Home</a> </li>
-                    <li <?php if(isset($page) && $page == 'getting') echo 'class="active"' ?>> <a href="./getting-started.php">Get started</a> </li>
-                    <li <?php if(isset($page) && $page == 'scaffolding') echo 'class="active"' ?>> <a href="./scaffolding.php">Scaffolding</a> </li>
-                    <li <?php if(isset($page) && $page == 'base-css') echo 'class="active"' ?>> <a href="./base-css.php" title="基础样式">Base CSS</a> </li>
-                    <li <?php if(isset($page) && $page == 'components') echo 'class="active"' ?>> <a href="./components.php" title="交互组件">Components</a> </li>
-                    <li <?php if(isset($page) && $page == 'javascript') echo 'class="active"' ?>> <a href="./javascript.php">Javascript</a> </li>
-                    <li <?php if(isset($page) && $page == 'customize') echo 'class="active"' ?>> <a href="./customize.php" title="定制">Customize</a> </li>
+                    <li <?php if(isset($page) && $page == 'home') echo 'class="active"' ?>> <a href="./index.php" title="Home">首页</a> </li>
+                    <li <?php if(isset($page) && $page == 'getting') echo 'class="active"' ?>> <a href="./getting-started.php" title="Get started">概述</a> </li>
+                    <li <?php if(isset($page) && $page == 'scaffolding') echo 'class="active"' ?>> <a href="./scaffolding.php" title="Scaffolding">框架</a> </li>
+                    <li <?php if(isset($page) && $page == 'base-css') echo 'class="active"' ?>> <a href="./base-css.php" title="Base CSS">基础CSS</a> </li>
+                    <li <?php if(isset($page) && $page == 'components') echo 'class="active"' ?>> <a href="./components.php" title="Components">组件</a> </li>
+                    <li <?php if(isset($page) && $page == 'javascript') echo 'class="active"' ?>> <a href="./javascript.php" title="JavaScript">Javascript插件</a> </li>
+                    <li <?php if(isset($page) && $page == 'customize') echo 'class="active"' ?>> <a href="./customize.php" title="Customize">定制</a> </li>
                     <li class="divider-vertical"></li>
-                    <li <?php if(isset($page) && $page == 'bugs-fixed') echo 'class="active"' ?>> <a href="./bugs-and-fixed.php">Bugs and Fixed</a> </li>
+                    <li <?php if(isset($page) && $page == 'bugs-fixed') echo 'class="active"' ?>> <a href="./bugs-and-fixed.php">Bugs - Fixed</a> </li>
                     <li <?php if(isset($page) && $page == 'project') echo 'class="active"' ?>> <a href="./project.php">Project</a> </li>
                     <li <?php if(isset($page) && $page == 'update') echo 'class="active"' ?>> <a href="./update-log.php">Update log</a> </li>
                 </ul>

@@ -1,27 +1,27 @@
 <?php $page = "home" ?>
 <?php $title="Design Pattern Library"?>
-<?php $description = "本项目作为研究并学习Bootstrap之用，由于Bootstrap项目不太适用国内或者说我正在从事的项目，必须要做部分的调整，进一步研究调试Oricode，最新的研究会用到创想信息网中，便于查看效果以及测试等！" ?>
+<?php $description = "本项目作为研究并学习bootstrap以及实践cnBootstrap之用，由于Bootstrap项目不太适用国内或者说我正在从事的项目，必须要做部分的调整，进一步研究调试cnBootstrap，本项目仍然在Github中开源，便于大家交流讨论及测试应用。" ?>
 <?php include("./templates/header.php"); ?>
 
 <div class="jumbotron masthead">
   <div class="container">
-    <h1>Bootstrap</h1>
-    <p>Sleek, intuitive, and powerful front-end framework for faster and easier web development.</p>
+    <h1>cnBootstrap</h1>
+    <p>时尚，直观，强大的前端框架cnBootstrap<br>使Web开发更快，更容易。</p>
     <p>
-      <a href="assets/bootstrap.zip" class="btn btn-primary btn-large" >Download Bootstrap</a>
+      <a href="https://github.com/xiaohan1219/cnBootstroap" class="btn btn-primary btn-large" title="Download Bootstrap">下载 cnBootstrap<small>(v1.0)</small></a>
     </p>
     <ul class="masthead-links">
       <li>
-        <a href="http://github.com/twitter/bootstrap" >GitHub project</a>
+        <a href="https://github.com/xiaohan1219/cnBootstroap" title="Github Progect">访问 GitHub 项目</a>
       </li>
       <li>
-        <a href="./getting-started.php#examples" >Examples</a>
+        <a href="./getting-started.php#examples" title="Examples">例子</a>
       </li>
       <li>
-        <a href="./extend.html" >Extend</a>
+        <a href="./extend.html" title="Extend">扩展</a>
       </li>
       <li>
-        Version 2.2.1
+        Version 1.0 base on TB v2.2.1
       </li>
 	  <li>
 	  	<a href="./bugs-and-fixed.php" title="Browser compatibility reproduce the bug and solution">Bugs and Fixed</a>
