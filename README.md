@@ -38,8 +38,7 @@ cnBootstrap将作为[cnEngine](https://github.com/Ocode/bootstrap)项目的前�
 
 在Twitter Bootstrap中:
 
-`<form>
-<fieldset>
+`<form><fieldset>
 ...
 </fieldset>
 </form>`
