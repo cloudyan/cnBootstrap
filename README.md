@@ -14,9 +14,9 @@ cnBootstrap将作为[cnEngine](https://github.com/Ocode/bootstrap)项目的前�
 
 目前cnBootstrap基于Twitter Bootstrap v 2.2.1修改。
 
-## 与Twitter Bootstrap的不同 ##
+## cnBootstrap与Twitter Bootstrap的不同 ##
 
-技术上来讲，cnBootstrap的实现原理就是在TB有侵入性的代码上加入了一些CSS Class命名空间，所以使用时会与TB有细微的差别：
+技术上来讲，cnBootstrap的实现原理就是在TB有侵入性的代码上加入了一些CSS Class命名空间，所以使用时会与TB有细微的差别，并更好的支持中文以及更广的浏览器兼容性问题处理：
 
 ### 文本排版 ###
 
@@ -37,7 +37,8 @@ cnBootstrap将作为[cnEngine](https://github.com/Ocode/bootstrap)项目的前�
 
 在Twitter Bootstrap中:
 
-`<form><fieldset>
+`<form>
+<fieldset>
 ...
 </fieldset>
 </form>`
