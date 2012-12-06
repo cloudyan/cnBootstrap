@@ -3,8 +3,9 @@ cnBootstroap
 
 Bootstrap-中文版——时尚的，直观的，强大的前端框架使Web开发更快，更容易。
 
+本项目使用Git管理，如果您对Git的使用不甚熟悉，可以参考[useGit使用指南](https://github.com/xiaohan1219/useGit)项目，包含详细的Git教程讲解以及Git命令。
 
-# cnBootstrap - 无侵入的TwitterBootstrap定制版 #
+# cnBootstrap - 无侵入的Twitter Bootstrap定制版 #
 
 版权采用[『 知识共享署名-非商业性使用 2.5 许可协议』](http://creativecommons.org/licenses/by-nc/2.5/cn/)进行许可。
 
