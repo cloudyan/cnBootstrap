@@ -33,16 +33,16 @@
   <div class="container">
     <ul class="bs-docs-social-buttons">
       <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=xiaohan1219&repo=cnBootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
       </li>
       <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=xiaohan1219&repo=cnBootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
       </li>
       <li class="follow-btn">
-        <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+        <a href="https://github.com/xiaohan1219/cnBootstroap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @cnBootstrap</a>
       </li>
       <li class="tweet-btn">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://github.com/xiaohan1219/cnBootstroap" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
       </li>
     </ul>
   </div>

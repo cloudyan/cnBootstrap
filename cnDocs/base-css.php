@@ -7,8 +7,8 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
     <div class="container">
-        <h1>Base CSS</h1>
-        <p class="lead">Fundamental HTML elements styled and enhanced with extensible classes.</p>
+        <h1 title="Base CSS">基础CSS</h1>
+        <p class="lead" title="Fundamental HTML elements styled and enhanced with extensible classes.">在框架的基础上，对HTML基础元素进行样式定义，并利用可扩展的class增强其展示效果，从而提供形式新颖，风格一致的外观和体验。</p>
     </div>
 </header>
 <div class="container"> 
@@ -18,14 +18,14 @@
     <div class="row">
         <div class="span3 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
-                <li><a href="#code"><i class="icon-chevron-right"></i> Code</a></li>
-                <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
-                <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
-                <li><a href="#buttons"><i class="icon-chevron-right"></i> Buttons</a></li>
-                <li><a href="#images"><i class="icon-chevron-right"></i> Images</a></li>
-                <li><a href="#icons"><i class="icon-chevron-right"></i> Icons by Glyphicons</a></li>
-                <li><a href="#icons-pure-css" title="纯CSS图标"><i class="icon-chevron-right"></i> Pure CSS icons</a></li>
+                <li><a href="#typography" title="Typography"><i class="icon-chevron-right"></i> 排版</a></li>
+                <li><a href="#code" title="Code"><i class="icon-chevron-right"></i> 代码</a></li>
+                <li><a href="#tables" title="Tables"><i class="icon-chevron-right"></i> 表格</a></li>
+                <li><a href="#forms" title="Forms"><i class="icon-chevron-right"></i> 表单</a></li>
+                <li><a href="#buttons" title="Buttons"><i class="icon-chevron-right"></i> 按钮</a></li>
+                <li><a href="#images" title="Images"><i class="icon-chevron-right"></i> 图片</a></li>
+                <li><a href="#icons" title="Icons by Glyphicons"><i class="icon-chevron-right"></i> 图标</a></li>
+                <li><a href="#icons-pure-css" title="Pure CSS icons"><i class="icon-chevron-right"></i> 纯CSS图标</a></li>
             </ul>
         </div>
         <div class="span9"> 
@@ -34,24 +34,24 @@
     ================================================== -->
             <section id="typography">
                 <div class="page-header">
-                    <h1>Typography</h1>
+                    <h1 title="Typography">排版 <small> 标题，段落，列表，以及其他行级元素</small></h1>
                 </div>
-                <h2 id="headings">Headings</h2>
-                <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+                <h2 id="headings" title="Headings">标题</h2>
+                <p title="All HTML headings, h1 through h6 are available.">所有的HTML标题, <code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 都可以用。</p>
                 <div class="bs-docs-example">
-                    <h1>h1. Heading 1</h1>
-                    <h2>h2. Heading 2</h2>
-                    <h3>h3. Heading 3</h3>
-                    <h4>h4. Heading 4</h4>
-                    <h5>h5. Heading 5</h5>
-                    <h6>h6. Heading 6</h6>
+                    <h1>h1. 一级标题</h1>
+                    <h2>h2. 二级标题</h2>
+                    <h3>h3. 三级标题</h3>
+                    <h4>h4. 四级标题</h4>
+                    <h5>h5. 五级标题</h5>
+                    <h6>h6. 六级标题</h6>
                 </div>
-                <h2 id="body-copy">Body copy</h2>
-                <p>Bootstrap's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
+                <h2 id="body-copy" title="Body copy">Body copy</h2>
+                <p title="Bootstrap's global default font-size is 14px, with a line-height of 20px. This is applied to the &lt;body&gt; and all paragraphs. In addition, &lt;p&gt; (paragraphs) receive a bottom margin of half their line-height (10px by default).">Bootstrap 全局默认字体大小14px，行高20px。这适用于 <code>&lt;body&gt;</code> 和所有段落 <code>&lt;p&gt;</code>。此外，<code>&lt;p&gt;</code> 还会设置等值一半行高的下边距（默认是10px）。</p>
+                <p><span class="label label-info" title="Heads up!">提醒</span> 针对中文显示，默认设置为12px/22px、14px/24px。</p>
                 <div class="bs-docs-example">
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <p>许小年：政府掌握了越来越多的资源，制订了日益烦琐的管理方法，为了获得企业发展所需要的资源，或者是仅仅为了生活下去，企业不得不按照潜规则与企业打交道。我非常赞同绿公司提出的要&ldquo;守本分&rdquo;，但是要想企业守本分，首先政府要守本分，&ldquo;逼良为娼&rdquo;还不是最可怕的，回过头来的&ldquo;扫黄&rdquo;才是致命的一击！</p>
+                    <p>余华：在涉及敏感话题时，我以前总是希望别人说出我想说的话。别人有风险，自已很安全。后来意识到如果人人都和我一样，那么我们可能长久生活在风险里。要想抵达安全，风险是必经之路。所以我开始自已说了，越来越多的人已经在自己说了……荷马史诗里描述黑压压的兵勇前进时的情景：他们将大地踩得轰然作响。</p>
                 </div>
                 <pre class="prettyprint">&lt;p&gt;...&lt;/p&gt;</pre>
                 <h3>Lead body copy</h3>
@@ -221,26 +221,28 @@ San Francisco, CA 94107&lt;br&gt;
                 <hr class="bs-docs-separator">
                 
                 <!-- Lists -->
-                <h2 id="lists">Lists</h2>
-                <h3>Unordered - 无序列表</h3>
+                <h2 id="lists" title="Lists">列表</h2>
+                <h3 title="Unordered">无序列表</h3>
                 <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
                 <div class="bs-docs-example">
                     <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipiscing elit</li>
-                        <li>Integer molestie lorem at massa</li>
-                        <li>Facilisis in pretium nisl aliquet</li>
-                        <li>Nulla volutpat aliquam velit
+                        <li>cnBootstrap是个好框架</li>
+                        <li>jQuery是个好框架</li>
+                        <li>artDialog是个好框架</li>
+                        <li>artTemplate是个好的JS模板</li>
+                        <li>Git是个好工具</li>
+                        <li>为什么选择Git
                             <ul>
-                                <li>Phasellus iaculis neque</li>
-                                <li>Purus sodales ultricies</li>
-                                <li>Vestibulum laoreet porttitor sem</li>
-                                <li>Ac tristique libero volutpat at</li>
+                                <li>更方便的 Merge</li>
+                                <li>更方便的管理</li>
+                                <li>更健壮的系统</li>
+                                <li>对网络的依赖性更低</li>
+                                <li>更少的&ldquo;仓库污染&rdquo;</li>
                             </ul>
                         </li>
-                        <li>Faucibus porta lacus fringilla vel</li>
-                        <li>Aenean sit amet erat nunc</li>
-                        <li>Eget porttitor lorem</li>
+                        <li>YUI是个好框架</li>
+                        <li>AliceUI是个好框架</li>
+                        <li>raphaeljs是个好框架</li>
                     </ul>
                 </div>
                 <pre class="prettyprint linenums">
@@ -248,18 +250,15 @@ San Francisco, CA 94107&lt;br&gt;
 &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-                <h3>Ordered - 有序列表</h3>
+                <h3 title="Ordered">有序列表</h3>
                 <p>A list of items in which the order <em>does</em> explicitly matter.</p>
                 <div class="bs-docs-example">
                     <ol>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipiscing elit</li>
-                        <li>Integer molestie lorem at massa</li>
-                        <li>Facilisis in pretium nisl aliquet</li>
-                        <li>Nulla volutpat aliquam velit</li>
-                        <li>Faucibus porta lacus fringilla vel</li>
-                        <li>Aenean sit amet erat nunc</li>
-                        <li>Eget porttitor lorem</li>
+                        <li>CSS规范-减少依赖，避免耦合</li>
+                        <li>统一风格，让代码有规可循，保证团队协作效率</li>
+                        <li>文件编码必须使用utf-8（无BOM）</li>
+                        <li>文件一律通过 link 链入 (NOT @import)</li>
+                        <li>当只是单个页面使用时，才写在 &lt;head&gt; 的 &lt;style&gt; 中</li>
                     </ol>
                 </div>
                 <pre class="prettyprint linenums">
@@ -267,25 +266,25 @@ San Francisco, CA 94107&lt;br&gt;
 &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;
 </pre>
-                <h3>Unstyled - 无样式列表</h3>
+                <h3 title="Unstyled">无样式列表</h3>
                 <p>A list of items with no <code>list-style</code> or additional left padding.</p>
                 <div class="bs-docs-example">
                     <ul class="unstyled">
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipiscing elit</li>
-                        <li>Integer molestie lorem at massa</li>
-                        <li>Facilisis in pretium nisl aliquet</li>
-                        <li>Nulla volutpat aliquam velit
+                        <li>以动手实践为荣 , 以只看不练为耻;</li>
+                        <li>以打印日志为荣 , 以单步跟踪为耻;</li>
+                        <li>以空格缩进为荣 , 以制表缩进为耻;</li>
+                        <li>以单元测试为荣 , 以人工测试为耻;
                             <ul>
-                                <li>Phasellus iaculis neque</li>
-                                <li>Purus sodales ultricies</li>
-                                <li>Vestibulum laoreet porttitor sem</li>
-                                <li>Ac tristique libero volutpat at</li>
+                                <li>Dreamweaver很不错</li>
+                                <li>Notepad++也很好用</li>
+                                <li>配合Zen-Coding很爽</li>
+                                <li>使用Sublime Text也不错</li>
                             </ul>
                         </li>
-                        <li>Faucibus porta lacus fringilla vel</li>
-                        <li>Aenean sit amet erat nunc</li>
-                        <li>Eget porttitor lorem</li>
+                        <li>以模块复用为荣 , 以复制粘贴为耻;</li>
+                        <li>以多态应用为荣 , 以分支判断为耻;</li>
+                        <li>以精简干练为荣 , 以冗余拖沓为耻;</li>
+                        <li>以总结分享为荣 , 以跪求其解为耻;</li>
                     </ul>
                 </div>
                 <pre class="prettyprint linenums">
@@ -293,17 +292,16 @@ San Francisco, CA 94107&lt;br&gt;
 &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-                <h3>Description</h3>
-                <p>A list of terms with their associated descriptions.</p>
+                <h3 title="Description">描述</h3>
+                <p title="A list of terms with their associated descriptions.">列表项目及其关联描述</p>
                 <div class="bs-docs-example">
                     <dl>
-                        <dt>Description lists</dt>
-                        <dd>A description list is perfect for defining terms.</dd>
-                        <dt>Euismod</dt>
-                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                        <dt>Malesuada porta</dt>
-                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                        <dt title="Definition list">定义列表</dt>
+                        <dd title="A description list is perfect for defining terms.">适用于术语的定义/解释</dd>
+                        <dt>计算机</dt>
+                        <dd>用来计算的仪器 ... ...</dd>
+                        <dt>显示器</dt>
+                        <dd>以视觉方式显示信息的装置 ... ...</dd>
                     </dl>
                 </div>
                 <pre class="prettyprint linenums">
@@ -316,15 +314,12 @@ San Francisco, CA 94107&lt;br&gt;
                 <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.</p>
                 <div class="bs-docs-example">
                     <dl class="dl-horizontal">
-                        <dt>Description lists</dt>
-                        <dd>A description list is perfect for defining terms.</dd>
-                        <dt>Euismod</dt>
-                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                        <dt>Malesuada porta</dt>
-                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-                        <dt>Felis euismod semper eget lacinia</dt>
-                        <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                    	<dt title="Definition list">定义列表</dt>
+                        <dd title="A description list is perfect for defining terms.">适用于术语的定义/解释</dd>
+                        <dt>Coffee</dt>
+                        <dd>Black hot drink</dd>
+                        <dt>Milk</dt>
+                        <dd>White cold drink</dd>
                     </dl>
                 </div>
                 <pre class="prettyprint linenums">
@@ -371,7 +366,7 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
     ================================================== -->
             <section id="tables">
                 <div class="page-header">
-                    <h1>Tables</h1>
+                    <h1 title="Tables">表格</h1>
                 </div>
                 <h2>表格标签</h2>
                 <table class="table table-bordered table-striped">
@@ -458,9 +453,8 @@ For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inlin
 					</tr>
 				</tbody>
 				</table>
-                <h2>Default styles</h2>
-                <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.</p>
-                <p>表格默认的样式仅有一些边框来保证表格的可读性和结构性，DPL中 <code>.table</code> 样式是必须的。</p>
+                <h2 title="Default styles">默认表格样式</h2>
+                <p title="For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class .table to any &lt;table&gt;.">仅使用一组横向边线对表格进行格式化，以保证可读性并维持表格结构不变。使用此默认效果 <code>.table</code> 样式是必须的。</p>
                 <div class="bs-docs-example">
                     <table class="table">
                         <thead>
