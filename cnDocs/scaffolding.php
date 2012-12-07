@@ -7,34 +7,34 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
     <div class="container">
-        <h1 title="框架">Scaffolding</h1>
-        <p class="lead" title="DPL基于Bootstrap的12/24列栅格系统，提供了多种布局模式。">Bootstrap is built on responsive 12/24-column grids, layouts, and components.</p>
+        <h1 title="Scaffolding">框架</h1>
+        <p class="lead" title="Bootstrap is built on responsive 12-column grids, layouts, and components.">Bootstrap是建立在响应式布局12列栅格系统之上实现布局和组件。</p>
     </div>
 </header>
 <div class="container"> 
-    
-    <!-- Docs nav
+
+<!-- Docs nav
 ================================================== -->
     <div class="row">
         <div class="span3 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav">
-                <li><a href="#global"><i class="icon-chevron-right"></i> Global styles</a></li>
-                <li><a href="#gridSystem"><i class="icon-chevron-right"></i> Grid system</a></li>
-                <li><a href="#fluidGridSystem"><i class="icon-chevron-right"></i> Fluid grid system</a></li>
-                <li><a href="#layouts"><i class="icon-chevron-right"></i> Layouts</a></li>
-                <li><a href="#responsive"><i class="icon-chevron-right"></i> Responsive design</a></li>
+                <li><a href="#global" title="Global styles"><i class="icon-chevron-right"></i> 全局样式</a></li>
+                <li><a href="#gridSystem" title="Grid system"><i class="icon-chevron-right"></i> 栅格系统</a></li>
+                <li><a href="#fluidGridSystem" title="Fluid grid system"><i class="icon-chevron-right"></i> 流动栅格系统</a></li>
+                <li><a href="#layouts" title="Layouts"><i class="icon-chevron-right"></i> 布局</a></li>
+                <li><a href="#responsive" title="Responsive design"><i class="icon-chevron-right"></i> 响应式设计</a></li>
             </ul>
         </div>
         <div class="span9"> 
             
             <!-- Global Bootstrap settings
-    ================================================== -->
+			================================================== -->
             <section id="global">
                 <div class="page-header">
-                    <h1>Global settings</h1>
+                    <h1 title="Global settings">全局设置 <small>重置CSS，排版和链接</small></h1>
                 </div>
-                <h3>Requires HTML5 doctype</h3>
-                <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+                <h3 title="Requires HTML5 doctype">要求HTML5 doctype</h3>
+                <p title="Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.">Bootstrap用到的HTML元素和CSS属性需要HTML5 doctype。因此每个使用Bootstrap的页面都应该包启HTML5声明。</p>
                 <p>页面框架是创建所有页面的基础，拷贝以下代码作为你的页面的初始状态。</p>
                 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
@@ -50,34 +50,28 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-                <h3 title="排版和链接">Typography and links</h3>
-                <p>Bootstrap sets basic global display, typography, and link styles. Specifically, we:</p>
-                <ul>
-                    <li>Remove <code>margin</code> on the body</li>
-                    <li>Set <code>background-color: white;</code> on the <code>body</code></li>
-                    <li>Use the <code>@baseFontFamily</code>, <code>@baseFontSize</code>, and <code>@baseLineHeight</code> attributes as our typographyic base</li>
-                    <li>Set the global link color via <code>@linkColor</code> and apply link underlines only on <code>:hover</code></li>
+                <h3 title="Typography and links">排版和链接</h3>
+                <p title="Bootstrap sets basic global display, typography, and link styles. Specifically, we:">Bootstrap设置了基本的全局显示效果，排版和链接样式。具体来说，我们:</p>
+				<ul>
+                    <li>移除了 <code>margin</code> 的 <code>margin</code></li>
+                    <li>设置 <code>margin</code> 背景色为 <code>background-color: white;</code></li>
+                    <li>将 <code>@baseFontFamily</code>, <code>@baseFontSize</code>, 和 <code>@baseLineHeight</code> 做为排版的基础变量</li>
+                    <li>使用 <code>@linkColor</code> 设置全局链接的颜色，链接仅在 <code>:hover</code> 状下显示下划线</li>
                 </ul>
-                <p>These styles can be found within <strong>scaffolding.less</strong>.</p>
+                <p title="These styles can be found within scaffolding.less.">这些样式都在 <strong>scaffolding.less</strong>文件中。</p>
                 <p>在page.less文件中，我们对全局显示、字体、链接做了设置。你可以通过修改variables.less中相关的值来改变这些设置。相关的设置：</p>
-                <ul>
-                    <li>@bodyBackground	全局背景颜色</li>
-                    <li>@baseFontFamily、@baseFontSize、@baseLineHeight	全局字体排版</li>
-                    <li>@textColor	全局字体颜色</li>
-                    <li>@linkColor、@linkColorHover	全局链接颜色</li>
-                </ul>
-                <h3>Reset via Normalize</h3>
-                <p>With Bootstrap 2, the old reset block has been dropped in favor of <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a>, a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> that also powers the <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a>. While we use much of Normalize within our <strong>reset.less</strong>, we have removed some elements specifically for Bootstrap.</p>
+                <h3 title="通过Normalize重置默认样式">Reset via Normalize</h3>
+				<p title="With Bootstrap 2, the old reset block has been dropped in favor of Normalize.css, a project by Nicolas Gallagher that also powers the HTML5 Boilerplate. While we use much of Normalize within our reset.less, we have removed some elements specifically for Bootstrap.">从Bootstrap 2开始，使用 <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a> 对默认的CSS进行重置(reset)。<a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a> 项目由 <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> 创建 <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a> 项目也出于他手。新的reset代码保存在 reset.less ，并移除了一些元素，从而更加简洁明了。</p>
             </section>
             
             <!-- Grid system
     ================================================== -->
             <section id="gridSystem">
                 <div class="page-header">
-                    <h1>Default grid system</h1>
+                    <h1 title="Default grid system">默认栅格系统 <small>响应式的12列系统</small></h1>
                 </div>
                 <h2>Live grid example</h2>
-                <p>The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without <a href="./scaffolding.php#responsive">responsive features</a> enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
+                <p title="The default Bootstrap grid system utilizes 12 columns, making for a 940px wide container without responsive features enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.">在缺省情况下，Bootstrap提供940px宽, 12列的无<a href="./scaffolding.php#responsive">响应功能</a>栅格系统。通过添加响应式CSS样式，栅格系统能自适应宽度为724px 和 1170px的分辨率，并且在767px分辨率以下，栅格将变化为流体布局及垂直堆栈式排列。</p>
                 <div class="bs-docs-grid">
                     <div class="row show-grid">
                         <div class="span1">1</div>
@@ -104,8 +98,10 @@
                     </div>
                 </div>
 				
-                <h3>Basic grid HTML</h3>
-                <p>For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
+                <h3 titlt="Basic grid HTML"></h3>
+                <p title="For a simple two column layout, create a .row and add the appropriate number of .span* columns. As this is a 12-column grid, each .span* spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).">一个基本的布局由两个“列”组成，栅格系统由一系列横跨12等分的"span*"组成。
+				
+				For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
                 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
 &lt;div class="span4"&gt;...&lt;/div&gt;

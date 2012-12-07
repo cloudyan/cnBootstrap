@@ -7,8 +7,8 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
   <div class="container">
-    <h1>Getting started</h1>
-    <p class="lead">Overview of the project, its contents, and how to get started with a simple template.</p>
+    <h1 title="Getting started">概述</h1>
+    <p class="lead" title="Overview of the project, its contents, and how to get started with a simple template.">项目的概述、内容，以及如何开始使用一个简单的模板。</p>
   </div>
 </header>
 

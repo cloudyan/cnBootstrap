@@ -1,12 +1,12 @@
 <?php $page = "home" ?>
 <?php $title="Design Pattern Library"?>
-<?php $description = "本项目作为研究并学习bootstrap以及实践cnBootstrap之用，由于Bootstrap项目不太适用国内或者说我正在从事的项目，必须要做部分的调整，进一步研究调试cnBootstrap，本项目仍然在Github中开源，便于大家交流讨论及测试应用。" ?>
+<?php $description = "cnBootstrap项目作为研究并学习bootstrap以及实践cnBootstrap之用，由于Bootstrap项目不太适用国内或者说我正在从事的项目，必须要做部分的调整，进一步研究调试cnBootstrap，本项目仍然在Github中开源，便于大家交流讨论及测试应用。" ?>
 <?php include("./templates/header.php"); ?>
 
 <div class="jumbotron masthead">
   <div class="container">
     <h1>cnBootstrap</h1>
-    <p>时尚，直观，强大的前端框架cnBootstrap<br>使Web开发更快，更容易。</p>
+    <p>Bootstrap中文版——时尚、直观、强大的前端框架<br>使Web开发更快，更容易。</p>
     <p>
       <a href="https://github.com/xiaohan1219/cnBootstroap" class="btn btn-primary btn-large" title="Download Bootstrap">下载 cnBootstrap<small>(v1.0)</small></a>
     </p>
@@ -51,31 +51,31 @@
 
   <div class="marketing">
 
-    <h1>Introducing Bootstrap.</h1>
-    <p class="marketing-byline">Need reasons to love Bootstrap? Look no further.</p>
+    <h1 title="Introducing Bootstrap.">Bootstrap简介</h1>
+    <p class="marketing-byline" title="Need reasons to love Bootstrap? Look no further.">爱上Bootstrap需要理由么？无需观望</p>
 
     <div class="row-fluid">
       <div class="span4">
         <img src="assets/img/bs-docs-twitter-github.png">
-        <h2>By nerds, for nerds.</h2>
-        <p>Built at Twitter by <a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>, Bootstrap utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a href="http://nodejs.org">Node</a>, and is managed through <a href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
+        <h2>由匠人建，为匠人用</h2>
+        <p>由 Twitter 大神<a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>创建, Bootstrap 使用 <a href="http://lesscss.org">LESS CSS</a>, 通过 <a href="http://nodejs.org">Node</a> 编译, 在 <a href="http://github.com">GitHub</a> 网站上进行管理维护并不断完善。</p>
       </div>
       <div class="span4">
         <img src="assets/img/bs-docs-responsive-illustrations.png">
-        <h2>Made for everyone.</h2>
-        <p>Bootstrap was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via <a href="./scaffolding.php#responsive">responsive CSS</a> as well.</p>
+        <h2 title="Made for everyone.">适合于每一个人.</h2>
+        <p title="Bootstrap was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via responsive CSS as well.">Bootstrap 不仅仅在主流浏览器表现卓越 (设置包括IE7), 并且通过 <a href="./scaffolding.php#responsive">响应式布局</a> 提供对平板和智能手机的支持。</p>
       </div>
       <div class="span4">
         <img src="assets/img/bs-docs-bootstrap-features.png">
-        <h2>Packed with features.</h2>
-        <p>A 12-column responsive <a href="./scaffolding.php#grid">grid</a>, dozens of components, <a href="./javascript.php">JavaScript plugins</a>, typography, form controls, and even a <a href="./customize.php">web-based Customizer</a> to make Bootstrap your own.</p>
+        <h2 title="Packed with features.">功能便携</h2>
+        <p title="A 12-column responsive grid, dozens of components, JavaScript plugins, typography, form controls, and even a web-based Customizer to make Bootstrap your own.">12列的响应<a href="./scaffolding.php#grid">栅格布局</a>，众多的组件，<a href="./javascript.php">JavaScript插件</a>，排版，表格控件，甚至可以<a href="./customize.php">基于网络定制自己的Bootstrap</a>。</p>
       </div>
     </div>
 
     <hr class="soften">
 
-    <h1>Built with Bootstrap.</h1>
-    <p class="marketing-byline">For even more sites built with Bootstrap, <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">visit the unofficial Tumblr</a> or <a href="./getting-started.html#examples">browse the examples</a>.</p>
+    <h1 title="Built with Bootstrap.">Bootstrap案例</h1>
+    <p class="marketing-byline" title="For even more sites built with Bootstrap, visit the unofficial Tumblr or browse the examples.">更多案例请查看 <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">非官方Tumblr站</a> 或 <a href="./getting-started.html#examples">浏览例子</a>。</p>
     <div class="row-fluid">
       <ul class="thumbnails example-sites">
         <li class="span3">
