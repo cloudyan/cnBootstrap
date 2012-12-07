@@ -50,18 +50,20 @@
                 <p title="Bootstrap's global default font-size is 14px, with a line-height of 20px. This is applied to the &lt;body&gt; and all paragraphs. In addition, &lt;p&gt; (paragraphs) receive a bottom margin of half their line-height (10px by default).">Bootstrap 全局默认字体大小14px，行高20px。这适用于 <code>&lt;body&gt;</code> 和所有段落 <code>&lt;p&gt;</code>。此外，<code>&lt;p&gt;</code> 还会设置等值一半行高的下边距（默认是10px）。</p>
                 <p><span class="label label-info" title="Heads up!">提醒</span> 针对中文显示，默认设置为12px/22px、14px/24px。</p>
                 <div class="bs-docs-example">
-                    <p>许小年：政府掌握了越来越多的资源，制订了日益烦琐的管理方法，为了获得企业发展所需要的资源，或者是仅仅为了生活下去，企业不得不按照潜规则与企业打交道。我非常赞同绿公司提出的要&ldquo;守本分&rdquo;，但是要想企业守本分，首先政府要守本分，&ldquo;逼良为娼&rdquo;还不是最可怕的，回过头来的&ldquo;扫黄&rdquo;才是致命的一击！</p>
-                    <p>余华：在涉及敏感话题时，我以前总是希望别人说出我想说的话。别人有风险，自已很安全。后来意识到如果人人都和我一样，那么我们可能长久生活在风险里。要想抵达安全，风险是必经之路。所以我开始自已说了，越来越多的人已经在自己说了……荷马史诗里描述黑压压的兵勇前进时的情景：他们将大地踩得轰然作响。</p>
+                    <p>制定本规范的目的在于使我们的CSS代码更加易于维护和重用，从而提升效率执行本规范时建议的流程。建议使用D(esign)C(oding)D(ebug)V(alidate)R(oundup)，即DCDVR的流程。首先需要规划样式并分为共有样式 和页面个性化样式，然后才开始编码，编码的同时进行Debug，Validate和代码片断的总结，而不是在所有模板都完成后才进行这三个步骤。</p>
+                    <p>这种方式我很是赞同，编码同时即DVR（这样团队开发确实能提高效率的），值得效法和推广！</p>
+					<p>前端框架设计模式：减少依赖，避免耦合；统一风格，让代码有规可循，保证团队协作效率。</p>
                 </div>
                 <pre class="prettyprint">&lt;p&gt;...&lt;/p&gt;</pre>
                 <h3>Lead body copy</h3>
                 <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
                 <div class="bs-docs-example">
-                    <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                    <p class="lead">写在规则前面的话——项目的可维护性第一。</p>
                 </div>
                 <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
-                <h3>Built with Less</h3>
-                <p>The typographic scale is based on two LESS variables in <strong>variables.less</strong>: <code>@baseFontSize</code> and <code>@baseLineHeight</code>. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.</p>
+                <h3 title="Built with Less">内置Less</h3>
+                <p title="The typographic scale is based on two LESS variables in variables.less: @baseFontSize and @baseLineHeight. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.">
+				整个排版系统的单位尺度都取决于 <strong>variables.less</strong> 文件中的两个Less变量： <code>@baseFontSize</code> 和 <code>@baseLineHeight</code>。 前者决定全局的默认字体大小font-size，后者决定默认的行高line-height。我们利用这些变量，配合一些数学运算，就可以得到定义样式时所需的margins, paddings, line-heights等等。配置它们以使Bootstrap能自适应。</p>
                 <hr class="bs-docs-separator">
                 <h2 id="emphasis">Emphasis</h2>
                 <p>Make use of HTML's default emphasis tags with lightweight styles.</p>

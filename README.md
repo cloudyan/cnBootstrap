@@ -1,7 +1,7 @@
 cnBootstroap
 ============
 
-Bootstrap-中文版——时尚的，直观的，强大的前端框架使Web开发更快，更容易。
+Bootstrap-中文版——时尚、直观、强大的前端框架使Web开发更快，更容易。
 
 本项目使用Git管理，如果您对Git的使用不甚熟悉，可以参考[useGit使用指南](https://github.com/xiaohan1219/useGit)项目，包含详细的Git教程讲解以及Git命令。
 
@@ -9,7 +9,7 @@ Bootstrap-中文版——时尚的，直观的，强大的前端框架使Web开�
 
 版权采用[『 知识共享署名-非商业性使用 2.5 许可协议』](http://creativecommons.org/licenses/by-nc/2.5/cn/)进行许可。
 
-[cnBootstrap](https://github.com/Ocode/bootstrap)是一个基于[Twitter Bootstrap](http://twitter.github.com/bootstrap/)（下简称TB）的修改定制版，主要解决了TB的侵入性问题，能使TB更好的与其他前端项目并存以及更好的适应国人需求兼容IE6+等。简言之，cnBootstrap提供TB的所有特性，并且不会修改你的CSS默认样式。
+[cnBootstrap](https://github.com/Ocode/bootstrap)是一个基于[Twitter Bootstrap](http://twitter.github.com/bootstrap/)（下简称TB）的修改定制版，主要解决了TB的侵入性问题，能使TB更好的与其他前端项目并存以及更好的适应国人需求兼容IE6+等。简言之，cnBootstrap提供TB的所有特性，在其基础上扩展设计更好的支持中文版面了，而这并不会修改你的CSS默认样式。
 
 cnBootstrap将作为[cnEngine](https://github.com/Ocode/bootstrap)项目的前端核心框架开源发布，协议采用[New BSD License](http://framework.zend.com/license/new-bsd)。
 
