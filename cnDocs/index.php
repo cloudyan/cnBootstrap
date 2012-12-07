@@ -57,12 +57,12 @@
     <div class="row-fluid">
       <div class="span4">
         <img src="assets/img/bs-docs-twitter-github.png">
-        <h2>由匠人建，为匠人用</h2>
+        <h2>由匠人建 为匠人用</h2>
         <p>由 Twitter 大神<a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>创建, Bootstrap 使用 <a href="http://lesscss.org">LESS CSS</a>, 通过 <a href="http://nodejs.org">Node</a> 编译, 在 <a href="http://github.com">GitHub</a> 网站上进行管理维护并不断完善。</p>
       </div>
       <div class="span4">
         <img src="assets/img/bs-docs-responsive-illustrations.png">
-        <h2 title="Made for everyone.">适合于每一个人.</h2>
+        <h2 title="Made for everyone.">适合于每一个人</h2>
         <p title="Bootstrap was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via responsive CSS as well.">Bootstrap 不仅仅在主流浏览器表现卓越 (设置包括IE7), 并且通过 <a href="./scaffolding.php#responsive">响应式布局</a> 提供对平板和智能手机的支持。</p>
       </div>
       <div class="span4">

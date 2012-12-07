@@ -306,65 +306,66 @@
     ================================================== -->
             <section id="responsive">
                 <div class="page-header">
-                    <h1>Responsive design</h1>
+                    <h1 title="Responsive design">响应式设计 <small>Media Query根据设备和分辨率的不同而使用不同样式</small></h1>
                 </div>
-                <h2>Enabling responsive features</h2>
-                <p>Turn on responsive CSS in your project by including the proper meta tag and additional stylesheet within the <code>&lt;head&gt;</code> of your document. If you've compiled Bootstrap from the Customize page, you need only include the meta tag.</p>
+                <h2 title="Enabling responsive features">启用响应功能</h2>
+                <p title="Turn on responsive CSS in your project by including the proper meta tag and additional stylesheet within the <head> of your document. If you've compiled Bootstrap from the Customize page, you need only include the meta tag.">在您的项目文档 <code>&lt;head&gt;</code> 中包括适当的meta标签以及额外的样式表即可打开响应式CSS。如果你使用的是“自定义”Bootstrap页面，那么你只需要包括meta标签即可。</p>
                 <pre class="prettyprint linenums">
 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 &lt;link href="assets/css/bootstrap-responsive.css" rel="stylesheet"&gt;
 </pre>
-          <p><span class="label label-info">Heads up!</span>  Bootstrap doesn't include responsive features by default at this time as not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it as needed.</p>
+          <p title="Bootstrap doesn't include responsive features by default at this time as not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it as needed."><span class="label label-info" title="Heads up!">提醒</span>  因为不是所有的设计都需要响应功能，所以 Bootstrap 在默认情况下不包含响应功能。但不是为了鼓励开发者移除此功能，这里我们最好启用它。</p>
 
-          <h2>About responsive Bootstrap</h2>
+          <h2 title="About responsive Bootstrap">响应式设计用来做什么？</h2>
           <img src="assets/img/responsive-illustrations.png" alt="Responsive devices" style="float: right; margin: 0 0 20px 20px;">
-          <p>Media queries allow for custom CSS based on a number of conditions&mdash;ratios, widths, display type, etc&mdash;but usually focuses around <code>min-width</code> and <code>max-width</code>.</p>
-          <ul>
-            <li>Modify the width of column in our grid</li>
-            <li>Stack elements instead of float wherever necessary</li>
-            <li>Resize headings and text to be more appropriate for devices</li>
-          </ul>
-          <p>Use media queries responsibly and only as a start to your mobile audiences. For larger projects, do consider dedicated code bases and not layers of media queries.</p>
+          <p title="Media queries allow for custom CSS based on a number of conditions—ratios, widths, display type, etc—but usually focuses around min-width and max-width.">Medias Query允许浏览器基于不同的条件而使用不同的CSS：比如宽高比，宽度，显示类型等等。但最常用的条件还是 <code>min-width</code> 和 <code>max-width</code> 。
+		</p>
+		<ul>
+			<li title="Modify the width of column in our grid">在栅格中修改列的宽度</li>
+			<li title="Stack elements instead of float wherever necessary">堆叠元素，而不是让其浮动</li>
+			<li title="Resize headings and text to be more appropriate for devices">根据不同设备重置标题和文字的大小，以获得更好的阅读体验。</li>
+        </ul>
+          <p title="Use media queries responsibly and only as a start to your mobile audiences. For larger projects, do consider dedicated code bases and not layers of media queries.">谨慎地使用media query，建议仅仅将其做为你的手机用户的初体验。对于大型项目而言，最好还是选择专业的代码库，而不是进行层层的media查询。</p>
 
-          <h2>Supported devices</h2>
-          <p>Bootstrap supports a handful of media queries in a single file to help make your projects more appropriate on different devices and screen resolutions. Here's what's included:</p>
+          <h2 title="Supported devices">支持的设备</h2>
+          <p title="Bootstrap supports a handful of media queries in a single file to help make your projects more appropriate on different devices and screen resolutions. Here's what's included:">Bootstrap在responsive.less文件中提供了一组media query，令你的项目可以更为便捷地适应多种设备和分辨率。包括：</p>
           <table class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Label</th>
-                <th>Layout width</th>
-                <th>Column width</th>
-                <th>Gutter width</th>
+                <th title="Label">设备</th>
+                <th title="Layout width">布局宽度</th>
+                <th title="Column width">列宽度</th>
+                <th title="Gutter width">间隔宽度</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Large display</td>
-                <td>1200px and up</td>
+                <td title="Large display">大分辨率</td>
+                <td>&gt;=1200px</td>
                 <td>70px</td>
                 <td>30px</td>
               </tr>
               <tr>
-                <td>Default</td>
-                <td>980px and up</td>
+                <td title="Default">默认</td>
+                <td>&gt;=980px</td>
                 <td>60px</td>
                 <td>20px</td>
               </tr>
               <tr>
-                <td>Portrait tablets</td>
-                <td>768px and above</td>
+                <td title="Portrait tablets">水平平板</td>
+                <td>&gt;=768px</td>
                 <td>42px</td>
                 <td>20px</td>
               </tr>
               <tr>
-                <td>Phones to tablets</td>
-                <td>767px and below</td>
-                <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+                <td title="Phones to tablets">智能手机到垂直平板</td>
+                <td>&lt;=767px</td>
+                <td class="muted" colspan="2" title="Fluid columns, no fixed widths">流式列，非固定宽度</td>
               </tr>
               <tr>
-                <td>Phones</td>
-                <td>480px and below</td>
-                <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+                <td title="Phones">智能手机</td>
+                <td>&lt;=480px</td>
+                <td class="muted" colspan="2" title="Fluid columns, no fixed widths">流式列，非固定宽度</td>
               </tr>
             </tbody>
           </table>
