@@ -56,7 +56,7 @@
                 </div>
                 <pre class="prettyprint">&lt;p&gt;...&lt;/p&gt;</pre>
                 <h3>Lead body copy</h3>
-                <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+                <p title="Make a paragraph stand out by adding .lead.">通过添加 <code>.lead</code> 实现段落强调。</p>
                 <div class="bs-docs-example">
                     <p class="lead">写在规则前面的话——项目的可维护性第一。</p>
                 </div>
@@ -65,36 +65,37 @@
                 <p title="The typographic scale is based on two LESS variables in variables.less: @baseFontSize and @baseLineHeight. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.">
 				整个排版系统的单位尺度都取决于 <strong>variables.less</strong> 文件中的两个Less变量： <code>@baseFontSize</code> 和 <code>@baseLineHeight</code>。 前者决定全局的默认字体大小font-size，后者决定默认的行高line-height。我们利用这些变量，配合一些数学运算，就可以得到定义样式时所需的margins, paddings, line-heights等等。配置它们以使Bootstrap能自适应。</p>
                 <hr class="bs-docs-separator">
-                <h2 id="emphasis">Emphasis</h2>
-                <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+                <h2 id="emphasis" title="Emphasis">强调</h2>
+                <p title="Make use of HTML's default emphasis tags with lightweight styles.">使用HTML默认的强调标签。</p>
                 <h3><code>&lt;small&gt;</code></h3>
-                <p>For de-emphasizing inline or blocks of text, <small>use the small tag.</small></p>
+                <p title="For de-emphasizing inline or blocks of text, use the small tag.">对于不再强调内联或文本块，<small>使用小标签。</small></p>
                 <div class="bs-docs-example">
-                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                    <p title="This line of text is meant to be treated as fine print."><small>这一行文本意味着它不是强调的内容。</small></p>
                 </div>
                 <pre class="prettyprint">
 &lt;p&gt;
-  &lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;
+  &lt;small&gt;这一行文本意味着它不是强调的内容。&lt;/small&gt;
 &lt;/p&gt;
 </pre>          
-<h3>Bold</h3>
-<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+<h3 title="Bold">加粗</h3>
+<p title="For emphasizing a snippet of text with a heavier font-weight.">使用加粗来强调文本</p>
           <div class="bs-docs-example">
-            <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+            <p title="The following snippet of text is rendered as bold text.">下面的代码片段的文本呈现为<strong>粗体文本</strong>。</p>
           </div>
-          <pre class="prettyprint">&lt;strong&gt;rendered as bold text&lt;/strong&gt;</pre>
+          <pre class="prettyprint">&lt;strong&gt;粗体文本&lt;/strong&gt;</pre>
 
-          <h3>Italics</h3>
-          <p>For emphasizing a snippet of text with italics.</p>
+          <h3 title="Italics">斜体</h3>
+          <p title="For emphasizing a snippet of text with italics.">使用斜体来强调文本</p>
           <div class="bs-docs-example">
-            <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+            <p title="The following snippet of text isrendered as italicized text.">下面的代码片段的文本 <em>呈现为斜体字</em>。</p>
           </div>
-          <pre class="prettyprint">&lt;em&gt;rendered as italicized text&lt;/em&gt;</pre>
+          <pre class="prettyprint">&lt;em&gt;呈现为斜体字&lt;/em&gt;</pre>
 
-          <p><span class="label label-info">Heads up!</span> Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+          <p title="Feel free to use &lt;b&gt; and &lt;i&gt; in HTML5. &lt;b&gt; is meant to highlight words or phrases without conveying additional importance while &lt;i&gt; is mostly for voice, technical terms, etc."><span class="label label-info" title="Heads up!">提醒</span> 在HTML5中仍然可以使用 <code>&lt;b&gt;</code> 和 <code>&lt;i&gt;</code> 标签，但是它们的用途已经发生了改变。
+	<code>&lt;b&gt;</code> 在过去仅仅用来加粗单词或短语，没有任何语义上的含义，现在定义需要强调的部分（如果您希望把文本标记为相比其他文本更为重要，应该使用 <code>&lt;strong&gt;</code> 标签。）。而 <code>&lt;i&gt;</code> 主要用在语音和技术等方面。</p>
 
-          <h3>Emphasis classes</h3>
-          <p>Convey meaning through color with a handful of emphasis utility classes.</p>
+          <h3 title="Emphasis classes">强调类</h3>
+          <p title="Convey meaning through color with a handful of emphasis utility classes.">通过颜色来表示强调的工具类</p>
           <div class="bs-docs-example">
             <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
             <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
@@ -110,55 +111,55 @@
 &lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
 </pre>                
 				<hr class="bs-docs-separator">
-                <h2 id="abbreviations">Abbreviations</h2>
-                <p>Stylized implemenation of HTML's <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.</p>
+                <h2 id="abbreviations" title="Abbreviations">缩写形式</h2>
+                <p title="Stylized implemenation of HTML's &lt;abbr&gt; element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a title attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.">HTML的 <code>&lt;abbr&gt;</code> 标签是为缩写语或缩写词在hover状态时能显示扩展的文本。使用 <code>title</code> 属性的 <code>&lt;abbr&gt;</code> 会带有点状(dotted)底边线，鼠标经过时会显示带问号的箭头，并提示完整的字词信息。</p>
                 <h3><code>&lt;abbr&gt;</code></h3>
-                <p>For expanded text on long hover of an abbreviation, include the <code>title</code> attribute.</p>
+                <p title="For expanded text on long hover of an abbreviation, include the title attribute.">要在缩写词上实现hover时的扩展文本，应该包含 <code>title</code> 属性.</p>
                 <div class="bs-docs-example">
-                    <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+                    <p title="An abbreviation of the word attribute is attr.">单词 attribute 的缩写是 <abbr title="attribute">attr</abbr>。</p>
                 </div>
                 <pre class="prettyprint">&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;</pre>
                 <h3><code>&lt;abbr class="initialism"&gt;</code></h3>
-                <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+                <p title="Add .initialism to an abbreviation for a slightly smaller font-size.">对缩写词元素应用 <code>.initialism</code> 会减小一号字体大小，以协调排版效果。</p>
                 <div class="bs-docs-example">
-                    <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+					<p title="HTML is the best thing since sliced bread."><abbr title="HyperText Markup Language 超文本标记语言" class="initialism">HTML</abbr> 是自切片面包问世以来最棒的发明。</p>
                 </div>
                 <pre class="prettyprint">&lt;abbr title="HyperText Markup Language" class="initialism"&gt;attr&lt;/abbr&gt;</pre>
                 <hr class="bs-docs-separator">
-                <h2 id="addresses">Addresses</h2>
-                <p>Present contact information for the nearest ancestor or the entire body of work.</p>
+                <h2 id="addresses" title="Addresses">地址</h2>
+                <p title="Present contact information for the nearest ancestor or the entire body of work.">定义文档作者或拥有者的联系信息。</p>
                 <h3><code>&lt;address&gt;</code></h3>
-                <p>Preserve formatting by ending all lines with <code>&lt;br&gt;</code>.</p>
+                <p title="Preserve formatting by ending all lines with &lt;br&gt;">通过行尾的 <code>&lt;br&gt;</code> 标签保持格式。</p>
                 <div class="bs-docs-example">
                     <address>
-                    <strong>Twitter, Inc.</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
+                    <strong>tCreator文化有限公司</strong><br>
+					某省某市某大道404号<br>
+                    佚名大厦, A座49楼<br>
                     <abbr title="Phone">P:</abbr> (123) 456-7890
                     </address>
                     <address>
-                    <strong>Full Name</strong><br>
+                    <strong>有关负责人</strong><br>
                     <a href="mailto:#">first.last@gmail.com</a>
                     </address>
                 </div>
                 <pre class="prettyprint linenums">
 &lt;address&gt;
-&lt;strong&gt;Twitter, Inc.&lt;/strong&gt;&lt;br&gt;
-795 Folsom Ave, Suite 600&lt;br&gt;
-San Francisco, CA 94107&lt;br&gt;
+&lt;strong&gt;tCreator文化有限公司&lt;/strong&gt;&lt;br&gt;
+某省某市某大道404号&lt;br&gt;
+佚名大厦, A座49楼&lt;br&gt;
 &lt;abbr title="Phone"&gt;P:&lt;/abbr&gt; (123) 456-7890
 &lt;/address&gt;
 
 &lt;address&gt;
-&lt;strong&gt;Full Name&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;有关负责人&lt;/strong&gt;&lt;br&gt;
 &lt;a href="mailto:#"&gt;first.last@gmail.com&lt;/a&gt;
 &lt;/address&gt;
 </pre>
                 <hr class="bs-docs-separator">
-                <h2 id="blockquotes">Blockquotes</h2>
-                <p>For quoting blocks of content from another source within your document.</p>
-                <h3>Default blockquote</h3>
-                <p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes we recommend a <code>&lt;p&gt;</code>.</p>
+                <h2 id="blockquotes" title="Blockquotes">引用</h2>
+                <p title="For quoting blocks of content from another source within your document.">定义摘自另一个源的块引用。</p>
+                <h3 title="Default blockquote">默认引用</h3>
+                <p title="Wrap &lt;blockquote&gt; around any HTML as the quote. For straight quotes we recommend a &lt;p&gt;.">用 <code>&lt;blockquote&gt;</code> 嵌套 <abbr title="HyperText Markup Language">HTML</abbr> 即可实现引用。对于连续的引用内容，建议使用 <code>&lt;p&gt;</code> 标签。</p>
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -170,49 +171,50 @@ San Francisco, CA 94107&lt;br&gt;
                     <tbody>
                         <tr>
                             <td><code>&lt;blockquote&gt;</code></td>
-                            <td> 引用其它出处文字块 </td>
-                            <td><p><code>cite</code> 属性可以用来标注文字出处。</p>
-                                class设置为 <code>.pull-left</code> 或 <code>.pull-right</code> 可以改变浮动的方向。 </td>
+                            <td> 用于引用外部内容的块级元素 </td>
+                            <td><p><code>cite</code> 属性可以用来标注文字出处，如：URL。</p>
+                                class设置为 <code>.pull-left</code> 或 <code>.pull-right</code> 决定是内容居左还是居右浮动对齐。</td>
                         </tr>
                         <tr>
                             <td><code>&lt;small&gt;</code></td>
-                            <td> 可选的元素，用来描述引用文字的出处。 </td>
-                            <td></td>
+                            <td> 可选元素，用于添加针对用户的引用，通常用于引言的作者。 </td>
+                            <td> 可以将引言或出处置于 <code>&lt;cite&gt;</code> 标签内。</td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="bs-docs-example">
                     <blockquote>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					<p>菩提本无树，明镜亦非台；本来无一物，何处惹尘埃。</p>
 					</blockquote>
                 </div>
                 <pre class="prettyprint linenums">
 &lt;blockquote&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;p&gt;菩提本无树，明镜亦非台；本来无一物，何处惹尘埃。&lt;/p&gt;
 &lt;/blockquote&gt;
 </pre>
-                <h3>Blockquote options</h3>
-                <p>Style and content changes for simple variations on a standard blockquote.</p>
-                <h4>Naming a source</h4>
-                <p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+                <h3 title="Blockquote options">引用文字选项</h3>
+                <p title="Style and content changes for simple variations on a standard blockquote.">对标准的引用文本实现简单的样式和内容风格的变化。</p>
+                <h4 title="Naming a source">引用出处</h4>
+                <p title="Add &lt;small&gt; tag for identifying the source. Wrap the name of the source work in &lt;cite&gt;.">可以添加一个可选的 <code>&lt;small&gt;</code> 元素来表示引用的出处，该元素会利用样式在内容前加入宽度为一个字长的破折号 <code>&amp;mdash;</code>。可以将引言或出处置于 <cite> 标签内。
+      </p>
                 <div class="bs-docs-example">
                     <blockquote>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-					<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                    <p>远看山有色，近听水无声。春去花还在，人来鸟不惊。</p>
+					<small title="Someone famous in Source Title">王维 <cite title="Source Title">《画》</cite></small>
 					</blockquote>
                 </div>
                 <pre class="prettyprint linenums">
 &lt;blockquote&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-&lt;small&gt;Someone famous &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
+&lt;p&gt;远看山有色，近听水无声。春去花还在，人来鸟不惊。&lt;/p&gt;
+&lt;small&gt;王维 &lt;cite title="Source Title"&gt;《画》&lt;/cite&gt;&lt;/small&gt;
 &lt;/blockquote&gt;
 </pre>
-                <h4>Alternate displays</h4>
-                <p>Use <code>.pull-right</code> for a floated, right-aligned blockquote.</p>
+                <h4 title="Alternate displays">另一种引用效果</h4>
+                <p title="Use .pull-right for a floated, right-aligned blockquote.">使用 <code>.pull-right</code> 实现由浮动且文本右对齐的引用框。</p>
                 <div class="bs-docs-example" style="overflow: hidden;">
                     <blockquote class="pull-right">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-					<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+					<p>曾经沧海难为水，除却巫山不是云。取次花丛懒回顾，半缘修道半缘君。</p>
+					<small title="Someone famous in Source Title">元稹 <cite title="Source Title">《离思五首》之四</cite></small>
 					</blockquote>
                 </div>
                 <pre class="prettyprint linenums">
@@ -225,7 +227,7 @@ San Francisco, CA 94107&lt;br&gt;
                 <!-- Lists -->
                 <h2 id="lists" title="Lists">列表</h2>
                 <h3 title="Unordered">无序列表</h3>
-                <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+                <p title="A list of items in which the order does not explicitly matter.">定义一个<em>没有</em>明确重要性的项目列表</p>
                 <div class="bs-docs-example">
                     <ul>
                         <li>cnBootstrap是个好框架</li>
@@ -253,7 +255,7 @@ San Francisco, CA 94107&lt;br&gt;
 &lt;/ul&gt;
 </pre>
                 <h3 title="Ordered">有序列表</h3>
-                <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+                <p title="A list of items in which the order does explicitly matter.">定义一个<em>有</em>明确重要性的项目列表。</p>
                 <div class="bs-docs-example">
                     <ol>
                         <li>CSS规范-减少依赖，避免耦合</li>
@@ -269,7 +271,7 @@ San Francisco, CA 94107&lt;br&gt;
 &lt;/ol&gt;
 </pre>
                 <h3 title="Unstyled">无样式列表</h3>
-                <p>A list of items with no <code>list-style</code> or additional left padding.</p>
+                <p title="A list of items with no list-style or additional left padding.">没有 <code>list-style</code> 即没有左侧内边距的列表。</p>
                 <div class="bs-docs-example">
                     <ul class="unstyled">
                         <li>以动手实践为荣 , 以只看不练为耻;</li>
@@ -277,7 +279,7 @@ San Francisco, CA 94107&lt;br&gt;
                         <li>以空格缩进为荣 , 以制表缩进为耻;</li>
                         <li>以单元测试为荣 , 以人工测试为耻;
                             <ul>
-                                <li>Dreamweaver很不错</li>
+                                <li>DreamWeaver很不错</li>
                                 <li>Notepad++也很好用</li>
                                 <li>配合Zen-Coding很爽</li>
                                 <li>使用Sublime Text也不错</li>
@@ -298,7 +300,7 @@ San Francisco, CA 94107&lt;br&gt;
                 <p title="A list of terms with their associated descriptions.">列表项目及其关联描述</p>
                 <div class="bs-docs-example">
                     <dl>
-                        <dt title="Definition list">定义列表</dt>
+                        <dt title="Description list">描述列表</dt>
                         <dd title="A description list is perfect for defining terms.">适用于术语的定义/解释</dd>
                         <dt>计算机</dt>
                         <dd>用来计算的仪器 ... ...</dd>
@@ -312,11 +314,11 @@ San Francisco, CA 94107&lt;br&gt;
 &lt;dd&gt;...&lt;/dd&gt;
 &lt;/dl&gt;
 </pre>
-                <h4>Horizontal description</h4>
-                <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.</p>
+                <h4 title="Horizontal description">水平状态的描述</h4>
+                <p title="Make terms and descriptions in &lt;dl&gt; line up side-by-side.">实现 <code>&lt;dl&gt;</code> 标签内项目和描述同一行内且内侧对齐。</p>
                 <div class="bs-docs-example">
                     <dl class="dl-horizontal">
-                    	<dt title="Definition list">定义列表</dt>
+                    	<dt title="Description list">描述列表</dt>
                         <dd title="A description list is perfect for defining terms.">适用于术语的定义/解释</dd>
                         <dt>Coffee</dt>
                         <dd>Black hot drink</dd>
@@ -330,9 +332,9 @@ San Francisco, CA 94107&lt;br&gt;
 &lt;dd&gt;...&lt;/dd&gt;
 &lt;/dl&gt;
 </pre>
-                <p>
-				<span class="label label-info">Heads up!</span>
-				Horizontal description lists will truncate terms that are too long to fit in the left column fix <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout. 
+                <p title="Horizontal description lists will truncate terms that are too long to fit in the left column fix text-overflow. In narrower viewports, they will change to the default stacked layout. ">
+				<span class="label label-info" title="Heads up!">提醒</span>
+				水平列表中如果项目名称太长，需要添加 <code>text-overflow</code> 属性。在小分辨率下，他们会以堆叠式布局显示。 
 				</p>
             </section>
             
@@ -340,28 +342,29 @@ San Francisco, CA 94107&lt;br&gt;
     ================================================== -->
             <section id="code">
                 <div class="page-header">
-                    <h1>Code</h1>
+                    <h1 title="Code">代码 <small>行级/块状代码片段</small></h1>
                 </div>
-                <h2>Inline</h2>
-                <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+                <h2 title="Inline">内联样式/行内样式</h2>
+                <p title="Wrap inline snippets of code with &lt;code&gt;.">使用 <code>&lt;code&gt;</code> 包装行级代码片段。</p>
                 <div class="bs-docs-example">
-				For example, <code>&lt;section&gt;</code> should be wrapped as inline. 
+				<p title="For example, &lt;section&gt; should be wrapped as inline. ">例如：<code>&lt;section&gt;</code> 应该被作为行级代码包装。</p>
 				</div>
                 <pre class="prettyprint linenums">
-For example, &lt;code&gt;&lt;section&gt;&lt;/code&gt; should be wrapped as inline.
+例如：&lt;code&gt;&lt;section&gt;&lt;/code&gt; 应该被作为行级代码包装。
 </pre>
-                <h2>Basic block</h2>
-                <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+                <h2 title="Basic block">基本块状内容</h2>
+                <p title="Use &lt;pre&gt; for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.">使用 <code>&lt;pre&gt;</code> 对多行代码进行包装。 切记一定要对代码中的每个&lt;&gt;进行转义，这样方能得到正常的渲染结果。
+      </p>
                 <div class="bs-docs-example">
-                    <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+                    <pre title="Sample text here...">&lt;p&gt;示范文本...&lt;/p&gt;</pre>
                 </div>
                 <pre class="prettyprint linenums" style="margin-bottom: 9px;">
 &lt;pre&gt;
-&amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;示范文本...&amp;lt;/p&amp;gt;
 &lt;/pre&gt;
 </pre>
-                <p><span class="label label-info">Heads up!</span> Be sure to keep code within <code>&lt;pre&gt;</code> tags as close to the left as possible; it will render all tabs.</p>
-                <p>You may optionally add the <code>.pre-scrollable</code> class which will set a max-height of 350px and provide a y-axis scrollbar.</p>
+                <p title="Be sure to keep code within &lt;pre&gt; tags as close to the left as possible; it will render all tabs."><span class="label label-info" title="Heads up!">提醒</span> 尽可能地让 <code>&lt;pre&gt;</code> 左对齐；因为会渲染所有空格和tab（就是你键盘左边的那个tab键）。</p>
+                <p title="You may optionally add the .pre-scrollable class which will set a max-height of 350px and provide a y-axis scrollbar.">还可以使用 <code>.pre-scrollable</code> 给代码区域设置350px的最大高度并设置一个纵向滚动条。</p>
             </section>
             
             <!-- Tables

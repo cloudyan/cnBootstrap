@@ -8,7 +8,7 @@
 /* 要注意表单元素并不继承父级 font 的问题 根据自身需求设置 这里可以注意下建议在使用表单元素的时候再定义 */
 body{font:12px/1.5 Tahoma, Arial,\5b8b\4f53;}
 button,input,select,textarea{font:12px/1.5 Tahoma, Arial,\5b8b\4f53;}
-blockquote,pre{white-space:pre-wrap;word-wrap:break-word;}
+blockquote,pre{word-wrap:break-word;/*white-space:pre-wrap;会引起空白行*/}
 /* 如果将font-family中的第一个字体设置为Tahoma，则可以完美的实现(type="checkbox",type="radio")对齐(Verdana等字体也可以)。而且在FF3.5/IE6/IE7/IE8和Chrome中均显示正常。 */
 
 /* 使Chrome支持12px以下的字体 */
