@@ -8,7 +8,7 @@
 <header class="jumbotron subhead">
   <div class="container">
     <h1>JavaScript</h1>
-    <p class="lead">Bring Bootstrap's components to life&mdash;now with 13 custom jQuery plugins.
+    <p class="lead" title="Bring Bootstrap's components to life&mdash;now with 13 custom jQuery plugins.">让Bootstrap的组件变得生动—提供了13种 jQuery 组件。
   </div>
 </header>
 
@@ -19,20 +19,20 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
-          <li><a href="#transitions"><i class="icon-chevron-right"></i> Transitions</a></li>
-          <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
-          <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdown</a></li>
-          <li><a href="#scrollspy"><i class="icon-chevron-right"></i> Scrollspy</a></li>
-          <li><a href="#tabs"><i class="icon-chevron-right"></i> Tab</a></li>
-          <li><a href="#tooltips"><i class="icon-chevron-right"></i> Tooltip</a></li>
-          <li><a href="#popovers"><i class="icon-chevron-right"></i> Popover</a></li>
-          <li><a href="#alerts"><i class="icon-chevron-right"></i> Alert</a></li>
-          <li><a href="#buttons"><i class="icon-chevron-right"></i> Button</a></li>
-          <li><a href="#collapse"><i class="icon-chevron-right"></i> Collapse</a></li>
-          <li><a href="#carousel"><i class="icon-chevron-right"></i> Carousel</a></li>
-          <li><a href="#typeahead"><i class="icon-chevron-right"></i> Typeahead</a></li>
-          <li><a href="#affix"><i class="icon-chevron-right"></i> Affix</a></li>
+          <li><a href="#overview" title="Overview"><i class="icon-chevron-right"></i> 概述</a></li>
+          <li><a href="#transitions" title="Transitions"><i class="icon-chevron-right"></i> 过渡效果</a></li>
+          <li><a href="#modals" title="Modal"><i class="icon-chevron-right"></i> 对话框</a></li>
+          <li><a href="#dropdowns" title="Dropdown"><i class="icon-chevron-right"></i> 下拉项</a></li>
+          <li><a href="#scrollspy" title="Scrollspy"><i class="icon-chevron-right"></i> 滚动侦听</a></li>
+          <li><a href="#tabs" title="Tab"><i class="icon-chevron-right"></i> 切换标签页</a></li>
+          <li><a href="#tooltips" title="Tooltip"><i class="icon-chevron-right"></i> 工具提示</a></li>
+          <li><a href="#popovers" title="Popover"><i class="icon-chevron-right"></i> 弹出提示</a></li>
+          <li><a href="#alerts" title="Alert"><i class="icon-chevron-right"></i> 通知</a></li>
+          <li><a href="#buttons" title="Button"><i class="icon-chevron-right"></i> 按钮</a></li>
+          <li><a href="#collapse" title="Collapse"><i class="icon-chevron-right"></i> 折叠</a></li>
+          <li><a href="#carousel" title="Carousel"><i class="icon-chevron-right"></i> 轮播/跑马灯</a></li>
+          <li><a href="#typeahead" title="Typeahead"><i class="icon-chevron-right"></i> 输入提醒</a></li>
+          <li><a href="#affix" title="Affix"><i class="icon-chevron-right"></i> 位置控制</a></li>
         </ul>
       </div>
       <div class="span9">

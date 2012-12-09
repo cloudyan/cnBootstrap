@@ -18,7 +18,7 @@
         <a href="./getting-started.php#examples" title="Examples">例子</a>
       </li>
       <li>
-        <a href="./extend.html" title="Extend">扩展</a>
+        <a href="./extend.php" title="Extend">扩展</a>
       </li>
       <li>
         Version 1.0 base on TB v2.2.1

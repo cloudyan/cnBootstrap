@@ -7,8 +7,8 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
 <div class="container">
-<h1>Components</h1>
-<p class="lead">Dozens of reusable components built to provide navigation, alerts, popovers, and more.</p>
+<h1 title="组件">Components</h1>
+<p class="lead" title="Dozens of reusable components built to provide navigation, alerts, popovers, and more.">内置几十种高可用的组件，以实现导航栏，通知，弹出框等功能。</p>
 </div>
 </header>
 
@@ -20,19 +20,20 @@
 <div class="row">
   <div class="span3 bs-docs-sidebar">
     <ul class="nav nav-list bs-docs-sidenav">
-      <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdowns</a></li>
-      <li><a href="#buttonGroups"><i class="icon-chevron-right"></i> Button groups</a></li>
-      <li><a href="#buttonDropdowns"><i class="icon-chevron-right"></i> Button dropdowns</a></li>
-      <li><a href="#navs"><i class="icon-chevron-right"></i> Navs</a></li>
-      <li><a href="#navbar"><i class="icon-chevron-right"></i> Navbar</a></li>
-      <li><a href="#breadcrumbs"><i class="icon-chevron-right"></i> Breadcrumbs</a></li>
-      <li><a href="#pagination"><i class="icon-chevron-right"></i> Pagination</a></li>
-      <li><a href="#labels-badges"><i class="icon-chevron-right"></i> Labels and badges</a></li>
-      <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
-      <li><a href="#thumbnails"><i class="icon-chevron-right"></i> Thumbnails</a></li>
-      <li><a href="#alerts"><i class="icon-chevron-right"></i> Alerts</a></li>
-      <li><a href="#progress"><i class="icon-chevron-right"></i> Progress bars</a></li>
-      <li><a href="#misc"><i class="icon-chevron-right"></i> Misc</a></li>
+      <li><a href="#dropdowns" title="Dropdowns"><i class="icon-chevron-right"></i> 下拉菜单</a></li>
+      <li><a href="#buttonGroups" title="Button groups"><i class="icon-chevron-right"></i> 按钮组</a></li>
+      <li><a href="#buttonDropdowns" title="Button dropdowns"><i class="icon-chevron-right"></i> 下拉按钮组</a></li>
+      <li><a href="#navs" title="Navs"><i class="icon-chevron-right"></i> 导航</a></li>
+      <li><a href="#navbar" title="Navbar"><i class="icon-chevron-right"></i> 导航条</a></li>
+      <li><a href="#breadcrumbs" title="Breadcrumbs"><i class="icon-chevron-right"></i> 面包屑导航</a></li>
+      <li><a href="#pagination" title="Pagination"><i class="icon-chevron-right"></i> 分页</a></li>
+      <li><a href="#labels-badges" title="Labels and badges"><i class="icon-chevron-right"></i> 标签及标记</a></li>
+      <li><a href="#typography" title="Typography"><i class="icon-chevron-right"></i> 排版</a></li>
+      <li><a href="#thumbnails" title="Thumbnails"><i class="icon-chevron-right"></i> 缩略图</a></li>
+      <li><a href="#alerts" title="Alerts"><i class="icon-chevron-right"></i> 通知</a></li>
+      <li><a href="#progress" title="Progress bars"><i class="icon-chevron-right"></i> 进度条</a></li>
+	   <li><a href="#media" title="Media object"><i class="icon-chevron-right"></i> 媒体对象</a></li>
+      <li><a href="#misc" title="Misc"><i class="icon-chevron-right"></i> 杂项</a></li>
     </ul>
   </div>
   <div class="span9">
@@ -139,7 +140,7 @@
     ================================================== -->
     <section id="buttonGroups">
       <div class="page-header">
-        <h1>Button groups</h1>
+        <h1 title="Button groups">按钮组 <small>添加更多按钮，实现类似工具条功能</small></h1>
       </div>
 
       <h2>Examples</h2>
@@ -1720,143 +1721,144 @@ Action
 
 
 
-    <!-- Thumbnails
-    ================================================== -->
-    <section id="thumbnails">
-      <div class="page-header">
-        <h1>Thumbnails <small>Grids of images, videos, text, and more</small></h1>
-      </div>
 
-      <h2>Default thumbnails</h2>
-      <p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
-      <div class="row-fluid">
-        <ul class="thumbnails">
-          <li class="span3">
-            <a href="#" class="thumbnail">
-              <img src="http://placehold.it/260x180" alt="">
-            </a>
-          </li>
-          <li class="span3">
-            <a href="#" class="thumbnail">
-              <img src="http://placehold.it/260x180" alt="">
-            </a>
-          </li>
-          <li class="span3">
-            <a href="#" class="thumbnail">
-              <img src="http://placehold.it/260x180" alt="">
-            </a>
-          </li>
-          <li class="span3">
-            <a href="#" class="thumbnail">
-              <img src="http://placehold.it/260x180" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>
+        <!-- Thumbnails
+        ================================================== -->
+        <section id="thumbnails">
+          <div class="page-header">
+            <h1>Thumbnails <small>Grids of images, videos, text, and more</small></h1>
+          </div>
 
-      <h2>Highly customizable</h2>
-      <p>With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.</p>
-      <div class="row-fluid">
-        <ul class="thumbnails">
-          <li class="span4">
-            <div class="thumbnail">
-              <img src="http://placehold.it/300x200" alt="">
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-              </div>
-            </div>
-          </li>
-          <li class="span4">
-            <div class="thumbnail">
-              <img src="http://placehold.it/300x200" alt="">
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-              </div>
-            </div>
-          </li>
-          <li class="span4">
-            <div class="thumbnail">
-              <img src="http://placehold.it/300x200" alt="">
-              <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+          <h2>Default thumbnails</h2>
+          <p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
+          <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span3">
+                <a href="#" class="thumbnail">
+                  <img data-src="holder.js/260x180" alt="">
+                </a>
+              </li>
+              <li class="span3">
+                <a href="#" class="thumbnail">
+                  <img data-src="holder.js/260x180" alt="">
+                </a>
+              </li>
+              <li class="span3">
+                <a href="#" class="thumbnail">
+                  <img data-src="holder.js/260x180" alt="">
+                </a>
+              </li>
+              <li class="span3">
+                <a href="#" class="thumbnail">
+                  <img data-src="holder.js/260x180" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
 
-      <h3>Why use thumbnails</h3>
-      <p>Thumbnails (previously <code>.media-grid</code> up until v1.4) are great for grids of photos or videos, image search results, retail products, portfolios, and much more. They can be links or static content.</p>
+          <h2>Highly customizable</h2>
+          <p>With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.</p>
+          <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span4">
+                <div class="thumbnail">
+                  <img data-src="holder.js/300x200" alt="">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img data-src="holder.js/300x200" alt="">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <img data-src="holder.js/300x200" alt="">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-      <h3>Simple, flexible markup</h3>
-      <p>Thumbnail markup is simple&mdash;a <code>ul</code> with any number of <code>li</code> elements is all that is required. It's also super flexible, allowing for any type of content with just a bit more markup to wrap your contents.</p>
+          <h3>Why use thumbnails</h3>
+          <p>Thumbnails (previously <code>.media-grid</code> up until v1.4) are great for grids of photos or videos, image search results, retail products, portfolios, and much more. They can be links or static content.</p>
 
-      <h3>Uses grid column sizes</h3>
-      <p>Lastly, the thumbnails component uses existing grid system classes&mdash;like <code>.span2</code> or <code>.span3</code>&mdash;for control of thumbnail dimensions.</p>
+          <h3>Simple, flexible markup</h3>
+          <p>Thumbnail markup is simple&mdash;a <code>ul</code> with any number of <code>li</code> elements is all that is required. It's also super flexible, allowing for any type of content with just a bit more markup to wrap your contents.</p>
 
-      <h2>Markup</h2>
-      <p>As mentioned previously, the required markup for thumbnails is light and straightforward. Here's a look at the default setup <strong>for linked images</strong>:</p>
+          <h3>Uses grid column sizes</h3>
+          <p>Lastly, the thumbnails component uses existing grid system classes&mdash;like <code>.span2</code> or <code>.span3</code>&mdash;for control of thumbnail dimensions.</p>
+
+          <h2>Markup</h2>
+          <p>As mentioned previously, the required markup for thumbnails is light and straightforward. Here's a look at the default setup <strong>for linked images</strong>:</p>
 <pre class="prettyprint linenums">
 &lt;ul class="thumbnails"&gt;
-&lt;li class="span4"&gt;
-&lt;a href="#" class="thumbnail"&gt;
-  &lt;img src="http://placehold.it/300x200" alt=""&gt;
-&lt;/a&gt;
-&lt;/li&gt;
-...
+  &lt;li class="span4"&gt;
+    &lt;a href="#" class="thumbnail"&gt;
+      &lt;img data-src="holder.js/300x200" alt=""&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  ...
 &lt;/ul&gt;
 </pre>
-      <p>For custom HTML content in thumbnails, the markup changes slightly. To allow block level content anywhere, we swap the <code>&lt;a&gt;</code> for a <code>&lt;div&gt;</code> like so:</p>
+          <p>For custom HTML content in thumbnails, the markup changes slightly. To allow block level content anywhere, we swap the <code>&lt;a&gt;</code> for a <code>&lt;div&gt;</code> like so:</p>
 <pre class="prettyprint linenums">
 &lt;ul class="thumbnails"&gt;
-&lt;li class="span4"&gt;
-&lt;div class="thumbnail"&gt;
-  &lt;img src="http://placehold.it/300x200" alt=""&gt;
-  &lt;h3&gt;Thumbnail label&lt;/h3&gt;
-  &lt;p&gt;Thumbnail caption...&lt;/p&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-...
+  &lt;li class="span4"&gt;
+    &lt;div class="thumbnail"&gt;
+      &lt;img data-src="holder.js/300x200" alt=""&gt;
+      &lt;h3&gt;Thumbnail label&lt;/h3&gt;
+      &lt;p&gt;Thumbnail caption...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  ...
 &lt;/ul&gt;
 </pre>
 
-      <h2>More examples</h2>
-      <p>Explore all your options with the various grid classes available to you. You can also mix and match different sizes.</p>
-      <ul class="thumbnails">
-        <li class="span4">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/360x270" alt="">
-          </a>
-        </li>
-        <li class="span3">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/260x120" alt="">
-          </a>
-        </li>
-        <li class="span2">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/160x120" alt="">
-          </a>
-        </li>
-        <li class="span3">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/260x120" alt="">
-          </a>
-        </li>
-        <li class="span2">
-          <a href="#" class="thumbnail">
-            <img src="http://placehold.it/160x120" alt="">
-          </a>
-        </li>
-      </ul>
+          <h2>More examples</h2>
+          <p>Explore all your options with the various grid classes available to you. You can also mix and match different sizes.</p>
+          <ul class="thumbnails">
+            <li class="span4">
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/360x270" alt="">
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/260x120" alt="">
+              </a>
+            </li>
+            <li class="span2">
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/160x120" alt="">
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/260x120" alt="">
+              </a>
+            </li>
+            <li class="span2">
+              <a href="#" class="thumbnail">
+                <img data-src="holder.js/160x120" alt="">
+              </a>
+            </li>
+          </ul>
 
-    </section>
+        </section>
 
 
 
@@ -2106,6 +2108,140 @@ Best check yo self, you're not...
     </section>
 
 
+        <!-- Media object
+        ================================================== -->
+        <section id="media">
+          <div class="page-header">
+            <h1>Media object</h1>
+          </div>
+          <p class="lead">Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.</p>
+
+          <h2>Default example</h2>
+          <p>The default media allow to float a media object (images, video, audio) to the left or right of a content block.</p>
+          <div class="bs-docs-example">
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                <div class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" data-src="holder.js/64x64">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Media heading</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="media"&gt;
+  &lt;a class="pull-left" href="#"&gt;
+    &lt;img class="media-object" data-src="holder.js/64x64"&gt;
+  &lt;/a&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+    ...
+
+    &lt;!-- Nested media object --&gt;
+    &lt;div class="media"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2>Media list</h2>
+          <p>With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).</p>
+          <div class="bs-docs-example">
+            <ul class="media-list">
+              <li class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" data-src="holder.js/64x64">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                  <!-- Nested media object -->
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" data-src="holder.js/64x64">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Nested media heading</h4>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      <!-- Nested media object -->
+                      <div class="media">
+                        <a class="pull-left" href="#">
+                          <img class="media-object" data-src="holder.js/64x64">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading">Nested media heading</h4>
+                          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Nested media object -->
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" data-src="holder.js/64x64">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Nested media heading</h4>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="media">
+                <a class="pull-right" href="#">
+                  <img class="media-object" data-src="holder.js/64x64">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                </div>
+              </li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums">
+&lt;ul class="media-list"&gt;
+  &lt;li class="media"&gt;
+    &lt;a class="pull-left" href="#"&gt;
+      &lt;img class="media-object" data-src="holder.js/64x64"&gt;
+    &lt;/a&gt;
+    &lt;div class="media-body"&gt;
+      &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+      ...
+
+      &lt;!-- Nested media object --&gt;
+      &lt;div class="media"&gt;
+        ...
+     &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+</section>
 
 
 

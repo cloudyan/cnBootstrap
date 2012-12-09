@@ -7,8 +7,8 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
   <div class="container">
-    <h1>Customize and download</h1>
-    <p class="lead"><a href="https://github.com/twitter/bootstrap/zipball/master">Download Bootstrap</a> or customize variables, components, JavaScript plugins, and more.</p>
+    <h1 title="Customize and download">定制并下载</h1>
+    <p class="lead" title="Download Bootstrap or customize variables, components, JavaScript plugins, and more."><a href="https://github.com/twitter/bootstrap/zipball/master">下载完整库</a>或通过自定义变量，选择组件、javascript插件以及你所需的附件定制你自己的Bootstrap。</p>
   </div>
 </header>
 
@@ -20,10 +20,10 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#components"><i class="icon-chevron-right"></i> 1. Choose components</a></li>
-          <li><a href="#plugins"><i class="icon-chevron-right"></i> 2. Select jQuery plugins</a></li>
-          <li><a href="#variables"><i class="icon-chevron-right"></i> 3. Customize variables</a></li>
-          <li><a href="#download"><i class="icon-chevron-right"></i> 4. Download</a></li>
+          <li><a href="#components" title="Choose components"><i class="icon-chevron-right"></i> 1. 选择组件</a></li>
+          <li><a href="#plugins" title="Select jQuery plugins"><i class="icon-chevron-right"></i> 2. 选择jQuery插件</a></li>
+          <li><a href="#variables" title="Customize variables"><i class="icon-chevron-right"></i> 3. 定制变量</a></li>
+          <li><a href="#download" title="Download"><i class="icon-chevron-right"></i> 4. 下载</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -36,7 +36,7 @@
             <div class="page-header">
               <a class="btn btn-small pull-right toggle-all" href="#">Toggle all</a>
               <h1>
-                1. Choose components
+                1. 选择组件
               </h1>
             </div>
             <div class="row download-builder">
@@ -97,7 +97,7 @@
             <div class="page-header">
               <a class="btn btn-small pull-right toggle-all" href="#">Toggle all</a>
               <h1>
-                2. Select jQuery plugins
+                2. 选择jQuery插件
               </h1>
             </div>
             <div class="row download-builder">
@@ -169,7 +169,7 @@
             <div class="page-header">
               <a class="btn btn-small pull-right toggle-all" href="#">Reset to defaults</a>
               <h1>
-                3. Customize variables
+                3. 定制变量
               </h1>
             </div>
             <div class="row download-builder">
@@ -380,7 +380,7 @@
           <section class="download" id="download">
             <div class="page-header">
               <h1>
-                4. Download
+                4. 下载
               </h1>
             </div>
             <div class="download-btn">

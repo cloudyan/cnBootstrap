@@ -1756,11 +1756,11 @@ Option two can be something else and selecting it will deselect option one
                 </div>
                 <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
                 <div class="bs-docs-example bs-docs-example-images"> 
-					<img src="http://placehold.it/140x140" class="img-rounded"> 
-					<img src="http://placehold.it/140x140" class="img-circle"> 
-					<img src="http://placehold.it/140x140" class="img-polaroid"> 
+					<img data-src="holder.js/140x140" class="img-rounded">
+					<img data-src="holder.js/140x140" class="img-circle">
+					<img data-src="holder.js/140x140" class="img-polaroid">
 				</div>
-                <pre class="prettyprint linenums">
+<pre class="prettyprint linenums">
 &lt;img src="..." class="img-rounded"&gt;
 &lt;img src="..." class="img-circle"&gt;
 &lt;img src="..." class="img-polaroid"&gt;
