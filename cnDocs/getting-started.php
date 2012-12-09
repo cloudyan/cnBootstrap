@@ -20,12 +20,12 @@
 <div class="row">
   <div class="span3 bs-docs-sidebar">
     <ul class="nav nav-list bs-docs-sidenav">
-      <li><a href="#download-bootstrap"><i class="icon-chevron-right"></i> Download</a></li>
-      <li><a href="#file-structure"><i class="icon-chevron-right"></i> File structure</a></li>
-      <li><a href="#contents"><i class="icon-chevron-right"></i> What's included</a></li>
-      <li><a href="#html-template"><i class="icon-chevron-right"></i> HTML template</a></li>
-      <li><a href="#examples"><i class="icon-chevron-right"></i> Examples</a></li>
-      <li><a href="#what-next"><i class="icon-chevron-right"></i> What next?</a></li>
+      <li><a href="#download-bootstrap" title="Download"><i class="icon-chevron-right"></i> 下载</a></li>
+      <li><a href="#file-structure" title="File structure"><i class="icon-chevron-right"></i> 文件结构</a></li>
+      <li><a href="#contents" title="What's included"><i class="icon-chevron-right"></i> 包括哪些内容</a></li>
+      <li><a href="#html-template" title="HTML template"><i class="icon-chevron-right"></i> HTML模版</a></li>
+      <li><a href="#examples" title="Examples"><i class="icon-chevron-right"></i> 实例</a></li>
+      <li><a href="#what-next" title="What next?"><i class="icon-chevron-right"></i> 接下来是什么?</a></li>
     </ul>
   </div>
   <div class="span9">
@@ -36,20 +36,20 @@
     ================================================== -->
     <section id="download-bootstrap">
       <div class="page-header">
-        <h1>1. Download</h1>
+        <h1>1. 下载</h1>
       </div>
-      <p class="lead">Before downloading, be sure to have a code editor (we recommend <a href="http://sublimetext.com/2">Sublime Text 2</a>) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available for download. We'll focus on getting started with the compiled Bootstrap files.</p>
+      <p class="lead" title="Before downloading, be sure to have a code editor (we recommend Sublime Text 2) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available for download. We'll focus on getting started with the compiled Bootstrap files.">在下载之前，请你确保有一个代码编辑器(我们推荐 <a href="http://sublimetext.com/2">Sublime Text 2</a>)并且准备了HTMl和CSS的相关知识。我们不能直接在这里修改源代码，但是提供它们的下载。现在我们就可以专注于编译Bootstrap文件了。</p>
 
       <div class="row-fluid">
         <div class="span6">
-          <h2>Download compiled</h2>
-          <p><strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
-          <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip" >Download Bootstrap</a></p>
+          <h2 title="Download compiled">下载编译</h2>
+          <p title="Fastest way to get started: get the compiled and minified versions of our CSS, JS, and images. No docs or original source files."><strong>开始的最快方式：</strong> 包含编译后并且压缩过的CSS、JS以及图片。这里没有文档及原始文件。</p>
+          <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip" >下载 Bootstrap</a></p>
         </div>
         <div class="span6">
-          <h2>Download source</h2>
-          <p>Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.</p>
-          <p><a class="btn btn-large" href="https://github.com/twitter/bootstrap/zipball/master" >Download Bootstrap source</a></p>
+          <h2 title="Download source">下载源码</h2>
+          <p title="Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.">从GitHub上直接下载最新的版本，包含所有的CSS和JavaScript的原始文件，以及文档的本地副本。</p>
+          <p><a class="btn btn-large" href="https://github.com/twitter/bootstrap/zipball/master" >下载 Bootstrap 源码</a></p>
         </div>
       </div>
     </section>
@@ -60,10 +60,10 @@
     ================================================== -->
     <section id="file-structure">
       <div class="page-header">
-        <h1>2. File structure</h1>
+        <h1>2. 文件结构</h1>
       </div>
-      <p class="lead">Within the download you'll find the following file structure and contents, logically grouping common assets and providing both compiled and minified variations.</p>
-      <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:</p>
+      <p class="lead" title="Within the download you'll find the following file structure and contents, logically grouping common assets and providing both compiled and minified variations.">你会发现下载文件对文档结构和内容都进行了逻辑划分，并提供编译版和压缩版。</p>
+      <p title="Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:">下载完成后，解压文件夹便会看到Bootstrap的结构。你会看到下面的结构：</p>
 <pre class="prettyprint">
 bootstrap/
 ├── css/
@@ -77,8 +77,8 @@ bootstrap/
 │   ├── glyphicons-halflings-white.png
 └── README.md
 </pre>
-      <p>This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). The image files are compressed using <a href="http://imageoptim.com/">ImageOptim</a>, a Mac app for compressing PNGs.</p>
-      <p>Please note that all JavaScript plugins require jQuery to be included.</p>
+      <p title="This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (bootstrap.*), as well as compiled and minified CSS and JS (bootstrap.min.*). The image files are compressed using ImageOptim, a Mac app for compressing PNGs.">l这是最基本的Bootstrap结构：编译后的文件非常精简并使用在几乎所有的Web项目中。我们提供编译的CSS和Js(<code>bootstrap.*</code>)以及编译后压缩过的版本(<code>bootstrap.min.*</code>)。图片文件使用的是<a href="http://imageoptim.com/">ImageOptim</a>——一个专门压缩PNG图片的Mac应用。</p>
+      <p title="Please note that all JavaScript plugins require jQuery to be included.">请注意所有的JavaScript插件的使用都需要引用jQuery框架。</p>
 	  <h3>写在前面的话：</h3>
       <p>以上是bootstrap的结构，但是也许你不想一下子全部引用进来，比如bootstrap.css，那怎么办呢，所以你要去细分，让这个NB的项目具有更强的组合性，Bootstrap Customize做了这件事，但是具体如何去用该如何避免一些冲突，这里Bootstrap缺少了详尽的注释，类似于开发文档一样的，就像我之前整理的一份css reset文档，详尽描述了各种reset元素的取舍（以及为什么），这样一来就不仅仅是使用这么一个NB项目，而是知道这个项目为什么这么做，从底层的一个小小的代码就知道为什么，那对前端开发者来说绝对是福音啊！并且也要让bootstrap兼容IE6才行啊，进行细分再研究其中的相关取舍原因，这第一件事就是结构划分，下面看看规划样本（这里面甚多都是最基础的文件命名，为了避免引用中的冲突，可在文件前添加自定义前缀（ori-）以示同一系列结构文件，同时区别于其他文件结构）</p>
       <p>这不是新作一个项目，而是研究Bootstrap为何如此设计，并引进新的技术到此中来！（也不你也想做整理一整套的网站架构所需的模块-html/css/js等一整套构造，便于管理和维护的，现在的bootstrap就是这么一套系统，现在我们做的就是去研究它使用它并完善它）</p>
@@ -108,42 +108,42 @@ Oricode/
     ================================================== -->
     <section id="contents">
       <div class="page-header">
-        <h1>3. What's included</h1>
+        <h1>3. 包括哪些内容</h1>
       </div>
-      <p class="lead">Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the <a href="http://getbootstrap.com">Bootstrap documentation</a>.</p>
+      <p class="lead" title="Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the Bootstrap documentation.">Bootstrap 内置了实现各类功能的 HTML, CSS 和 JS，并且它们被归纳到导航条上精简的几个类别下。</p>
 
-      <h2>Docs sections</h2>
-      <h4><a href="./scaffolding.php">Scaffolding</a></h4>
-      <p>Global styles for the body to reset type and background, link styles, grid system, and two simple layouts.</p>
-      <h4><a href="./base-css.php">Base CSS</a></h4>
-      <p>Styles for common HTML elements like typography, code, tables, forms, and buttons. Also includes <a href="http://glyphicons.com">Glyphicons</a>, a great little icon set.</p>
-      <h4><a href="./components.php">Components</a></h4>
-      <p>Basic styles for common interface components like tabs and pills, navbar, alerts, page headers, and more.</p>
-      <h4><a href="./javascript.php">JavaScript plugins</a></h4>
-      <p>Similar to Components, these JavaScript plugins are interactive components for things like tooltips, popovers, modals, and more.</p>
+      <h2 title="Docs sections">文档部分</h2>
+      <h4><a href="./scaffolding.php">框架</a></h4>
+      <p title="Global styles for the body to reset type and background, link styles, grid system, and two simple layouts.">设置了网页文档的重定义、背景、栅格系统以及两列简单布局的全局样式</p>
+      <h4><a href="./base-css.php">基础CSS</a></h4>
+      <p title="Basic styles for common interface components like tabs and pills, navbar, alerts, page headers, and more.">常见的HTML元素，如排版、代码、表格、按钮的样式。此外还包含 <a href="http://glyphicons.com">Glyphicons</a> ——一个完美的Icon小图标集。</p>
+      <h4><a href="./components.php">组件</a></h4>
+      <p title="Basic styles for common interface components like tabs and pills, navbar, alerts, page headers, and more.">界面界面组件的基本样式，如切换标签、导航条、通知、页头等等。</p>
+      <h4><a href="./javascript.php">JavaScript 插件</a></h4>
+      <p title="Similar to Components, these JavaScript plugins are interactive components for things like tooltips, popovers, modals, and more.">通用组件，如工具提醒、弹出提醒、对话框等等。</p>
 
-      <h2>List of components</h2>
-      <p>Together, the <strong>Components</strong> and <strong>JavaScript plugins</strong> sections provide the following interface elements:</p>
+      <h2 title="List of components">组件列表</h2>
+      <p title="Together, the Components and JavaScript plugins sections provide the following interface elements:">总之，<strong>组件</strong> 和<strong>JavaScript插件</strong>部分提供了以下界面元素：</p>
       <ul>
-        <li>Button groups</li>
-        <li>Button dropdowns</li>
-        <li>Navigational tabs, pills, and lists</li>
-        <li>Navbar</li>
-        <li>Labels</li>
-        <li>Badges</li>
-        <li>Page headers and hero unit</li>
-        <li>Thumbnails</li>
-        <li>Alerts</li>
-        <li>Progress bars</li>
-        <li>Modals</li>
-        <li>Dropdowns</li>
-        <li>Tooltips</li>
-        <li>Popovers</li>
-        <li>Accordion</li>
-        <li>Carousel</li>
-        <li>Typeahead</li>
+        <li>按钮组</li>
+        <li>按钮下拉菜单</li>
+        <li title="Navigational tabs, pills, and lists">导航选项卡、列表</li>
+        <li>导航栏</li>
+        <li>标签</li>
+        <li>标识</li>
+        <li title="Page headers and hero unit">页头</li>
+        <li>缩略图</li>
+        <li>通知</li>
+        <li>进度条</li>
+        <li>对话框</li>
+        <li>下拉列表</li>
+        <li>工具提醒</li>
+        <li>弹出提醒</li>
+        <li>折叠</li>
+        <li>轮播/跑马灯</li>
+        <li>输入提醒</li>
       </ul>
-      <p>In future guides, we may walk through these components individually in more detail. Until then, look for each of these in the documentation for information on how to utilize and customize them.</p>
+      <p title="In future guides, we may walk through these components individually in more detail. Until then, look for each of these in the documentation for information on how to utilize and customize them.">在未来的发展中，我们可能会对个别的组件实现更多的细节。在此之前，文档中仅仅介绍如何利用它们进行自定义设置。</p>
     </section>
 
 
@@ -152,10 +152,10 @@ Oricode/
     ================================================== -->
     <section id="html-template">
       <div class="page-header">
-        <h1>4. Basic HTML template</h1>
+        <h1>4. 基本的HTML模板</h1>
       </div>
-      <p class="lead">With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the <a href="#file-structure">File structure</a>.</p>
-      <p>Now, here's a look at a <strong>typical HTML file</strong>:</p>
+      <p class="lead" title="With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the File structure.">作为一个简短的文档介绍，我们可以集中精力去使用Bootstrap。要做到这一点，我们将利用一个基本的HTML模板，其中包括我们所需要的<a href="#file-structure">文件结构</a>。</p>
+      <p title="Now, here's a look at a typical HTML file:">现在，我们就来看一下一个<strong>典型的HTML文件</strong>：</p>
 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -168,7 +168,7 @@ Oricode/
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-      <p>To make this <strong>a Bootstrapped template</strong>, just include the appropriate CSS and JS files:</p>
+      <p title="To make this a Bootstrapped template, just include the appropriate CSS and JS files:">要使用这个 <strong>Bootstrap模版</strong>，只需要包含相应的CSS和JS文件：</p>
 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -184,7 +184,7 @@ Oricode/
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-      <p><strong>And you're set!</strong> With those two files added, you can begin to develop any site or application with Bootstrap.</p>
+      <p title="And you're set! With those two files added, you can begin to develop any site or application with Bootstrap."><strong>如果你按上面设置了！</strong> 引入这两个文件，你就可以用Bootstrap开始开发任意网站或应用程序了。</p>
     </section>
 
 
@@ -193,9 +193,9 @@ Oricode/
     ================================================== -->
     <section id="examples">
       <div class="page-header">
-        <h1>5. Examples</h1>
+        <h1>5. 实例</h1>
       </div>
-      <p class="lead">Move beyond the base template with a few example layouts. We encourage folks to iterate on these examples and not simply use them as an end result.</p>
+      <p class="lead" title="Move beyond the base template with a few example layouts. We encourage folks to iterate on these examples and not simply use them as an end result.">在基础模版上进行创新实现的一些布局示例。我们鼓励人们去创新这些示例而不是仅仅简单的使用这些例子或将其作为最终的效果来用。</p>
       <ul class="thumbnails bootstrap-examples">
         <li class="span3">
           <a class="thumbnail" href="examples/starter-template.html">
@@ -258,11 +258,11 @@ Oricode/
     ================================================== -->
     <section id="what-next">
       <div class="page-header">
-        <h1>What next?</h1>
+        <h1>接下来是什么？</h1>
       </div>
-      <p class="lead">Head to the docs for information, examples, and code snippets, or take the next leap and customize Bootstrap for any upcoming project.</p>
-      <a class="btn btn-large btn-primary" href="./scaffolding.php" >Visit the Bootstrap docs</a>
-      <a class="btn btn-large" href="./customize.php" style="margin-left: 5px;" >Customize Bootstrap</a>
+      <p class="lead" title="Head to the docs for information, examples, and code snippets, or take the next leap and customize Bootstrap for any upcoming project.">去了解文档说明、实例以及代码片段，或者进行直接为即将开展的项目定制Bootstrap。</p>
+      <a class="btn btn-large btn-primary" href="./scaffolding.php" >访问Bootstrap文档</a>
+      <a class="btn btn-large" href="./customize.php" style="margin-left: 5px;" >定制Bootstrap</a>
     </section>
 
 
