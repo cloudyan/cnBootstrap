@@ -42,35 +42,43 @@
         ================================================== -->
         <section id="overview">
           <div class="page-header">
-            <h1>JavaScript in Bootstrap</h1>
+            <h1>概述</h1>
           </div>
 
           <h3>Individual or compiled</h3>
-          <p>Plugins can be included individually (though some have required dependencies), or all at once. Both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all plugins in a single file.</p>
+          <p title="Plugins can be included individually (though some have required dependencies), or all at once. Both bootstrap.js and bootstrap.min.js contain all plugins in a single file.">插件能够单独使用(虽然有些需要有依赖)或者一次性全部引用进来。<strong>bootstrap.js</strong> 和 <strong>bootstrap.min.js</strong> 都在一个文件中包含了所有的插件。</p>
 
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
+          <h3 title="Data attributes">数据属性</h3>
+          <p title="You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.">你可以通过API标记使用所有的Bootstrap插件，而不必编写一行代码。这是Bootstrap插件最重要的特点，也是你选择使用插件时首要考虑的问题。</p>
 
-          <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:
+          <p title="That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:">这表示，在某些情况下，你可以采取措施关闭其功能。因此，我们还提供禁用数据属性API的功能——通过命名空间data-api取消绑定事件。比如下面这样：
           <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
 
-          <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
+          <p title="Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:">另外，针对特定的插件，也可以使用插件名加data-api的形式作为其命名空间，像下面这样：</p>
           <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
 
-          <h3>Programmatic API</h3>
-          <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
+          <h3 title="Programmatic API"></h3>
+          <p title="We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.">我们确信，你应该能够通过JavaScript API使用所有的Bootstrap插件。所有的公共API都是单一的，支持链式写法并返回集合以便操作。</p>
           <pre class="prettyprint linenums">$(".btn.danger").button("toggle").addClass("fat")</pre>
-          <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
+          <p title="All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):">所有的方法都应该可以接受一个可选参数，一个实现特定方法的字符串或者什么也不设置(启用插件的默认效果)：</p>
 <pre class="prettyprint linenums">
 $("#myModal").modal()                       // initialized with defaults
 $("#myModal").modal({ keyboard: false })   // initialized with no keyboard
 $("#myModal").modal('show')                // initializes and invokes show immediately</p>
 </pre>
-          <p>Each plugin also exposes its raw constructor on a `Constructor` property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=popover]').data('popover')</code>.</p>
+          <p title="Each plugin also exposes its raw constructor on a `Constructor` property: $.fn.popover.Constructor. If you'd like to get a particular plugin instance, retrieve it directly from an element: $('[rel=popover]').data('popover').">Each plugin also exposes its raw constructor on a `Constructor` property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=popover]').data('popover')</code>.</p>
+		  
+		  <h3 title="No Conflict">解决冲突</h3>
+          <p title="Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances,  namespace collisions can occasionally occur. If this happens, you may call .noConflict on the plugin you wish to revert the value of.">有时候必须要Bootstrap和其他Ui框架同时使用。这种情况下，命名空间冲突偶有发生。如果发生这种情况，你可以在插件中调用 <code>.noConflict</code> 以获得你需要恢复的值。</p>
 
-          <h3>Events</h3>
-          <p>Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is trigger on the completion of an action.</p>
-          <p>All infinitive events provide preventDefault functionality. This provides the abililty to stop the execution of an action before it starts.</p>
+<pre class="prettyprint linenums">
+var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+$.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the bootstrap functionality
+</pre>
+
+          <h3 title="Events">事件</h3>
+          <p title="Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. show) is triggered at the start of an event, and its past participle form (ex. shown) is trigger on the completion of an action.">Bootstrap在大多数插件中都提供了自定义事件。一般来说，有两种形式——触发事件(如显示)和监听事件(如显示完成时)</p>
+          <p title="All infinitive events provide preventDefault functionality. This provides the ability to stop the execution of an action before it starts.">所有的触发事件都提供阻止冒泡(preventDefault)机制。这能有效的避免级联事件。</p>
 <pre class="prettyprint linenums">
 $('#myModal').on('show', function (e) {
     if (!data) return e.preventDefault() // stops modal from being shown
