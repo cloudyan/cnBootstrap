@@ -1047,7 +1047,14 @@ vertical-align:middle;
 <pre class="prettyprint linenums">
 &lt;!--[if &lt;keywords&gt; IE &lt;version&gt;]&gt;
  HTML代码块 
-&lt;![endif]--&gt;</pre>
+&lt;![endif]--&gt;
+
+&lt;!--[if lt IE 7 ]&gt; 如果小于IE7 &lt;![endif]--&gt;
+&lt;!--[if IE 7 ]&gt; 如果是IE7 &lt;![endif]--&gt;
+&lt;!--[if IE 8 ]&gt; 如果是IE8 &lt;![endif]--&gt;
+&lt;!--[if IE 9 ]&gt; 如果是IE9 &lt;![endif]--&gt;
+&lt;!--[if (gt IE 9)|!(IE)]&gt; 如果大于IE9或非IE &lt;!--&lt;![endif]--&gt;
+</pre>
 <h4>&lt;keywords&gt;</h4>
     <p>if条件共包含6种选择方式：是否、大于、大于或等于、小于、小于或等于、非指定版本</p>
     <dl>
