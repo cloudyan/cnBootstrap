@@ -7,7 +7,7 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
 <div class="container">
-<h1 title="组件">Components</h1>
+<h1 title="组件">组件</h1>
 <p class="lead" title="Dozens of reusable components built to provide navigation, alerts, popovers, and more.">内置几十种高可用的组件，以实现导航栏，通知，弹出框等功能。</p>
 </div>
 </header>

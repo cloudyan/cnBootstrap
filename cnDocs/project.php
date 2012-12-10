@@ -7,8 +7,8 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
     <div class="container">
-        <h1>Project Research and Share</h1>
-        <p class="lead">Project Research and Share links.</p>
+        <h1 title="Project Research and Share">项目研究及分享</h1>
+        <p class="lead" title="Project Research and Share links.">最新项目研究及分享资源连接等</p>
     </div>
 </header>
 <div class="container"> 
@@ -31,13 +31,13 @@
             </ul>
         </div>
         <div class="span9"> 
-            <!-- Scrollpane
-    ================================================== -->
+<!-- Scrollpane
+================================================== -->
             <section id="scrollpane">
                 <div class="page-header">
-                    <h1>Scrollpane</h1>
+                    <h1>模拟滚动条</h1>
                 </div>
-                <p>实现模拟滚动条滚动条只需在实现位置的最外层盒子上添加class="scroll-pane"即可！</p>
+                <p>Scrollpane实现模拟滚动条滚动条，只需在需要实现的位置最外层盒子上添加class="scroll-pane"即可！</p>
                 <div class="bs-docs-example">
                     <div class="scoll_box scroll-pane">
                         <ul>
@@ -69,7 +69,7 @@ $('.scroll-pane').jScrollPane();
                 <h4>依赖：</h4>
                 <p>模拟滚动条功能依赖插件jquery.mousewheel.js,jquery.jscrollpane.min.js和样式jquery.jscrollpane.css</p>
                 <p>更详细内容可参考：<a href="http://jscrollpane.kelvinluck.com/" target="_blank">jscrollpane项目</a></p>
-                <p><span class="label label-info">注意!</span> 以前版本不能支持jQuery库1.8版，现在无限制了。</p>
+                <p><span class="label label-info">注意!</span> 以前版本不能支持jQuery库1.8版，现在支持了。</p>
             </section>
 
 
@@ -80,13 +80,10 @@ $('.scroll-pane').jScrollPane();
                     <h1>Select控件模拟</h1>
                 </div>
                 <p class="lead">在实际前端开发中，由于select的不稳定性，以及在低版本的IE中的样式不可定性，带来了很大的不方便，因此，总结了这个列表模拟select的js插件。主要有 select标签自动生成模拟，div直接构造模拟select两种方式。</p>
-                <h2>select标签自动生成模拟</h2>
+                <h3>select标签自动生成模拟</h3>
                 <p>这是在页面中使用select标签，通过js自动生成相应的div+ul的模拟结构（隐藏了select标签），优点：处理编辑改动页面时便捷，缺点：在调试时要调整自动生成的模拟结构的样式效果，这个比较麻烦，但调试好后，很方便使用！</p>
 
-
-
-
-                <h2>div直接构造模拟select</h2>
+                <h3>div直接构造模拟select</h3>
                 <p>页面上不存在select标签，直接使用div+js模拟select效果，功能强大，甚至可以做自动帅选功能，推荐使用！</p>
                 <div class="bs-docs-example">
                     

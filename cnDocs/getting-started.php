@@ -155,7 +155,7 @@ Oricode/
         <h1>4. 基本的HTML模板</h1>
       </div>
       <p class="lead" title="With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the File structure.">作为一个简短的文档介绍，我们可以集中精力去使用Bootstrap。要做到这一点，我们将利用一个基本的HTML模板，其中包括我们所需要的<a href="#file-structure">文件结构</a>。</p>
-      <p title="Now, here's a look at a typical HTML file:">现在，我们就来看一下一个<strong>典型的HTML文件</strong>：</p>
+      <p title="Now, here's a look at a typical HTML file:">现在，我们就来看一个<strong>典型的HTML文件</strong>：</p>
 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -184,7 +184,7 @@ Oricode/
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-      <p title="And you're set! With those two files added, you can begin to develop any site or application with Bootstrap."><strong>如果你按上面设置了！</strong> 引入这两个文件，你就可以用Bootstrap开始开发任意网站或应用程序了。</p>
+      <p title="And you're set! With those two files added, you can begin to develop any site or application with Bootstrap."><strong>设置完毕！</strong> 引入这两个文件后，你就可以用Bootstrap开始开发任意网站或应用程序了。</p>
     </section>
 
 

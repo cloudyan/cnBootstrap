@@ -7,8 +7,8 @@
 ================================================== -->
 <header class="jumbotron subhead">
     <div class="container">
-        <h1>Bugs and Fixed</h1>
-        <p class="lead">Bugs and fixed list.</p>
+        <h1>Bugs及解决办法</h1>
+        <p class="lead">汇总了各种常见的抑或不常见的Bugs及其解决办法。</p>
     </div>
 </header>
 <div class="container"> 
@@ -19,7 +19,7 @@
     	
         <div class="span3 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav" style="display:none">
-                <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
+                <li><a href="#overview"><i class="icon-chevron-right"></i> 概述</a></li>
                 <li><a href="#tactics"><i class="icon-chevron-right"></i> 策略</a></li>
                 <li class="dropdown-submenu"><a href="#css-hack"><i class="icon-chevron-right"></i> CSS Hack</a>
                     <ul class="dropdown-menu">
@@ -82,7 +82,7 @@
 			-->
 			<!-- 搜素筛选\\ -->
 			<div class="search-filter bs-docs-sidenav">
-				<div class="filter-info clearfix"><span class="result-info">共找到<i id="filter-num">100</i>条结果。</span>
+				<div class="filter-info clearfix"><span class="result-info">共找到<i id="filter-num">81</i>条结果。</span>
 					<dl id="your-choices" class="your-choices">
 					</dl>
 				</div>
@@ -120,7 +120,7 @@
     ================================================== -->
             <section id="overview">
                 <div class="page-header">
-                    <h1>Bugs and Fixed</h1>
+                    <h1>概述</h1>
                 </div>
                 <p>一直想系统的整理下关于浏览器兼容性的各种Bug及解决方法，但一直都很忙没有完成，没有成片的时间，于是我决定每天整理一点，毕竟网上也不少整理的了，虽然不全，但是参考着再补充我和朋友们所遇到的，那么一份齐全的浏览器兼容性bug列表及解决方案也就指日可待了！</p>
                 <p>整理Bugs方案，自然首先要处理更底层的东西，考虑到不同的结构也可能产生影响，所以优先研究css reset以及html结构基础方案，这之后在解决Bugs问题就会减少N多种的情形，如此就能保证更好更统一的解决问题！</p>
