@@ -201,52 +201,52 @@ Oricode/
           <a class="thumbnail" href="examples/starter-template.html">
             <img src="assets/img/examples/bootstrap-example-starter.jpg" alt="">
           </a>
-          <h4>Starter template</h4>
-          <p>A barebones HTML document with all the Bootstrap CSS and JavaScript included.</p>
+          <h4 title="Starter template">入门模板</h4>
+          <p title="A barebones HTML document with all the Bootstrap CSS and JavaScript included.">包含了Bootstrap所有的CSS和JS文件的标准HTML文档。</p>
         </li>
         <li class="span3">
           <a class="thumbnail" href="examples/hero.html">
             <img src="assets/img/examples/bootstrap-example-hero.jpg" alt="">
           </a>
-          <h4>Basic marketing site</h4>
-          <p>Featuring a hero unit for a primary message and three supporting elements.</p>
+          <h4 title="Basic marketing site">基本的营销型网站</h4>
+          <p title="Featuring a hero unit for a primary message and three supporting elements.">设置有一个主要显示区和三个次内容显示区。</p>
         </li>
         <li class="span3">
           <a class="thumbnail" href="examples/fluid.html">
             <img src="assets/img/examples/bootstrap-example-fluid.jpg" alt="">
           </a>
-          <h4>Fluid layout</h4>
-          <p>Uses our new responsive, fluid grid system to create a seamless liquid layout.</p>
+          <h4 title="Fluid layout">流体布局</h4>
+          <p title="Uses our new responsive, fluid grid system to create a seamless liquid layout.">使用新的响应式布局、流体栅格系统创建的一个无缝的流体布局。</p>
         </li>
 
         <li class="span3">
           <a class="thumbnail" href="examples/marketing-narrow.html">
             <img src="assets/img/examples/bootstrap-example-marketing-narrow.png" alt="">
           </a>
-          <h4>Narrow marketing</h4>
-          <p>Slim, lightweight marketing template for small projects or teams.</p>
+          <h4 title="Narrow marketing">小型营销</h4>
+          <p title="Slim, lightweight marketing template for small projects or teams.">规模较小的项目或团队的营销模板。</p>
         </li>
         <li class="span3">
           <a class="thumbnail" href="examples/signin.html">
             <img src="assets/img/examples/bootstrap-example-signin.png" alt="">
           </a>
-          <h4>Sign in</h4>
-          <p>Barebones sign in form with custom, larger form controls and a flexible layout.</p>
+          <h4 title="Sign in">登陆界面</h4>
+          <p title="Barebones sign in form with custom, larger form controls and a flexible layout.">标准的登陆框以及自定义的标志，能更大程度的控制及灵活的布局。</p>
         </li>
         <li class="span3">
           <a class="thumbnail" href="examples/sticky-footer.html">
             <img src="assets/img/examples/bootstrap-example-sticky-footer.png" alt="">
           </a>
-          <h4>Sticky footer</h4>
-          <p>Pin a fixed-height footer to the bottom of the user's viewport.</p>
+          <h4 title="Sticky footer">固定页脚</h4>
+          <p title="Pin a fixed-height footer to the bottom of the user's viewport.">固定页脚始终位于浏览器窗口的最底部。</p>
         </li>
 
         <li class="span3">
           <a class="thumbnail" href="examples/carousel.html">
             <img src="assets/img/examples/bootstrap-example-carousel.png" alt="">
           </a>
-          <h4>Carousel jumbotron</h4>
-          <p>A more interactive riff on the basic marketing site featuring a prominent carousel.</p>
+          <h4 title="Carousel jumbotron">大屏幕轮播/旋转木马</h4>
+          <p title="A more interactive riff on the basic marketing site featuring a prominent carousel.">更具交互性的基本营销网站，具有一个突出的轮播效果。</p>
         </li>
       </ul>
     </section>

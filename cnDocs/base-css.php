@@ -48,7 +48,7 @@
                 </div>
                 <h2 id="body-copy" title="Body copy">Body copy</h2>
                 <p title="Bootstrap's global default font-size is 14px, with a line-height of 20px. This is applied to the &lt;body&gt; and all paragraphs. In addition, &lt;p&gt; (paragraphs) receive a bottom margin of half their line-height (10px by default).">Bootstrap 全局默认字体大小14px，行高20px。这适用于 <code>&lt;body&gt;</code> 和所有段落 <code>&lt;p&gt;</code>。此外，<code>&lt;p&gt;</code> 还会设置等值一半行高的下边距（默认是10px）。</p>
-                <p><span class="label label-info" title="Heads up!">提醒</span> 针对中文显示，默认设置为12px/22px、14px/24px。</p>
+                <p><span class="label label-info">注意!</span> 针对中文显示，默认设置为12px/22px、14px/24px。</p>
                 <div class="bs-docs-example">
                     <p>制定本规范的目的在于使我们的CSS代码更加易于维护和重用，从而提升效率执行本规范时建议的流程。建议使用D(esign)C(oding)D(ebug)V(alidate)R(oundup)，即DCDVR的流程。首先需要规划样式并分为共有样式 和页面个性化样式，然后才开始编码，编码的同时进行Debug，Validate和代码片断的总结，而不是在所有模板都完成后才进行这三个步骤。</p>
                     <p>这种方式我很是赞同，编码同时即DVR（这样团队开发确实能提高效率的），值得效法和推广！</p>
@@ -91,7 +91,7 @@
           </div>
           <pre class="prettyprint">&lt;em&gt;呈现为斜体字&lt;/em&gt;</pre>
 
-          <p title="Feel free to use &lt;b&gt; and &lt;i&gt; in HTML5. &lt;b&gt; is meant to highlight words or phrases without conveying additional importance while &lt;i&gt; is mostly for voice, technical terms, etc."><span class="label label-info" title="Heads up!">提醒</span> 在HTML5中仍然可以使用 <code>&lt;b&gt;</code> 和 <code>&lt;i&gt;</code> 标签，但是它们的用途已经发生了改变。
+          <p title="Feel free to use &lt;b&gt; and &lt;i&gt; in HTML5. &lt;b&gt; is meant to highlight words or phrases without conveying additional importance while &lt;i&gt; is mostly for voice, technical terms, etc."><span class="label label-info">注意!</span> 在HTML5中仍然可以使用 <code>&lt;b&gt;</code> 和 <code>&lt;i&gt;</code> 标签，但是它们的用途已经发生了改变。
 	<code>&lt;b&gt;</code> 在过去仅仅用来加粗单词或短语，没有任何语义上的含义，现在定义需要强调的部分（如果您希望把文本标记为相比其他文本更为重要，应该使用 <code>&lt;strong&gt;</code> 标签。）。而 <code>&lt;i&gt;</code> 主要用在语音和技术等方面。</p>
 
           <h3 title="Emphasis classes">强调类</h3>
@@ -333,7 +333,7 @@
 &lt;/dl&gt;
 </pre>
                 <p title="Horizontal description lists will truncate terms that are too long to fit in the left column fix text-overflow. In narrower viewports, they will change to the default stacked layout. ">
-				<span class="label label-info" title="Heads up!">提醒</span>
+				<span class="label label-info">注意!</span>
 				水平列表中如果项目名称太长，需要添加 <code>text-overflow</code> 属性。在小分辨率下，他们会以堆叠式布局显示。 
 				</p>
             </section>
@@ -363,7 +363,7 @@
 &amp;lt;p&amp;gt;示范文本...&amp;lt;/p&amp;gt;
 &lt;/pre&gt;
 </pre>
-                <p title="Be sure to keep code within &lt;pre&gt; tags as close to the left as possible; it will render all tabs."><span class="label label-info" title="Heads up!">提醒</span> 尽可能地让 <code>&lt;pre&gt;</code> 左对齐；因为会渲染所有空格和tab（就是你键盘左边的那个tab键）。</p>
+                <p title="Be sure to keep code within &lt;pre&gt; tags as close to the left as possible; it will render all tabs."><span class="label label-info">注意!</span> 尽可能地让 <code>&lt;pre&gt;</code> 左对齐；因为会渲染所有空格和tab（就是你键盘左边的那个tab键）。</p>
                 <p title="You may optionally add the .pre-scrollable class which will set a max-height of 350px and provide a y-axis scrollbar.">还可以使用 <code>.pre-scrollable</code> 给代码区域设置350px的最大高度并设置一个纵向滚动条。</p>
             </section>
             
@@ -1590,15 +1590,14 @@ Option two can be something else and selecting it will deselect option one
 </pre>
             </section>
             
-            <!-- Buttons
-    ================================================== -->
+<!-- Buttons
+================================================== -->
             <section id="buttons">
                 <div class="page-header">
-                    <h1>Buttons</h1>
+                    <h1 title="Buttons">按钮</h1>
                 </div>
-                <h2>Default buttons</h2>
-                <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
-                <p>按钮的样式可以使用任何标签并添加样式 <code>.btn</code> 。但是一般而言你应该仅使用 <code>&lt;a&gt;</code> 和 <code>&lt;button&gt;</code> 元素。但是当使用menuButton时，请使用<code>&lt;div&gt;</code>。</p>
+                <h2 title="Default buttons">默认按钮</h2>
+                <p title="Button styles can be applied to anything with the .btn class applied. However, typically you'll want to apply these to only &lt;a&gt; and &lt;button&gt; elements for the best rendering.">按钮的样式可以使用任何标签并添加样式 <code>.btn</code> 。但是一般而言你应该仅使用 <code>&lt;a&gt;</code> 和 <code>&lt;button&gt;</code> 元素。但是当使用menuButton时，请使用<code>&lt;div&gt;</code>。</p>
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -1611,127 +1610,121 @@ Option two can be something else and selecting it will deselect option one
                         <tr>
                             <td><button type="button" class="btn">Default</button></td>
                             <td><code>btn</code></td>
-                            <td title="默认的灰色按钮，并带有渐变色">Standard gray button with gradient</td>
+                            <td title="Standard gray button with gradient">默认的灰色按钮，并带有渐变色</td>
                         </tr>
                         <tr>
                             <td><button type="button" class="btn btn-primary">Primary</button></td>
                             <td><code>btn btn-primary</code></td>
-                            <td title="提供更深的色度来表明在按钮组中是最重要的行为">Provides extra visual weight and identifies the primary action in a set of buttons</td>
+                            <td title="Provides extra visual weight and identifies the primary action in a set of buttons">视觉吸引力强，用于标识一组按钮中最主要的那个动作</td>
                         </tr>
                         <tr>
                             <td><button type="button" class="btn btn-info">Info</button></td>
                             <td><code>btn btn-info</code></td>
-                            <td title="默认样式的一种替代方案">Used as an alternative to the default styles</td>
+                            <td title="Used as an alternative to the default styles">可用于替换默认样式</td>
                         </tr>
                         <tr>
                             <td><button type="button" class="btn btn-success">Success</button></td>
                             <td><code>btn btn-success</code></td>
-                            <td title="表示一个成功的或者有积极意义的行为">Indicates a successful or positive action</td>
+                            <td title="Indicates a successful or positive action">表示操作成功或动作正确</td>
                         </tr>
                         <tr>
                             <td><button type="button" class="btn btn-warning">Warning</button></td>
                             <td><code>btn btn-warning</code></td>
-                            <td title="表明警告，并需要采取这种行为的操作">Indicates caution should be taken with this action</td>
+                            <td title="Indicates caution should be taken with this action">表示该动作应谨慎</td>
                         </tr>
                         <tr>
                             <td><button type="button" class="btn btn-danger">Danger</button></td>
                             <td><code>btn btn-danger</code></td>
-                            <td title="表明一个危险的或者潜在的有消极意义的行为">Indicates a dangerous or potentially negative action</td>
+                            <td title="Indicates a dangerous or potentially negative action">表示危险或有潜在威胁的动作</td>
                         </tr>
                         <tr>
                             <td><button type="button" class="btn btn-inverse">Inverse</button></td>
                             <td><code>btn btn-inverse</code></td>
-                            <td title="深灰色的按钮，默认按钮的一种替代按钮，跟语义无关的操作">Alternate dark gray button, not tied to a semantic action or use</td>
+                            <td title="Alternate dark gray button, not tied to a semantic action or use">备用的暗灰色按钮，表示跟语义无关的操作</td>
                         </tr>
                         <tr>
                             <td><button type="button" class="btn btn-link">Link</button></td>
                             <td><code>btn btn-link</code></td>
-                            <td title="淡化使它看起来像一个链接按钮的行为，同时保持一个按钮">Deemphasize a button by making it look like a link while maintaining button behavior</td>
+                            <td title="Deemphasize a button by making it look like a link while maintaining button behavior">淡化使它看起来像一个链接，同时保持有按钮的行为</td>
                         </tr>
                     </tbody>
                 </table>
                 <p>一般而言，按钮仅当链接作为一个行为对象时来使用时。例如“下载”应当为一个按钮，“最近活动”应该是一个链接。</p>
-                <h4>Cross browser compatibility</h4>
-                <p>IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.</p>
-                <h2>Button sizes</h2>
-                <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code> or <code>.btn-mini</code> for additional sizes.</p>
-                <p>你喜欢大的还是小的按钮？添加样式 <code>.btn-large</code>, <code>.btn-small</code> 或者 <code>.btn-mini</code> 实现不同的样式。</p>
+                <h4 title="Cross browser compatibility">扩浏览器兼容</h4>
+                <p title="IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled button elements, rendering text gray with a nasty text-shadow that we cannot fix.">IE9不支持渐变背景色的圆角裁剪，我们只好去掉了这个特性。此外，IE9 还搞砸了 <code>button</code> 元素的禁用样式，居然在渲染时使用一个丑陋的文本阴影修饰按钮的灰色文字，对此我们实在无能为力。</p>
+                <h2 title="Button sizes">按钮大小</h2>
+                <p title="Fancy larger or smaller buttons? Add .btn-large, .btn-small or .btn-mini for additional sizes.">你喜欢大的还是小的按钮？添加样式 <code>.btn-large</code>, <code>.btn-small</code> 或者 <code>.btn-mini</code> 实现不同的样式。</p>
                 <div class="bs-docs-example">
                     <p>
-                        <button type="button" class="btn btn-large btn-primary">Large button</button>
-                        <button type="button" class="btn btn-large">Large button</button>
+                        <button type="button" class="btn btn-large btn-primary">大号按钮</button>
+                        <button type="button" class="btn btn-large">大号按钮</button>
                     </p>
                     <p>
-                        <button type="button" class="btn btn-primary">Default button</button>
-                        <button type="button" class="btn">Default button</button>
+                        <button type="button" class="btn btn-primary">默认按钮</button>
+                        <button type="button" class="btn">默认按钮</button>
                     </p>
                     <p>
-                        <button type="button" class="btn btn-small btn-primary">Small button</button>
-                        <button type="button" class="btn btn-small">Small button</button>
+                        <button type="button" class="btn btn-small btn-primary">小号按钮</button>
+                        <button type="button" class="btn btn-small">小号按钮</button>
                     </p>
                     <p>
-                        <button type="button" class="btn btn-mini btn-primary">Mini button</button>
-                        <button type="button" class="btn btn-mini">Mini button</button>
+                        <button type="button" class="btn btn-mini btn-primary">迷你按钮</button>
+                        <button type="button" class="btn btn-mini">迷你按钮</button>
                     </p>
                 </div>
                 <pre class="prettyprint linenums">
 &lt;p&gt;
-&lt;button class="btn btn-large btn-primary" type="button"&gt;Large button&lt;/button&gt;
-&lt;button class="btn btn-large" type="button"&gt;Large button&lt;/button&gt;
+&lt;button class="btn btn-large btn-primary" type="button"&gt;大号按钮&lt;/button&gt;
+&lt;button class="btn btn-large" type="button"&gt;大号按钮&lt;/button&gt;
 &lt;/p&gt;
 &lt;p&gt;
-&lt;button class="btn btn-primary" type="button"&gt;Default button&lt;/button&gt;
-&lt;button class="btn" type="button"&gt;Default button&lt;/button&gt;
+&lt;button class="btn btn-primary" type="button"&gt;默认按钮&lt;/button&gt;
+&lt;button class="btn" type="button"&gt;默认按钮&lt;/button&gt;
 &lt;/p&gt;
 &lt;p&gt;
-&lt;button class="btn btn-small btn-primary" type="button"&gt;Small button&lt;/button&gt;
-&lt;button class="btn btn-small" type="button"&gt;Small button&lt;/button&gt;
+&lt;button class="btn btn-small btn-primary" type="button"&gt;小号按钮&lt;/button&gt;
+&lt;button class="btn btn-small" type="button"&gt;小号按钮&lt;/button&gt;
 &lt;/p&gt;
 &lt;p&gt;
-&lt;button class="btn btn-mini btn-primary" type="button"&gt;Mini button&lt;/button&gt;
-&lt;button class="btn btn-mini" type="button"&gt;Mini button&lt;/button&gt;
+&lt;button class="btn btn-mini btn-primary" type="button"&gt;迷你按钮&lt;/button&gt;
+&lt;button class="btn btn-mini" type="button"&gt;迷你按钮&lt;/button&gt;
 &lt;/p&gt;
 </pre>
-                <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
+                <p title="Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding .btn-block.">通过添加 <code>.btn-block</code> 样式，创建块级按钮且等于父级宽度。</p>
                 <div class="bs-docs-example">
                     <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
-                        <button type="button" class="btn btn-large btn-block btn-primary">Block level button</button>
-                        <button type="button" class="btn btn-large btn-block">Block level button</button>
+                        <button type="button" class="btn btn-large btn-block btn-primary">块级按钮</button>
+                        <button type="button" class="btn btn-large btn-block">块级按钮</button>
                     </div>
                 </div>
                 <pre class="prettyprint linenums">
 &lt;button class="btn btn-large btn-block btn-primary" type="button"&gt;Block level button&lt;/button&gt;
 &lt;button class="btn btn-large btn-block" type="button"&gt;Block level button&lt;/button&gt;
 </pre>
-                <h2>Disabled state</h2>
-                <p>Make buttons look unclickable by fading them back 50%.</p>
-                <h3>Anchor element</h3>
-                <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
-                <p class="bs-docs-example"> 
-					<a href="#" class="btn btn-large btn-primary disabled">Primary link</a> 
-					<a href="#" class="btn btn-large disabled">Link</a> 
-				</p>
+                <h2 title="Disabled state">禁用状态</h2>
+                <p title="Make buttons look unclickable by fading them back 50%.">禁用状态使按钮色彩减淡50%，并设置无法点击。</p>
+                <h3 title="Anchor element"></h3>
+                <p title="Add the .disabled class to &lt;a&gt; buttons or add the disabled attribute to &lt;button&gt; buttons.">对超链接按钮添加 <code>.disabled</code> 类，或是在 <code>&lt;button&gt;</code> 元素中设置 <code>disabled</code> 属性，即可将其变成禁用状态。</p>
+                <div class="bs-docs-example"> 
+					<p><a href="#" class="btn btn-large btn-primary disabled">Primary link</a> 
+					<a href="#" class="btn btn-large disabled">Link</a></p>
+					<p><button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
+                    <button type="button" class="btn btn-large" disabled>Button</button></p>
+				</div>
                 <pre class="prettyprint linenums">
+&lt;p&gt;
 &lt;a href="#" class="btn btn-large btn-primary disabled"&gt;Primary link&lt;/a&gt;
 &lt;a href="#" class="btn btn-large disabled"&gt;Link&lt;/a&gt;
-</pre>
-                <p> 
-					<span class="label label-info">Heads up!</span> 
-					We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. 
-				</p>
-                <p> <span class="label label-info">警告！</span> 我们在这里使用 <code>.disabled</code> 帮助样式, 类似于 <code>.active</code> 样式，所以不需要前缀。</p>
-                <h3>Button element</h3>
-                <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
-                <p class="bs-docs-example">
-                    <button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
-                    <button type="button" class="btn btn-large" disabled>Button</button>
-                </p>
-                <pre class="prettyprint linenums">
+&lt;/p&gt;
+&lt;p&gt;
 &lt;button type="button" class="btn btn-large btn-primary disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
 &lt;button type="button" class="btn btn-large" disabled&gt;Button&lt;/button&gt;
+&lt;/p&gt;
 </pre>
-                <h2>One class, multiple tags <small>同一个样式，多种标签的实现</small></h2>
-                <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+                <p title="We use .disabled as a utility class here, similar to the common .active class, so no prefix is required."><span class="label label-info">注意！</span> 我们把 <code>.disabled</code> 作为工具类来用，就像用 <code>.active</code> 一样，因而无须添加.btn前缀。</p>
+                
+                <h2 title="One class, multiple tags">按钮类可用于多种标签</h2>
+                <p title="Use the .btn class on an &lt;a&gt;, &lt;button&gt;, or &lt;input&gt; element.">可以在<code>&lt;a&gt;</code>、<code>&lt;button&gt;</code>、<code>&lt;input&gt;</code> 等元素上使用 <code>.btn</code> 类。</p>
                 <form class="bs-docs-example">
                     <a class="btn" href="">Link</a>
                     <button class="btn" type="submit">Button</button>
@@ -1744,28 +1737,27 @@ Option two can be something else and selecting it will deselect option one
 &lt;input class="btn" type="button" value="Input"&gt;
 &lt;input class="btn" type="submit" value="Submit"&gt;
 </pre>
-                <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
-                <p>作为一个最佳实践，假如你使用 <code>input</code> , 那么就用 <code>&lt;input type="submit"&gt;</code> 实现你的按钮来兼容跨浏览器的渲染。</p>
+                <p title='As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an input, use an &lt;input type="submit"&gt; for your button.'>作为一个最佳实践，假如你使用 <code>input</code> , 那么就用 <code>&lt;input type="submit"&gt;</code> 实现你的按钮来兼容跨浏览器的渲染。</p>
             </section>
             
-            <!-- Images
-    ================================================== -->
+<!-- Images
+================================================== -->
             <section id="images">
                 <div class="page-header">
-                    <h1>Images</h1>
+                    <h1>图片</h1>
                 </div>
-                <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+                <p title="Add classes to an &lt;img&gt; element to easily style images in any project.">一个 <code>&lt;img&gt;</code> 元素的图像可以轻松地在任何项目中添加图片样式。</p>
                 <div class="bs-docs-example bs-docs-example-images"> 
 					<img data-src="holder.js/140x140" class="img-rounded">
 					<img data-src="holder.js/140x140" class="img-circle">
 					<img data-src="holder.js/140x140" class="img-polaroid">
 				</div>
 <pre class="prettyprint linenums">
-&lt;img src="..." class="img-rounded"&gt;
-&lt;img src="..." class="img-circle"&gt;
-&lt;img src="..." class="img-polaroid"&gt;
+&lt;img data-src="holder.js/140x140" class="img-rounded"&gt;
+&lt;img data-src="holder.js/140x140" class="img-circle"&gt;
+&lt;img data-src="holder.js/140x140" class="img-polaroid"&gt;
 </pre>
-                <p><span class="label label-info">Heads up!</span> <code>.img-rounded</code> and <code>.img-circle</code> do not work in IE7-8 due to lack of <code>border-radius</code> support.</p>
+                <p title=".img-rounded and .img-circle do not work in IE7-8 due to lack of border-radius support."><span class="label label-info">注意!</span> 因为IE7-8缺乏对 <code>border-radius</code>的支持，将导致 <code>.img-rounded</code> 和 <code>.img-circle</code> 样式失效。</p>
             </section>
             
             <!-- Icons
@@ -1979,25 +1971,25 @@ Option two can be something else and selecting it will deselect option one
                 <h5>Dropdown in a button group</h5>
                 <div class="bs-docs-example">
                     <div class="btn-group btn-toolbar"> 
-						<a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a> 
-						<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+						<a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> 用户</a> 
+						<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#" title="User"><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-                            <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-                            <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+                            <li><a href="#" title="Edit"><i class="icon-pencil"></i> 修改</a></li>
+                            <li><a href="#" title="Delete"><i class="icon-trash"></i> 删除</a></li>
+                            <li><a href="#" title="Ban"><i class="icon-ban-circle"></i> 禁止</a></li>
                             <li class="divider"></li>
-                            <li><a href="#"><i class="i"></i> Make admin</a></li>
+                            <li><a href="#" title="Make admin"><i class="i"></i> 设为管理员</a></li>
                         </ul>
                     </div>
 					<p>
-						<a class="btn" href="#"><i class="icon-refresh"></i> Refresh</a>
-						<a class="btn btn-success" href="#"><i class="icon-shopping-cart icon-white"></i> Checkout</a>
-						<a class="btn btn-danger" href="#"><i class="icon-trash icon-white"></i> Delete</a>
+						<a class="btn" href="#" title="Refresh"><i class="icon-refresh"></i> 刷新</a>
+						<a class="btn btn-success" href="#" title="Checkout"><i class="icon-shopping-cart icon-white"></i> 签出</a>
+						<a class="btn btn-danger" href="#" title="Delete"><i class="icon-trash icon-white"></i> 删除</a>
 					</p>
 					<p>
-						<a class="btn btn-large" href="#"><i class="icon-comment"></i> Comment</a>
-						<a class="btn btn-small" href="#"><i class="icon-cog"></i> Settings</a>
-						<a class="btn btn-small btn-info" href="#"><i class="icon-info-sign icon-white"></i> More Info</a>
+						<a class="btn btn-large" href="#" title="Comment"><i class="icon-comment"></i> 点评</a>
+						<a class="btn btn-small" href="#" title="Settings"><i class="icon-cog"></i> 设置</a>
+						<a class="btn btn-small btn-info" href="#" title="More Info"><i class="icon-info-sign icon-white"></i> 更多信息</a>
 					</p>
                 </div>
                 <pre class="prettyprint linenums">
@@ -2015,11 +2007,15 @@ Option two can be something else and selecting it will deselect option one
 </pre>
 
           <h5>Small button</h5>
-          <div class="bs-docs-example">
-            <a class="btn btn-small" href="#"><i class="icon-star"></i></a>
+		  <div class="bs-docs-example">
+            <a class="btn btn-large" href="#"><i class="icon-star"></i> Star</a>
+            <a class="btn btn-small" href="#"><i class="icon-star"></i> Star</a>
+            <a class="btn btn-mini" href="#"><i class="icon-star"></i> Star</a>
           </div>
 <pre class="prettyprint linenums">
+&lt;a class="btn btn-large" href="#"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class="btn btn-small" href="#"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="btn btn-mini" href="#"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt;&lt;/a&gt;
 </pre>
 
 
@@ -2182,7 +2178,14 @@ Option two can be something else and selecting it will deselect option one
                 <p>Demo for <a href="http://nicolasgallagher.com/pure-css-gui-icons/">Pure CSS GUI icons (experimental)</a>.</p>
                 <hr class="bs-docs-separator">
                 <h2>How to use</h2>
-                <p></p>
+                <div class="bs-docs-example">
+				<ul>
+   <li class="power"><a href="#non">Power</a></li>
+   <li class="play"><a href="#non">Play</a></li>
+   <li class="stop"><a href="#non">Stop</a></li>
+   <li class="pause"><a href="#non">Pause</a></li>
+</ul>
+				</div>
                 <pre class="prettyprint linenums">
 &lt;ul&gt;
    &lt;li class="power"&gt;&lt;a href="#non"&gt;Power&lt;/a&gt;&lt;/li&gt;

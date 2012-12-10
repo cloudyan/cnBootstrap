@@ -69,7 +69,7 @@ $('.scroll-pane').jScrollPane();
                 <h4>依赖：</h4>
                 <p>模拟滚动条功能依赖插件jquery.mousewheel.js,jquery.jscrollpane.min.js和样式jquery.jscrollpane.css</p>
                 <p>更详细内容可参考：<a href="http://jscrollpane.kelvinluck.com/" target="_blank">jscrollpane项目</a></p>
-                <p><span class="label label-info">提醒：</span> 以前版本不能支持jQuery库1.8版，现在无限制了。</p>
+                <p><span class="label label-info">注意!</span> 以前版本不能支持jQuery库1.8版，现在无限制了。</p>
             </section>
 
 

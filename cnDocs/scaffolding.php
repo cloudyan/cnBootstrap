@@ -314,7 +314,7 @@
 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 &lt;link href="assets/css/bootstrap-responsive.css" rel="stylesheet"&gt;
 </pre>
-          <p title="Bootstrap doesn't include responsive features by default at this time as not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it as needed."><span class="label label-info" title="Heads up!">提醒</span>  因为不是所有的设计都需要响应功能，所以 Bootstrap 在默认情况下不包含响应功能。但不是为了鼓励开发者移除此功能，这里我们最好启用它。</p>
+          <p title="Bootstrap doesn't include responsive features by default at this time as not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it as needed."><span class="label label-info" title="Heads up!">提醒</span>  并不是所有的设计都需要响应功能，所以 Bootstrap 在默认情况下不包含响应功能。但不是为了鼓励开发者移除此功能，这里我们最好启用它。</p>
 
           <h2 title="About responsive Bootstrap">响应式设计用来做什么？</h2>
           <img src="assets/img/responsive-illustrations.png" alt="Responsive devices" style="float: right; margin: 0 0 20px 20px;">
@@ -384,8 +384,9 @@
 </pre>
 
 
-          <h2>Responsive utility classes</h2>
-          <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device. Below is a table of the available classes and their effect on a given media query layout (labeled by device). They can be found in <code>responsive.less</code>.</p>
+          <h2 title="Responsive utility classes">响应式设计类</h2>
+          <p title="For faster mobile-friendly development, use these utility classes for showing and hiding content by device. Below is a table of the available classes and their effect on a given media query layout (labeled by device). They can be found in responsive.less.">为了更高效友好地面向移动设备开发，可以使用这些基础实用类根据设备的不同决定内容的显示或隐藏。下表展示了可用的类，及其在media query（设备标识）下的效果。
+	这些类保存在 <code>responsive.less</code>。</p>
           <table class="table table-bordered table-striped responsive-utilities">
             <thead>
               <tr>
@@ -435,20 +436,20 @@
             </tbody>
           </table>
 
-          <h3>When to use</h3>
-          <p>Use on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. Responsive utilities should not be used with tables, and as such are not supported.</p>
+          <h3 title="When to use">何时适用</h3>
+          <p title="Use on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. Responsive utilities should not be used with tables, and as such are not supported.">你的网站已经有了一点底子，但并不想再为不同设备而重新创建一个完全不同的站点，这种情况就适合使用实用类来完善呈现效果。响应式设计不应该使用在表格布局上，它也是不被支持的。</p>
 
-          <h3>Responsive utilities test case</h3>
-          <p>Resize your browser or load on different devices to test the above classes.</p>
-          <h4>Visible on...</h4>
-          <p>Green checkmarks indicate that class is visible in your current viewport.</p>
+          <h3 title="Responsive utilities test case">测试案例</h3>
+          <p title="Resize your browser or load on different devices to test the above classes.">改变你的浏览器尺寸，或是不在同的设备上浏览，以观察上述类的效果。</p>
+          <h4 title="Visible on...">显示</h4>
+          <p title="Green checkmarks indicate that class is visible in your current viewport.">绿色选中的复选框是表示在您当前的窗口中是可见的。</p>
           <ul class="responsive-utilities-test">
             <li>Phone<span class="visible-phone">&#10004; Phone</span></li>
             <li>Tablet<span class="visible-tablet">&#10004; Tablet</span></li>
             <li>Desktop<span class="visible-desktop">&#10004; Desktop</span></li>
           </ul>
-          <h4>Hidden on...</h4>
-          <p>Here, green checkmarks indicate that class is hidden in your current viewport.</p>
+          <h4 title="Hidden on...">隐藏</h4>
+          <p title="Here, green checkmarks indicate that class is hidden in your current viewport.">这里绿色选中的复选框是表示在您当前的窗口中是隐藏的。</p>
           <ul class="responsive-utilities-test hidden-on">
             <li>Phone<span class="hidden-phone">&#10004; Phone</span></li>
             <li>Tablet<span class="hidden-tablet">&#10004; Tablet</span></li>
