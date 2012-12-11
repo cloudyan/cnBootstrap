@@ -32,7 +32,7 @@
       <li><a href="#thumbnails" title="Thumbnails"><i class="icon-chevron-right"></i> 缩略图</a></li>
       <li><a href="#alerts" title="Alerts"><i class="icon-chevron-right"></i> 通知</a></li>
       <li><a href="#progress" title="Progress bars"><i class="icon-chevron-right"></i> 进度条</a></li>
-	   <li><a href="#media" title="Media object"><i class="icon-chevron-right"></i> 媒体对象</a></li>
+	  <li><a href="#media" title="Media object"><i class="icon-chevron-right"></i> 媒体对象</a></li>
       <li><a href="#misc" title="Misc"><i class="icon-chevron-right"></i> 杂项</a></li>
     </ul>
   </div>
@@ -44,7 +44,7 @@
     ================================================== -->
     <section id="dropdowns">
       <div class="page-header">
-        <h1>Dropdown menus</h1>
+        <h1>下拉菜单</h1>
       </div>
 
       <h2>Example</h2>
@@ -141,12 +141,14 @@
     <section id="buttonGroups">
       <div class="page-header">
         <h1 title="Button groups">按钮组 <small>添加更多按钮，实现类似工具条功能</small></h1>
+		<p class="lead">按钮组可以将多个按钮做为一个复合组件来用。由一系列 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 元素构建。
+      </p>
       </div>
 
-      <h2>Examples</h2>
-      <p>Two basic options, along with two more specific variations.</p>
+      <h2 title="Examples">实例</h2>
+      <p title="Two basic options, along with two more specific variations."></p>
 
-      <h3>Single button group</h3>
+      <h3 title="Single button group">单选按钮组</h3>
       <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
       <div class="bs-docs-example">
         <div class="btn-group" style="margin: 9px 0 5px;">
@@ -163,7 +165,7 @@
 &lt;/div&gt;
 </pre>
 
-      <h3>Multiple button groups</h3>
+      <h3 title="Multiple button groups">复选按钮组</h3>
       <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
       <div class="bs-docs-example">
         <div class="btn-toolbar" style="margin: 0;">
