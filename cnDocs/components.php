@@ -18,25 +18,25 @@
 <!-- Docs nav
 ================================================== -->
 <div class="row">
-  <div class="span3 bs-docs-sidebar">
-    <ul class="nav nav-list bs-docs-sidenav">
-      <li><a href="#dropdowns" title="Dropdowns"><i class="icon-chevron-right"></i> 下拉菜单</a></li>
-      <li><a href="#buttonGroups" title="Button groups"><i class="icon-chevron-right"></i> 按钮组</a></li>
-      <li><a href="#buttonDropdowns" title="Button dropdowns"><i class="icon-chevron-right"></i> 下拉按钮组</a></li>
-      <li><a href="#navs" title="Navs"><i class="icon-chevron-right"></i> 导航</a></li>
-      <li><a href="#navbar" title="Navbar"><i class="icon-chevron-right"></i> 导航条</a></li>
-      <li><a href="#breadcrumbs" title="Breadcrumbs"><i class="icon-chevron-right"></i> 面包屑导航</a></li>
-      <li><a href="#pagination" title="Pagination"><i class="icon-chevron-right"></i> 分页</a></li>
-      <li><a href="#labels-badges" title="Labels and badges"><i class="icon-chevron-right"></i> 标签及标记</a></li>
-      <li><a href="#typography" title="Typography"><i class="icon-chevron-right"></i> 排版</a></li>
-      <li><a href="#thumbnails" title="Thumbnails"><i class="icon-chevron-right"></i> 缩略图</a></li>
-      <li><a href="#alerts" title="Alerts"><i class="icon-chevron-right"></i> 通知</a></li>
-      <li><a href="#progress" title="Progress bars"><i class="icon-chevron-right"></i> 进度条</a></li>
-	  <li><a href="#media" title="Media object"><i class="icon-chevron-right"></i> 媒体对象</a></li>
-      <li><a href="#misc" title="Misc"><i class="icon-chevron-right"></i> 杂项</a></li>
-    </ul>
-  </div>
-  <div class="span9">
+	<div class="span3 bs-docs-sidebar">
+		<ul class="nav nav-list bs-docs-sidenav">
+			<li><a href="#dropdowns" title="Dropdowns"><i class="icon-chevron-right"></i> 下拉菜单</a></li>
+			<li><a href="#buttonGroups" title="Button groups"><i class="icon-chevron-right"></i> 按钮组</a></li>
+			<li><a href="#buttonDropdowns" title="Button dropdowns"><i class="icon-chevron-right"></i> 下拉按钮组</a></li>
+			<li><a href="#navs" title="Navs"><i class="icon-chevron-right"></i> 导航</a></li>
+			<li><a href="#navbar" title="Navbar"><i class="icon-chevron-right"></i> 导航条</a></li>
+			<li><a href="#breadcrumbs" title="Breadcrumbs"><i class="icon-chevron-right"></i> 面包屑导航</a></li>
+			<li><a href="#pagination" title="Pagination"><i class="icon-chevron-right"></i> 分页</a></li>
+			<li><a href="#labels-badges" title="Labels and badges"><i class="icon-chevron-right"></i> 标签及标记</a></li>
+			<li><a href="#typography" title="Typography"><i class="icon-chevron-right"></i> 排版</a></li>
+			<li><a href="#thumbnails" title="Thumbnails"><i class="icon-chevron-right"></i> 缩略图</a></li>
+			<li><a href="#alerts" title="Alerts"><i class="icon-chevron-right"></i> 通知</a></li>
+			<li><a href="#progress" title="Progress bars"><i class="icon-chevron-right"></i> 进度条</a></li>
+			<li><a href="#media" title="Media object"><i class="icon-chevron-right"></i> 媒体对象</a></li>
+			<li><a href="#misc" title="Misc"><i class="icon-chevron-right"></i> 杂项</a></li>
+		</ul>
+	</div>
+<div class="span9">
 
 
 
@@ -141,20 +141,27 @@
     <section id="buttonGroups">
       <div class="page-header">
         <h1 title="Button groups">按钮组 <small>添加更多按钮，实现类似工具条功能</small></h1>
-		<p class="lead">按钮组可以将多个按钮做为一个复合组件来用。由一系列 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 元素构建。
-      </p>
       </div>
+	  <p>按钮组可以将多个按钮做为一个复合组件来用。由一系列 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 元素构建。</p>
+      <h3>最佳实践</h3>
+	  <p>我们建议使用按钮组和工具条时应遵循下列准则：</p>
+	  <ul>
+        <li>在一个按钮组中只使用一种元素，<code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 。</li>
+        <li>不要在同一个按钮组中使用不同按钮颜色。</li>
+        <li>使用图标补充内容或直接替代文本时，应包含说明性的alt或title文字。</li>
+      </ul>
+	  <p><span class="label label-info">补充</span> 下面会单独强调带下拉框的按钮组，其包含一个下拉/上弹三角以表示可点击触发下拉/上弹。
+      </p>
+	  <h2 title="Examples">实例</h2>
+      <p title="Two basic options, along with two more specific variations.">两种基本设置，随意控制具体的变化。</p>
 
-      <h2 title="Examples">实例</h2>
-      <p title="Two basic options, along with two more specific variations."></p>
-
-      <h3 title="Single button group">单选按钮组</h3>
-      <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+      <h3 title="Single button group">单按钮组</h3>
+      <p title="Wrap a series of buttons with .btn in .btn-group.">在 <code>.btn-group</code> 中包括了一系列附带 <code>.btn</code> 样式的按钮</p>
       <div class="bs-docs-example">
         <div class="btn-group" style="margin: 9px 0 5px;">
-          <button class="btn">Left</button>
-          <button class="btn">Middle</button>
-          <button class="btn">Right</button>
+          <button class="btn">左</button>
+          <button class="btn">中</button>
+          <button class="btn">右</button>
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -165,8 +172,9 @@
 &lt;/div&gt;
 </pre>
 
-      <h3 title="Multiple button groups">复选按钮组</h3>
-      <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
+      <h3 title="Multiple button groups">多按钮组</h3>
+      <p title='Combine sets of &lt;div class="btn-group"&gt; into a &lt;div class="btn-toolbar"&gt; for more complex components.'>集合几组 <code>&lt;div class="btn-group"&gt;</code>，再用 <code>&lt;div class="btn-toolbar"&gt;</code> 包装就可以合成工具条组件。
+      </p>
       <div class="bs-docs-example">
         <div class="btn-toolbar" style="margin: 0;">
           <div class="btn-group">
@@ -193,8 +201,8 @@
 &lt;/div&gt;
 </pre>
 
-      <h3>Vertical button groups</h3>
-      <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
+      <h3 title="Vertical button groups">垂直按钮组</h3>
+      <p title="Make a set of buttons appear vertically stacked rather than horizontally.">实现一组按钮垂直排列，而非水平排列。</p>
       <div class="bs-docs-example">
         <div class="btn-group btn-group-vertical">
           <button type="button" class="btn"><i class="icon-align-left"></i></button>
@@ -213,11 +221,11 @@
       <hr class="bs-docs-separator">
 
 
-      <h4>Checkbox and radio flavors</h4>
-      <p>Button groups can also function as radios, where only one button may be active, or checkboxes, where any number of buttons may be active. View <a href="./javascript.html#buttons">the Javascript docs</a> for that.</p>
-
-      <h4>Dropdowns in button groups</h4>
-      <p><span class="label label-info">Heads up!</span> Buttons with dropdowns must be individually wrapped in their own <code>.btn-group</code> within a <code>.btn-toolbar</code> for proper rendering.</p>
+      <h4 title="Checkbox and radio flavors">复选和单选形式</h4>
+      <p title="Button groups can also function as radios, where only one button may be active, or checkboxes, where any number of buttons may be active. View the Javascript docs for that.">按钮组也可实现单选和复选功能。单选只有一个按钮可被按下，而多选可以按下多个按钮。详见<a href="./javascript.html#buttons">Javascript插件</a>。</p>
+		<p><a class="btn js-btn" href="./javascript.php#buttons">获取相关的javascript »</a></p>
+      <h4 title="Dropdowns in button groups">按钮组中的下拉项</h4>
+      <p title="Heads up! Buttons with dropdowns must be individually wrapped in their own .btn-group within a .btn-toolbar for proper rendering."><span class="label label-info">强调!</span> 为了渲染正常，带下拉项的按钮应该被 <code>.btn-group</code> 嵌套，然后再放入 <code>.btn-toolbar</code> 内。</p>
     </section>
 
 
@@ -226,83 +234,82 @@
     ================================================== -->
     <section id="buttonDropdowns">
       <div class="page-header">
-        <h1>Button dropdown menus <small>构建支持下拉菜单的按钮组</small></h1>
+        <h1 title="Button dropdown menus">按钮下拉菜单 <small>基于按钮组构建下拉菜单</small></h1>
       </div>
 
 
-      <h2>Overview and examples <small>概述和示例</small></h2>
-      <p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
-      <p>使用按钮代替下拉菜单，设置class <code>.btn-group</code> 和合适的标签。</p>
+      <h2 title="Overview and examples">简介和示例</h2>
+      <p title="Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.">使用任意按钮来触发一个下拉菜单——通过设置class <code>.btn-group</code> 和合适的标签即可。</p>
       <div class="bs-docs-example">
         <div class="btn-toolbar" style="margin: 0;">
           <div class="btn-group">
-            <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+            <button class="btn dropdown-toggle" data-toggle="dropdown" title="Action">动作 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#" title="Action">动作</a></li>
+              <li><a href="#" title="Another action">另一个动作</a></li>
+              <li><a href="#" title="Something else here">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#" title="Separated link">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="Action">动作 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#" title="Action">动作</a></li>
+              <li><a href="#" title="Another action">另一个动作</a></li>
+              <li><a href="#" title="Something else here">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#" title="Separated link">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" title="Danger">危险 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
+            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" title="Warning">警告 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" title="Success">成功 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
+            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" title="Info">信息 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Inverse <span class="caret"></span></button>
+            <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" title="Inverse">逆操作 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
         </div><!-- /btn-toolbar -->
@@ -319,134 +326,131 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h3>Works with all button sizes <small>可以适用于各种尺寸的按钮</small></h3>
-      <p>Button dropdowns work at any size:  <code>.btn-large</code>, <code>.btn-small</code> or <code>.btn-mini</code>.</p>
-      <p>下拉按钮适用于多种尺寸大小. 你可以定义  <code>.btn-large</code>, <code>.btn-small</code> 或者 <code>.btn-mini</code> 三种类型。</p>
+      <h3 title="Sizes">按钮大小</h3>
+      <p title="Utilize the extra button classes .btn-mini, .btn-small, or .btn-large for sizing.">利用额外的按钮类 <code>.btn-large</code>, <code>.btn-small</code> 或 <code>.btn-mini</code> 控制大小。</p>
       <div class="bs-docs-example">
         <div class="btn-toolbar" style="margin: 0;">
           <div class="btn-group">
-            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">Large button <span class="caret"></span></button>
+            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">大号按钮 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">Small button <span class="caret"></span></button>
+            <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">小号按钮 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Mini button <span class="caret"></span></button>
+            <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">迷你按钮 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
         </div><!-- /btn-toolbar -->
       </div>
 
-      <h3>Requires javascript <small>javascript 依赖</small></h3>
-      <p>Button dropdowns require the <a href="./javascript.php#dropdowns">Bootstrap dropdown plugin</a> to function.</p>
-      <p>In some cases&mdash;like mobile&mdash;dropdown menus will extend outside the viewport. You need to resolve the alignment manually or with custom javascript.</p>
-      <p>下拉按钮依赖于<a href="./javascript.php#dropdowns">DPL 下拉按钮插件</a>。</p>
-      <p>在某些情形下 - 利于移动设备 - 下拉按钮可能会超出当前的可视区域。你需要手动或者使用javascript的方式解决屏幕的自适应问题。</p>
+      <h3 title="Requires javascript">javascript 依赖</h3>
+      <p title="Button dropdowns require the Bootstrap dropdown plugin to function.">下拉按钮依赖于<a href="./javascript.php#dropdowns">下拉按钮插件</a>。</p>
+      <p title="In some cases&mdash;like mobile&mdash;dropdown menus will extend outside the viewport. You need to resolve the alignment manually or with custom javascript.">在某些情形下 &mdash; 利于移动设备 &mdash; 下拉按钮可能会超出当前的可视区域。你需要手动或者使用javascript的方式解决屏幕的自适应问题。</p>
 
       <hr class="bs-docs-separator">
 
 
-      <h2>Split button dropdowns <small>分离式下拉按钮</small></h2>
-      <p>Building on the button group styles and markup, we can easily create a split button. Split buttons feature a standard action on the left and a dropdown toggle on the right with contextual links.</p>
+      <h2 title="Split button dropdowns">分离式下拉按钮</h2>
+      <p title="Building on the button group styles and markup, we can easily create a split button. Split buttons feature a standard action on the left and a dropdown toggle on the right with contextual links."></p>
       <p>在分组按钮的样式和标签基础上我们可以很容易的创建分离式下拉按钮。分离式下拉按钮左边部分有标准的按钮功能，右边部分有一个下拉菜单。</p>
       <p>我们利用第二个按钮动作扩展了下拉按钮，点击右边图标时触发。</p>
       <div class="bs-docs-example">
         <div class="btn-toolbar" style="margin: 0;">
           <div class="btn-group">
-            <button class="btn">Action</button>
+            <button class="btn">动作</button>
             <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-primary">Action</button>
+            <button class="btn btn-primary">动作</button>
             <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-danger">危险</button>
             <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-warning">警告</button>
             <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-success">Success</button>
+            <button class="btn btn-success">成功</button>
             <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-info">Info</button>
+            <button class="btn btn-info">信息</button>
             <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
-            <button class="btn btn-inverse">Inverse</button>
+            <button class="btn btn-inverse">逆操作</button>
             <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
         </div><!-- /btn-toolbar -->
@@ -468,40 +472,40 @@ Action
       <div class="bs-docs-example">
         <div class="btn-toolbar">
           <div class="btn-group">
-            <button class="btn btn-large">Large action</button>
+            <button class="btn btn-large">大号action</button>
             <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
         </div><!-- /btn-toolbar -->
         <div class="btn-toolbar">
           <div class="btn-group">
-            <button class="btn btn-small">Small action</button>
+            <button class="btn btn-small">小号action</button>
             <button class="btn btn-small dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
         </div><!-- /btn-toolbar -->
         <div class="btn-toolbar">
           <div class="btn-group">
-            <button class="btn btn-mini">Mini action</button>
+            <button class="btn btn-mini">迷你action</button>
             <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
         </div><!-- /btn-toolbar -->
@@ -518,9 +522,8 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h3>Dropup menus <small>展示向上的菜单</small></h3>
-      <p>Dropdown menus can also be toggled from the bottom up by adding a single class to the immediate parent of <code>.dropdown-menu</code>. It will flip the direction of the <code>.caret</code> and reposition the menu itself to move from the bottom up instead of top down.</p>
-      <p>可以通过在 <code>.dropdown-menu</code> 的父元素上添加一个样式将下拉菜单在按钮的下部调整到按钮上方。这将更改右边图标<code>.caret</code>的方向同时重新定位菜单的位置，将菜单从按钮的下面移动到上方。</p>
+      <h3 title="Dropup menus">上弹菜单</h3>
+      <p title="Dropdown menus can also be toggled from the bottom up by adding a single class to the immediate parent of .dropdown-menu. It will flip the direction of the .caret and reposition the menu itself to move from the bottom up instead of top down.">下拉菜单也可以变成上弹菜单，只要在 <code>.dropdown-menu</code> 最近的父标签上应用 <code>.dropup</code> 即可。它会改变 <code>.caret</code> 的箭头方向，并将菜单底部与按钮顶部对齐。</p>
       <div class="bs-docs-example">
         <div class="btn-toolbar" style="margin: 0;">
           <div class="btn-group dropup">
@@ -2361,7 +2364,6 @@ clear: both;
 </div>
 
 </div>
-
 
 
 <?php include("common/footer.html");?>
