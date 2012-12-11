@@ -327,7 +327,7 @@ Action
 </pre>
 
       <h3 title="Sizes">按钮大小</h3>
-      <p title="Utilize the extra button classes .btn-mini, .btn-small, or .btn-large for sizing.">利用额外的按钮类 <code>.btn-large</code>, <code>.btn-small</code> 或 <code>.btn-mini</code> 控制大小。</p>
+      <p title="Utilize the extra button classes .btn-mini, .btn-small, or .btn-large for sizing.">可使用额外的按钮类 <code>.btn-large</code>, <code>.btn-small</code> 或 <code>.btn-mini</code> 控制大小。</p>
       <div class="bs-docs-example">
         <div class="btn-toolbar" style="margin: 0;">
           <div class="btn-group">
@@ -467,8 +467,8 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h3>Sizes</h3>
-      <p>Utilize the extra button classes <code>.btn-mini</code>, <code>.btn-small</code>, or <code>.btn-large</code> for sizing.</p>
+	  <h3 title="Sizes">按钮大小</h3>
+      <p title="Utilize the extra button classes .btn-mini, .btn-small, or .btn-large for sizing.">可使用额外的按钮类 <code>.btn-large</code>, <code>.btn-small</code> 或 <code>.btn-mini</code> 控制大小。</p>
       <div class="bs-docs-example">
         <div class="btn-toolbar">
           <div class="btn-group">
@@ -527,25 +527,25 @@ Action
       <div class="bs-docs-example">
         <div class="btn-toolbar" style="margin: 0;">
           <div class="btn-group dropup">
-            <button class="btn">Dropup</button>
+            <button class="btn" title="Dropup">上弹按钮</button>
             <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group dropup">
-            <button class="btn primary">Right dropup</button>
+            <button class="btn primary" title="Right dropup">上弹按钮(右对齐)</button>
             <button class="btn primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
             <ul class="dropdown-menu pull-right">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
         </div>
@@ -570,20 +570,21 @@ Action
     ================================================== -->
     <section id="navs">
       <div class="page-header">
-        <h1>Nav: tabs, pills, and lists <small>切换页面内容的组件</small></h1>
+        <h1 title="Nav: tabs, pills, and lists">导航：标签页，胶囊链接和列表<small>定制性灵活的列表导航</small></h1>
       </div>
       
-      <h2>Lightweight defaults <small>Same markup, different classes</small></h2>
-      <p>All nav components here&mdash;tabs, pills, and lists&mdash;<strong>share the same base markup and styles</strong> through the <code>.nav</code> class.</p>
+      <h2 title="Lightweight defaults Same markup, different classes">轻巧的默认项 <small>同样的标记，不同的类</small></h2>
+      <p title="All nav components here&mdash;tabs, pills, and lists&mdash;share the same base markup and styles through the .nav class."><p>所有的导航组件，诸如标签页/胶囊链接/列表，<strong>使用同样的标记和样式</strong> &mdash; <code>.nav</code> 类。
+      </p>
       <p>Tabs 分为导航和内容两部分，主要用于展示相同类型的内容，用于页面内或页面间切换。</p>
      
-      <h3>Basic tabs</h3>
-      <p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
+      <h3 title="Basic tabs">基本的标签页</h3>
+      <p title="Take a regular &lt;ul&gt; of links and add .nav-tabs:">对存放链接的 <code>&lt;ul&gt;</code> 应用 <code>.nav-tabs</code>：</p>
       <div class="bs-docs-example">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Messages</a></li>
+          <li class="active"><a href="#" title="Home">首页</a></li>
+          <li><a href="#" title="Profile">介绍</a></li>
+          <li><a href="#" title="Messages">消息</a></li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
@@ -596,13 +597,13 @@ Action
 &lt;/ul&gt;
 </pre>
 
-      <h3>Basic pills</h3>
-      <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+      <h3 title="Basic pills">基本的胶囊链接</h3>
+      <p title="Take that same HTML, but use .nav-pills instead:">HTML不变，使用 <code>.nav-pills</code>：</p>
       <div class="bs-docs-example">
         <ul class="nav nav-pills">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Messages</a></li>
+          <li class="active"><a href="#" title="Home">首页</a></li>
+          <li><a href="#" title="Profile">介绍</a></li>
+          <li><a href="#" title="Messages">消息</a></li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
@@ -615,13 +616,13 @@ Action
 &lt;/ul&gt;
 </pre>
 
-      <h3>Disabled state</h3>
-      <p>For any nav component (tabs, pills, or list), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>. Links will remain clickable, however, unless custom javascript is implemented to prevent those clicks.</p>
+      <h3 title="Disabled state">禁用状态</h3>
+      <p title="For any nav component (tabs, pills, or list), add .disabled for gray links and no hover effects. Links will remain clickable, however, unless custom javascript is implemented to prevent those clicks.">对于任意的导航组件(标签页、胶囊链接或列表)，添加 <code>.disabled</code> 只是改变成 <strong>灰色链接及无悬停状态</strong>。链接本身仍然是可以点击的，除非去自定义javascript阻止点击行为。</p>
       <div class="bs-docs-example">
         <ul class="nav nav-pills">
-          <li><a href="#">Clickable link</a></li>
-          <li><a href="#">Clickable link</a></li>
-          <li class="disabled"><a href="#">Disabled link</a></li>
+          <li><a href="#" title="Clickable link">可点击链接</a></li>
+          <li><a href="#" title="Clickable link">可点击链接</a></li>
+          <li class="disabled" title="Disabled link"><a href="#">不可点击链接</a></li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
@@ -632,23 +633,21 @@ Action
 &lt;/ul&gt;
 </pre>
 
-      <h3>Component alignment <small>对齐方式</small></h3>
-      <p>To align nav links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
-      <p>可以使用 <code>.pull-left</code> 或者 <code>.pull-right</code> 设置导航链接的对齐方式</p>
-
+      <h3 title="Component alignment">对齐方式</h3>
+      <p title="To align nav links, use the .pull-left or .pull-right utility classes. Both classes will add a CSS float in the specified direction.">可以使用 <code>.pull-left</code> 或 <code>.pull-right</code> 设置导航链接的对齐方式。两者都依赖CSS float实现左/右对齐。</p>
+	  
       <hr class="bs-docs-separator">
 
 
-      <h2>Stackable <small>Tabs纵向排列</small></h2>
-      <p>As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.</p>
-      <p>Tabs的导航默认横向排列，可以通过添加样式 <code>.nav-stacked</code> 的方式，使之看起来像一个纵向排列的堆栈。</p>
+      <h2 title="Stackable">叠放式导航 <small>竖直排列标签和胶囊链接</small></h2>
+      <p title="As tabs and pills are horizontal by default, just add a second class, .nav-stacked, to make them appear vertically stacked.">默认情况下标签和胶囊链接是水平排列的，使用 <code>.nav-stacked</code> 就可以将其变成竖直排列。</p>
       
-      <h3>Stacked tabs</h3>
+      <h3 title="Stacked tabs">叠放式标签</h3>
       <div class="bs-docs-example">
         <ul class="nav nav-tabs nav-stacked">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Messages</a></li>
+          <li class="active"><a href="#" title="Home">首页</a></li>
+          <li><a href="#" title="Profile">介绍</a></li>
+          <li><a href="#" title="Messages">消息</a></li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
@@ -657,12 +656,12 @@ Action
 &lt;/ul&gt;
 </pre>
 
-      <h3>Stacked pills</h3>
+      <h3 title="Stacked pills">叠放式胶囊链接</h3>
       <div class="bs-docs-example">
         <ul class="nav nav-pills nav-stacked">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Messages</a></li>
+          <li class="active"><a href="#" title="Home">首页</a></li>
+          <li><a href="#" title="Profile">介绍</a></li>
+          <li><a href="#" title="Messages">消息</a></li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
@@ -675,22 +674,22 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2>Dropdowns</h2>
-      <p>Add dropdown menus with a little extra HTML and the <a href="./javascript.html#dropdowns">dropdowns javascript plugin</a>.</p>
+      <h2 title="Dropdowns">下拉项 <small>改良的导航组件</small></h2>
+      <p title="Add dropdown menus with a little extra HTML and the dropdowns javascript plugin.">在标签和胶囊链接中创建下拉菜单非常方便，仅需增加极少的HTML标签和<a href="./javascript.html#dropdowns">jQuery下拉插件</a>即可。</p>
 
-      <h3>Tabs with dropdowns</h3>
+      <h3 title="Tabs with dropdowns">带下拉项的标签页</h3>
       <div class="bs-docs-example">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Help</a></li>
+          <li class="active"><a href="#">首页</a></li>
+          <li><a href="#">帮助</a></li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉 <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </li>
         </ul>
@@ -711,19 +710,19 @@ Action
 &lt;/ul&gt;
 </pre>
 
-      <h3>Pills with dropdowns</h3>
+      <h3 title="Pills with dropdowns">带下拉的胶囊链接</h3>
       <div class="bs-docs-example">
         <ul class="nav nav-pills">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Help</a></li>
+          <li class="active"><a href="#">首页</a></li>
+          <li><a href="#">帮助</a></li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉 <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </li>
         </ul>
@@ -748,23 +747,24 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2>Nav lists</h2>
-      <p>A simple and easy way to build groups of nav links with optional headers. They're best used in sidebars like the Finder in OS X.</p>
+      <h2 title="Nav lists">导航列表 <small>构建简单的叠放式导航，适用于侧边栏</small></h2>
+      <p title="A simple and easy way to build groups of nav links with optional headers. They're best used in sidebars like the Finder in OS X.">导航列表可以便捷地创建带有标头(可选)的导航链接组，非常适合用做侧边栏（与OS X中的Finder类似）。</p>
+	  <p>从结构上看，其与标签和胶囊链接无异，都使用同样的导航样式，所以用法和自定义都一样简洁。</p>
 
-      <h3>Example nav list</h3>
-      <p>Take a list of links and add <code>class="nav nav-list"</code>:</p>
-      <div class="bs-docs-example">
+      <h3 title="Example nav list">导航列表例子</h3>
+      <p title='Take a list of links and add class="nav nav-list":'>对存放一组链接的列表使用 <code>class="nav nav-list"</code> 样式：</p>
+	  <div class="bs-docs-example">
         <div class="well" style="max-width: 340px; padding: 8px 0;">
           <ul class="nav nav-list">
-            <li class="nav-header">List header</li>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Library</a></li>
-            <li><a href="#">Applications</a></li>
-            <li class="nav-header">Another list header</li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Settings</a></li>
+            <li class="nav-header" title="List header">列表头</li>
+            <li class="active"><a href="#" title="Home">首页</a></li>
+            <li><a href="#" title="Library">类库</a></li>
+            <li><a href="#" title="Applications">应用</a></li>
+            <li class="nav-header" title="Another list header">另一个列表头</li>
+            <li><a href="#" title="Profile">介绍</a></li>
+            <li><a href="#" title="Settings">设置</a></li>
             <li class="divider"></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="#" title="Help">帮助</a></li>
           </ul>
         </div> <!-- /well -->
       </div>
@@ -776,8 +776,8 @@ Action
 ...
 &lt;/ul&gt;
 </pre>
-      <p>
-        <span class="label label-info">Note</span>
+      <p title='Note For nesting within a nav list, include class="nav nav-list" on any nested &lt;ul&gt;.'>
+        <span class="label label-info">小提示</span>
         For nesting within a nav list, include <code>class="nav nav-list"</code> on any nested <code>&lt;ul&gt;</code>.
       </p>
 
