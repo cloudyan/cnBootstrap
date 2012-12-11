@@ -51,13 +51,13 @@
       <p>Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="./javascript.html#dropdowns">dropdown javascript plugin</a>.</p>
       <div class="bs-docs-example">
         <div class="dropdown clearfix">
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
-            <li><a tabindex="-1" href="#">Action</a></li>
-            <li><a tabindex="-1" href="#">Another action</a></li>
-            <li><a tabindex="-1" href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a tabindex="-1" href="#">Separated link</a></li>
-          </ul>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+				<li><a tabindex="-1" href="#" title="Action">动作</a></li>
+				<li><a tabindex="-1" href="#" title="Another action">另一个动作</a></li>
+				<li><a tabindex="-1" href="#" title="Something else here">其他</a></li>
+				<li class="divider"></li>
+				<li><a tabindex="-1" href="#" title="Separated link">被间隔的链接</a></li>
+			</ul>
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -101,22 +101,22 @@
       <p>Add an extra level of dropdown menus, appearing on hover like those of OS X, with some simple markup additions. Add <code>.dropdown-submenu</code> to any <code>li</code> in an existing dropdown menu for automatic styling.</p>
       <div class="bs-docs-example">
         <div class="dropdown clearfix">
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
-            <li><a tabindex="-1" href="#">Action</a></li>
-            <li><a tabindex="-1" href="#">Another action</a></li>
-            <li><a tabindex="-1" href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-submenu">
-              <a tabindex="-1" href="#">More options</a>
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="#">Second level link</a></li>
-                <li><a tabindex="-1" href="#">Second level link</a></li>
-                <li><a tabindex="-1" href="#">Second level link</a></li>
-                <li><a tabindex="-1" href="#">Second level link</a></li>
-                <li><a tabindex="-1" href="#">Second level link</a></li>
-              </ul>
-            </li>
-          </ul>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+				<li><a tabindex="-1" href="#" title="Action">动作</a></li>
+				<li><a tabindex="-1" href="#" title="Another action">另一个动作</a></li>
+				<li><a tabindex="-1" href="#" title="Something else here">其他</a></li>
+				<li class="divider"></li>
+				<li class="dropdown-submenu">
+					<a tabindex="-1" href="#" title="More options">更多选项</a>
+					<ul class="dropdown-menu">
+						<li><a tabindex="-1" href="#" title="Second level link">二级链接</a></li>
+						<li><a tabindex="-1" href="#">二级链接</a></li>
+						<li><a tabindex="-1" href="#">二级链接</a></li>
+						<li><a tabindex="-1" href="#">二级链接</a></li>
+						<li><a tabindex="-1" href="#">二级链接</a></li>
+					</ul>
+				</li>
+			</ul>
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -245,21 +245,21 @@
           <div class="btn-group">
             <button class="btn dropdown-toggle" data-toggle="dropdown" title="Action">动作 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#" title="Action">动作</a></li>
-              <li><a href="#" title="Another action">另一个动作</a></li>
-              <li><a href="#" title="Something else here">其他</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#" title="Separated link">被间隔的链接</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
             <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="Action">动作 <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#" title="Action">动作</a></li>
-              <li><a href="#" title="Another action">另一个动作</a></li>
-              <li><a href="#" title="Something else here">其他</a></li>
+              <li><a href="#">动作</a></li>
+              <li><a href="#">另一个动作</a></li>
+              <li><a href="#">其他</a></li>
               <li class="divider"></li>
-              <li><a href="#" title="Separated link">被间隔的链接</a></li>
+              <li><a href="#">被间隔的链接</a></li>
             </ul>
           </div><!-- /btn-group -->
           <div class="btn-group">
@@ -777,12 +777,10 @@ Action
 &lt;/ul&gt;
 </pre>
       <p title='Note For nesting within a nav list, include class="nav nav-list" on any nested &lt;ul&gt;.'>
-        <span class="label label-info">小提示</span>
-        For nesting within a nav list, include <code>class="nav nav-list"</code> on any nested <code>&lt;ul&gt;</code>.
-      </p>
+        <span class="label label-info">小提示</span> 需要嵌套的导航列表，在 <code>&lt;ul&gt;</code> 上添加 <code>class="nav nav-list"</code> 样式即可。</p>
 
-      <h3>Horizontal dividers</h3>
-      <p>Add a horizontal divider by creating an empty list item with the class <code>.divider</code>, like so:</p>
+      <h3 title="Horizontal dividers">水平间隔</h3>
+      <p title="Add a horizontal divider by creating an empty list item with the class .divider, like so:">应用 <code>.divider</code> 的空列表项会显示为一个水平间隔，如下：</p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-list"&gt;
 ...
@@ -795,10 +793,10 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2>Tabbable nav</h2>
-      <p>Bring your tabs to life with a simple plugin to toggle between content via tabs. Bootstrap integrates tabbable tabs in four styles: top (default), right, bottom, and left.</p>
+      <h2 title="Tabbable nav">标签页切换导航 <small>通过javascript让标签生动起来</small></h2>
+      <p title="Bring your tabs to life with a simple plugin to toggle between content via tabs. Bootstrap integrates tabbable tabs in four styles: top (default), right, bottom, and left.">我们使用一个简单的插件切换标签页对应的内容，从而让标签页变得生动。 Bootstrap 提供了四种样式的标签页：置顶(默认)，居右，置底，居左。</p>
 
-      <h3>Tabbable example</h3>
+      <h3 title="Tabbable example">标签页切换示例</h3>
       <p>To make tabs tabbable, create a <code>.tab-pane</code> with unique ID for every tab and wrap them in <code>.tab-content</code>.</p>
       <div class="bs-docs-example">
         <div class="tabbable" style="margin-bottom: 18px;">
