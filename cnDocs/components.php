@@ -793,27 +793,27 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2 title="Tabbable nav">标签页切换导航 <small>通过javascript让标签生动起来</small></h2>
-      <p title="Bring your tabs to life with a simple plugin to toggle between content via tabs. Bootstrap integrates tabbable tabs in four styles: top (default), right, bottom, and left.">我们使用一个简单的插件切换标签页对应的内容，从而让标签页变得生动。 Bootstrap 提供了四种样式的标签页：置顶(默认)，居右，置底，居左。</p>
+      <h2 title="Tabbable nav">标签页切换导航 <small>通过javascript让标签动起来</small></h2>
+      <p title="Bring your tabs to life with a simple plugin to toggle between content via tabs. Bootstrap integrates tabbable tabs in four styles: top (default), right, bottom, and left.">我们使用一个简单的插件切换标签页对应的内容，从而让标签页变得生动。Bootstrap 提供了四种样式的标签页：置顶(默认)，居右，置底，居左。</p>
 
       <h3 title="Tabbable example">标签页切换示例</h3>
-      <p>To make tabs tabbable, create a <code>.tab-pane</code> with unique ID for every tab and wrap them in <code>.tab-content</code>.</p>
+      <p title="To make tabs tabbable, create a .tab-pane with unique ID for every tab and wrap them in .tab-content.">要实现标签页，需要为每一个tab创建具有惟一Id的 <code>.tab-pane</code> 并在外面用使用 <code>.tab-content</code>嵌套起来。</p>
       <div class="bs-docs-example">
         <div class="tabbable" style="margin-bottom: 18px;">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-            <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-            <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+            <li class="active"><a href="#tab1" data-toggle="tab" title="Section 1">第1节</a></li>
+            <li><a href="#tab2" data-toggle="tab">第2节</a></li>
+            <li><a href="#tab3" data-toggle="tab">第3节</a></li>
           </ul>
           <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
             <div class="tab-pane active" id="tab1">
-              <p>I'm in Section 1.</p>
+              <p title="I'm in Section 1.">我在第1节</p>
             </div>
             <div class="tab-pane" id="tab2">
-              <p>Howdy, I'm in Section 2.</p>
+              <p title="Howdy, I'm in Section 2.">你好，我在第1节</p>
             </div>
             <div class="tab-pane" id="tab3">
-              <p>What up girl, this is Section 3.</p>
+              <p title="What up girl, this is Section 3.">怎么了女孩，这是第3节</p>
             </div>
           </div>
         </div> <!-- /tabbable -->
@@ -835,33 +835,33 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h4>Fade in tabs</h4>
-      <p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>.</p>
+      <h4 title="Fade in tabs">淡入标签</h4>
+      <p title="To make tabs fade in, add .fade to each .tab-pane.">实现淡入效果只需添加 <code>.fade</code> 到每一个 <code>.tab-pane</code>上即可。</p>
 
-      <h4>Requires jQuery plugin</h4>
-      <p>All tabbable tabs are powered by our lightweight jQuery plugin. Read more about how to bring tabbable tabs to life <a href="./javascript.html#tabs">on the javascript docs page</a>.</p>
+      <h4 title="Requires jQuery plugin">依赖的jQuery插件</h4>
+      <p title="All tabbable tabs are powered by our lightweight jQuery plugin. Read more about how to bring tabbable tabs to life on the javascript docs page.">所有的标签切换都是由轻量级jQuery插件驱动，要了解更多详情请参考 <a href="./javascript.php#tabs">JavaScript插件文档</a>。</p>
 
-      <h3>Tabbable in any direction</h3>
+      <h3 title="Tabbable in any direction">任意方向上使用标签切换页</h3>
 
-      <h4>Tabs on the bottom</h4>
-      <p>Flip the order of the HTML and add a class to put tabs on the bottom.</p>
+      <h4 title="Tabs on the bottom">标签置底</h4>
+      <p title="Flip the order of the HTML and add a class .tabs-below to put tabs on the bottom.">反转HTML的顺序，用 <code>.tabs-below</code> 将标签居底。</p>
       <div class="bs-docs-example">
         <div class="tabbable tabs-below">
           <div class="tab-content">
             <div class="tab-pane active" id="A">
-              <p>I'm in Section A.</p>
+              <p>这是章节A</p>
             </div>
             <div class="tab-pane" id="B">
-              <p>Howdy, I'm in Section B.</p>
+              <p>你好，这是章节B</p>
             </div>
             <div class="tab-pane" id="C">
-              <p>What up girl, this is Section C.</p>
+              <p>怎么了女孩，这是章节C</p>
             </div>
           </div>
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#A" data-toggle="tab">Section 1</a></li>
-            <li><a href="#B" data-toggle="tab">Section 2</a></li>
-            <li><a href="#C" data-toggle="tab">Section 3</a></li>
+            <li class="active"><a href="#A" data-toggle="tab">第1节</a></li>
+            <li><a href="#B" data-toggle="tab">第2节</a></li>
+            <li><a href="#C" data-toggle="tab">第3节</a></li>
           </ul>
         </div> <!-- /tabbable -->
       </div>
@@ -876,24 +876,24 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h4>Tabs on the left</h4>
-      <p>Swap the class to put tabs on the left.</p>
+      <h4 title="Tabs on the left">标签居左</h4>
+      <p title="Swap the class to put tabs on the left.">使用 <code>.tabs-left</code> 将标签居左。</p>
       <div class="bs-docs-example">
         <div class="tabbable tabs-left">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#lA" data-toggle="tab">Section 1</a></li>
-            <li><a href="#lB" data-toggle="tab">Section 2</a></li>
-            <li><a href="#lC" data-toggle="tab">Section 3</a></li>
+            <li class="active"><a href="#lA" data-toggle="tab">第1节</a></li>
+            <li><a href="#lB" data-toggle="tab">第2节</a></li>
+            <li><a href="#lC" data-toggle="tab">第3节</a></li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="lA">
-              <p>I'm in Section A.</p>
+              <p>这是章节A</p>
             </div>
             <div class="tab-pane" id="lB">
-              <p>Howdy, I'm in Section B.</p>
+              <p>你好，这是章节B</p>
             </div>
             <div class="tab-pane" id="lC">
-              <p>What up girl, this is Section C.</p>
+              <p>怎么了女孩，这是章节C</p>
             </div>
           </div>
         </div> <!-- /tabbable -->
@@ -909,24 +909,24 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h4>Tabs on the right</h4>
-      <p>Swap the class to put tabs on the right.</p>
+      <h4 title="Tabs on the right">标签居右</h4>
+      <p title="Swap the class to put tabs on the right.">使用 <code>.tabs-right</code> 将标签居右。</p>
       <div class="bs-docs-example">
         <div class="tabbable tabs-right">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#rA" data-toggle="tab">Section 1</a></li>
-            <li><a href="#rB" data-toggle="tab">Section 2</a></li>
-            <li><a href="#rC" data-toggle="tab">Section 3</a></li>
+            <li class="active"><a href="#rA" data-toggle="tab">第1节</a></li>
+            <li><a href="#rB" data-toggle="tab">第2节</a></li>
+            <li><a href="#rC" data-toggle="tab">第3节</a></li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="rA">
-              <p>I'm in Section A.</p>
+              <p>这是章节A</p>
             </div>
             <div class="tab-pane" id="rB">
-              <p>Howdy, I'm in Section B.</p>
+              <p>你好，这是章节B</p>
             </div>
             <div class="tab-pane" id="rC">
-              <p>What up girl, this is Section C.</p>
+              <p>怎么了女孩，这是章节C</p>
             </div>
           </div>
         </div> <!-- /tabbable -->
@@ -950,20 +950,20 @@ Action
     ================================================== -->
     <section id="navbar">
       <div class="page-header">
-        <h1>Navbar</h1>
+        <h1 title="Navbar">导航条</h1>
       </div>
 
 
-      <h2>Basic navbar</h2>
-      <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
+      <h2 title="Basic navbar"></h2>
+      <p title="To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a .container, which sets the width of your site and content.">最初状态，导航条是静态的(也不是置顶的)，包括项目名称和基本导航功能。它可以放置在设置了网站或内容宽度的 <code>.container</code> 容器任意位置。</p>
       <div class="bs-docs-example">
         <div class="navbar">
           <div class="navbar-inner">
-            <a class="brand" href="#">Title</a>
+            <a class="brand" href="#" title="Title">项目名称</a>
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li class="active"><a href="#">首页</a></li>
+              <li><a href="#">链接</a></li>
+              <li><a href="#">链接</a></li>
             </ul>
           </div>
         </div>
@@ -985,14 +985,14 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2>Navbar components</h2>
+      <h2 title="Navbar components">导航条组件</h2>
 
-      <h3>Brand</h3>
-      <p>A simple link to show your brand or project name only requires an anchor tag.</p>
+      <h3 title="Brand">品牌名称</h3>
+      <p title="A simple link to show your brand or project name only requires an anchor tag.">用于展示品牌或项目名称的一个简单链接，只需要一个锚标签。</p>
       <div class="bs-docs-example">
         <div class="navbar">
           <div class="navbar-inner">
-            <a class="brand" href="#">Title</a>
+            <a class="brand" href="#">项目名称</a>
           </div>
         </div>
       </div>
@@ -1000,15 +1000,15 @@ Action
 &lt;a class="brand" href="#"&gt;Project name&lt;/a&gt;
 </pre>
 
-      <h3>Nav links</h3>
-      <p>Nav items are simple to add via unordered lists.</p>
+      <h3 title="Nav links">导航链接</h3>
+      <p title="Nav items are simple to add via unordered lists.">导航项与无序列表非常相似。</p>
       <div class="bs-docs-example">
         <div class="navbar">
           <div class="navbar-inner">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li class="active"><a href="#">首页</a></li>
+              <li><a href="#">链接</a></li>
+              <li><a href="#">链接</a></li>
             </ul>
           </div>
         </div>
@@ -1022,16 +1022,16 @@ Action
 &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-      <p>You can easily add dividers to your nav links with an empty list item and a simple class. Just add this between links:</p>
+      <p title="You can easily add dividers to your nav links with an empty list item and a simple class. Just add this between links:">将应用 <code>.divider-vertical</code> 的空列表项插入到两个链接项之间，就会得到分隔条：</p>
       <div class="bs-docs-example">
         <div class="navbar">
           <div class="navbar-inner">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a href="#">首页</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#">链接</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#">链接</a></li>
               <li class="divider-vertical"></li>
             </ul>
           </div>
@@ -1045,14 +1045,14 @@ Action
 &lt;/ul&gt;
 </pre>
 
-      <h3>Forms</h3>
-      <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
+      <h3 title="Forms">导航条中的表单</h3>
+      <p title="To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include .navbar-form and either .pull-left or .pull-right to properly align it.">导航条内的表单，用 <code>.navbar-form</code> 进行样式化如下图所示，由 <code>.pull-left</code> 或 <code>.pull-right</code> 决定居左还是居右。</p>
       <div class="bs-docs-example">
         <div class="navbar">
           <div class="navbar-inner">
             <form class="navbar-form pull-left">
               <input type="text" class="span2">
-              <button type="submit" class="btn">Submit</button>
+              <button type="submit" class="btn">提交</button>
             </form>
           </div>
         </div>
@@ -1064,8 +1064,8 @@ Action
 &lt;/form&gt;
 </pre>
 
-      <h3>Search form</h3>
-      <p>For a more customized search form, add <code>.navbar-search</code> to the <code>form</code> and <code>.search-query</code> to the input for specialized styles in the navbar.</p>
+      <h3 title="Search form">搜索表单</h3>
+      <p title="For a more customized search form, add .navbar-search to the form and .search-query to the input for specialized styles in the navbar.">对导航栏应用 <code>.navbar-search</code> 的同时对其中的输入框使用 <code>.search-query</code> ，就会得到另一种搜索样式，从而增强搜索表单的可定制性。</p>
       <div class="bs-docs-example">
         <div class="navbar">
           <div class="navbar-inner">
@@ -1081,11 +1081,11 @@ Action
 &lt;/form&gt;
 </pre>
 
-      <h3>Component alignment</h3>
-      <p>Align nav links, search form, or text, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
+      <h3 title="Component alignment">组件对齐</h3>
+      <p title="Align nav links, search form, or text, use the .pull-left or .pull-right utility classes. Both classes will add a CSS float in the specified direction.">我们使用 <code>.pull-left</code> 或 <code>.pull-right</code> 对齐链接，搜索表单或是文本。这两个类都使用CSS浮动进行对齐。</p>
 
-      <h3>Using dropdowns</h3>
-      <p>Add dropdowns and dropups to the nav with a bit of markup and the <a href="./javascript.html#dropdowns">dropdowns javascript plugin</a>.</p>
+      <h3 title="Using dropdowns">添加下拉菜单</h3>
+      <p title="Add dropdowns and dropups to the nav with a bit of markup and the dropdowns javascript plugin.">在导航中很容易添加上下拉菜单，要用到 <a href="./javascript.html/#dropdown">下拉javascript插件</a>。</p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav"&gt;
 &lt;li class="dropdown"&gt;
@@ -1099,29 +1099,29 @@ Action
 &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-      <p>Visit the <a href="./javascript.html#dropdowns">javascript dropdowns documentation</a> for more markup and information on calling dropdowns.</p>
+      <p title="Visit the javascript dropdowns documentation for more markup and information on calling dropdowns.">访问 <a href="./javascript.php#dropdowns">javascript下拉菜单文档</a> 及更多调用下拉菜单的代码和信息。</p>
 
-      <h3>Text</h3>
-      <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
+      <h3 title="Text">导航条中的文本</h3>
+      <p title="Wrap strings of text in an element with .navbar-text, usually on a &lt;p&gt; tag for proper leading and color.">导航中包括文本的标签一般要有 <code>.navbar-text</code> 样式，这里通常在导航条中用 <code>&lt;p&gt;</code> 标签包装文本以设置行高和颜色。</p>
 
 
       <hr class="bs-docs-separator">
 
 
-      <h2>Optional display variations</h2>
-      <p>Fix the navbar to the top or bottom of the viewport with an additional class on the outermost div, <code>.navbar</code>.</p>
+      <h2 title="Optional display variations">导航条的可选变量</h2>
+      <p title="Fix the navbar to the top or bottom of the viewport with an additional class on the outermost div, .navbar.">只要在最外层的div上应用 <code>.navbar</code> ，就可以将导航条固定到顶部或是底部。</p>
 
-      <h3>Fixed to top</h3>
-      <p>Add <code>.navbar-fixed-top</code> and remember to account for the hidden area underneath it by adding at least 40px <code>padding</code> to the <code>&lt;body&gt;</code>. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.</p>
+      <h3 title="Fixed to top">固定在顶部</h3>
+      <p title="Add .navbar-fixed-top and remember to account for the hidden area underneath it by adding at least 40px padding to the &lt;body&gt;. Be sure to add this after the core Bootstrap CSS and before the optional responsive CSS.">添加 <code>.navbar-fixed-top</code> 并且一定要在 <code>&lt;body&gt;</code> 上面通过 <code>padding</code> (左右方向)留出一块至少40px的空白。这样可以保证这段样式添加在Bootstrap核心CSS之前，在响应式CSS(可选的)之后。</p>
       <div class="bs-docs-example bs-navbar-top-example">
         <div class="navbar navbar-fixed-top" style="position: absolute;">
           <div class="navbar-inner">
             <div class="container" style="width: auto; padding: 0 20px;">
-              <a class="brand" href="#">Title</a>
+              <a class="brand" href="#">项目名称</a>
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">链接</a></li>
+                <li><a href="#">链接</a></li>
               </ul>
             </div>
           </div>
@@ -1133,17 +1133,17 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h3>Fixed to bottom</h3>
-      <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
+      <h3 title="Fixed to bottom">固定在底部</h3>
+      <p title="Add .navbar-fixed-bottom instead.">添加 <code>.navbar-fixed-bottom</code> 即可。</p>
       <div class="bs-docs-example bs-navbar-bottom-example">
         <div class="navbar navbar-fixed-bottom" style="position: absolute;">
           <div class="navbar-inner">
             <div class="container" style="width: auto; padding: 0 20px;">
-              <a class="brand" href="#">Title</a>
+              <a class="brand" href="#">项目名称</a>
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">链接</a></li>
+                <li><a href="#">链接</a></li>
               </ul>
             </div>
           </div>
@@ -1155,17 +1155,17 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h3>Static top navbar</h3>
-      <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-top</code> class, you do not need to change any padding on the <code>body</code>.</p>
+      <h3 title="Static top navbar">静态顶部导航</h3>
+      <p title="Create a full-width navbar that scrolls away with the page by adding .navbar-static-top. Unlike the .navbar-fixed-top class, you do not need to change any padding on the body.">创建一个满屏且有滚动的页面时，添加 <code>.navbar-static-top</code> 样式。你无需在 <code>body</code> 上改变任何的padding值，这个不像 <code>.navbar-fixed-top</code> 样式。</p>
       <div class="bs-docs-example bs-navbar-top-example">
         <div class="navbar navbar-static-top" style="margin: -1px -1px 0;">
           <div class="navbar-inner">
             <div class="container" style="width: auto; padding: 0 20px;">
-              <a class="brand" href="#">Title</a>
+              <a class="brand" href="#">项目名称</a>
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">链接</a></li>
+                <li><a href="#">链接</a></li>
               </ul>
             </div>
           </div>
@@ -1181,8 +1181,8 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2>Responsive navbar</h2>
-      <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.btn-navbar</code>.</p>
+      <h2 title="Responsive navbar">响应式导航条</h2>
+      <p title="To implement a collapsing responsive navbar, wrap your navbar content in a containing div, .nav-collapse.collapse, and add the navbar toggle button, .btn-navbar.">如果我们想根据置顶导航条中的不同内容实现响应性设计，就可以将导航内容嵌套在一个 <code>.nav-collapse.collapse</code> div容器中，并对按钮都应用 <code>.btn-navbar</code> 类。</p>
       <div class="bs-docs-example">
         <div class="navbar">
           <div class="navbar-inner">
@@ -1192,22 +1192,22 @@ Action
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </a>
-              <a class="brand" href="#">Title</a>
+              <a class="brand" href="#">项目名称</a>
               <div class="nav-collapse">
                 <ul class="nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
+                  <li class="active"><a href="#">首页</a></li>
+                  <li><a href="#">链接</a></li>
+                  <li><a href="#">链接</a></li>
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
+                      <li><a href="#">动作</a></li>
+					  <li><a href="#">另一个动作</a></li>
+					  <li><a href="#">其他</a></li>
                       <li class="divider"></li>
-                      <li class="nav-header">Nav header</li>
-                      <li><a href="#">Separated link</a></li>
-                      <li><a href="#">One more separated link</a></li>
+                      <li class="nav-header" title="Nav header">导航头</li>
+                      <li><a href="#">被间隔的链接</a></li>
+                      <li><a href="#" title="One more separated link">再一个被间隔的链接</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -1215,16 +1215,16 @@ Action
                   <input type="text" class="search-query span2" placeholder="Search">
                 </form>
                 <ul class="nav pull-right">
-                  <li><a href="#">Link</a></li>
+                  <li><a href="#">链接</a></li>
                   <li class="divider-vertical"></li>
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
+                      <li><a href="#">动作</a></li>
+					  <li><a href="#">另一个动作</a></li>
+					  <li><a href="#">其他</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">被间隔的链接</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -1257,16 +1257,16 @@ Action
 &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-      <div class="alert alert-info">
-        <strong>Heads up!</strong> The responsive navbar requires the <a href="./javascript.html#collapse">collapse plugin</a> and <a href="./scaffolding.html#responsive">responsive Bootstrap CSS file</a>.
+      <div class="alert alert-info" title="Heads up! The responsive navbar requires the collapse plugin and responsive Bootstrap CSS file.">
+        <strong>注意!</strong> 响应式导航条需要 <a href="./javascript.php#collapse">collapse插件</a> 和 <a href="./scaffolding.php#responsive">响应式CSS文件</a>.
       </div>
 
 
       <hr class="bs-docs-separator">
 
 
-      <h2>Inverted variation</h2>
-      <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
+      <h2 title="Inverted variation">反相变化</h2>
+      <p title="Modify the look of the navbar by adding .navbar-inverse.">应用反相样式 <code>.navbar-inverse</code> 修改导航条的外观。</p>
       <div class="bs-docs-example">
         <div class="navbar navbar-inverse" style="position: static;">
           <div class="navbar-inner">
@@ -1276,22 +1276,22 @@ Action
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </a>
-              <a class="brand" href="#">Title</a>
+              <a class="brand" href="#">项目名称</a>
               <div class="nav-collapse subnav-collapse">
                 <ul class="nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
+                  <li class="active"><a href="#">首页</a></li>
+                  <li><a href="#">链接</a></li>
+                  <li><a href="#">链接</a></li>
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
+                      <li><a href="#">动作</a></li>
+					  <li><a href="#">另一个动作</a></li>
+					  <li><a href="#">其他</a></li>
                       <li class="divider"></li>
-                      <li class="nav-header">Nav header</li>
-                      <li><a href="#">Separated link</a></li>
-                      <li><a href="#">One more separated link</a></li>
+                      <li class="nav-header">导航头</li>
+                      <li><a href="#">被间隔的链接</a></li>
+                      <li><a href="#">再一个被间隔的链接</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -1299,16 +1299,16 @@ Action
                   <input type="text" class="search-query span2" placeholder="Search">
                 </form>
                 <ul class="nav pull-right">
-                  <li><a href="#">Link</a></li>
+                  <li><a href="#">链接</a></li>
                   <li class="divider-vertical"></li>
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
+                      <li><a href="#">动作</a></li>
+					  <li><a href="#">另一个动作</a></li>
+					  <li><a href="#">其他</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">被间隔的链接</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -1331,23 +1331,24 @@ Action
     ================================================== -->
     <section id="breadcrumbs">
       <div class="page-header">
-        <h1>Breadcrumbs <small>快速找到使用路径</small></h1>
+        <h1 title="Breadcrumbs">面包屑导航条</h1>
       </div>
-
-      <h2>Examples</h2>
-      <p>A single example shown as it might be displayed across multiple pages.</p>
+	  <h2>为什么使用面包屑导航条</h2>
+      <p>面包屑导航栏用于展示用户当前在网站/应用中的位置，但并不是首要导航。适宜布局清爽，简洁明了的场合。</p>
+      <h2 title="Examples">示例</h2>
+      <p title="A single example shown as it might be displayed across multiple pages.">一个简单的例子，可以用在多个页面中。</p>
       <div class="bs-docs-example">
         <ul class="breadcrumb">
-          <li class="active">Home</li>
+          <li class="active">首页</li>
         </ul>
         <ul class="breadcrumb">
-          <li><a href="#">Home</a> <span class="divider">/</span></li>
-          <li class="active">Library</li>
+          <li><a href="#">首页</a> <span class="divider">/</span></li>
+          <li class="active">类库</li>
         </ul>
         <ul class="breadcrumb" style="margin-bottom: 5px;">
-          <li><a href="#">Home</a> <span class="divider">/</span></li>
-          <li><a href="#">Library</a> <span class="divider">/</span></li>
-          <li class="active">Data</li>
+          <li><a href="#" title="Home">首页</a> <span class="divider">/</span></li>
+          <li><a href="#" title="Library">类库</a> <span class="divider">/</span></li>
+          <li class="active" title="Data">数据</li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
@@ -1366,11 +1367,11 @@ Action
     ================================================== -->
     <section id="pagination">
       <div class="page-header">
-        <h1>Pagination <small>Two options for paging through content</small></h1>
+        <h1 title="Pagination -- Two options for paging through content">页码 <small>使用两个参数对内容进行分页</small></h1>
       </div>
 
-      <h2>Standard pagination</h2>
-      <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+      <h2 title="Standard pagination">标准分页</h2>
+      <p title="Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.">简单的分页灵感来自于Rdio，应用于应用程序及搜索结果。大页码不容易错过，容易扩展并提供大尺度点击范围。</p>
       <div class="bs-docs-example">
         <div class="pagination">
           <ul>
@@ -1401,7 +1402,7 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2>Options</h2>
+      <h2 title="Options">Options</h2>
 
       <h3>Disabled and active states</h3>
       <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
@@ -1533,69 +1534,69 @@ Action
     ================================================== -->
     <section id="labels-badges">
       <div class="page-header">
-        <h1>Labels and badges</h1>
+        <h1 title="Labels and badges">标签及标记</h1>
       </div>
-      <h3>Labels <small>标签和注释文字</small></h3>
+      <h3>标签 <small>标签和注释文字</small></h3>
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
-            <th>Labels</th>
-            <th>Markup</th>
+            <th title="Labels">标签</th>
+            <th title="Markup">代码</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <span class="label">Default</span>
+              <span class="label" title="Default">默认</span>
             </td>
             <td>
-              <code>&lt;span class="label"&gt;Default&lt;/span&gt;</code>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="label label-success">Success</span>
-            </td>
-            <td>
-              <code>&lt;span class="label label-success"&gt;Success&lt;/span&gt;</code>
+              <code>&lt;span class="label"&gt;默认&lt;/span&gt;</code>
             </td>
           </tr>
           <tr>
             <td>
-              <span class="label label-warning">Warning</span>
+              <span class="label label-success" title="Success">成功</span>
             </td>
             <td>
-              <code>&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;</code>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="label label-important">Important</span>
-            </td>
-            <td>
-              <code>&lt;span class="label label-important"&gt;Important&lt;/span&gt;</code>
+              <code>&lt;span class="label label-success"&gt;成功&lt;/span&gt;</code>
             </td>
           </tr>
           <tr>
             <td>
-              <span class="label label-info">Info</span>
+              <span class="label label-warning" title="Warning">警告</span>
             </td>
             <td>
-              <code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code>
+              <code>&lt;span class="label label-warning"&gt;警告&lt;/span&gt;</code>
             </td>
           </tr>
           <tr>
             <td>
-              <span class="label label-inverse">Inverse</span>
+              <span class="label label-important" title="Important">重要</span>
             </td>
             <td>
-              <code>&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;</code>
+              <code>&lt;span class="label label-important"&gt;重要&lt;/span&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="label label-info" title="Info">信息</span>
+            </td>
+            <td>
+              <code>&lt;span class="label label-info"&gt;信息&lt;/span&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="label label-inverse" title="Inverse">反相</span>
+            </td>
+            <td>
+              <code>&lt;span class="label label-inverse"&gt;反相&lt;/span&gt;</code>
             </td>
           </tr>
         </tbody>
       </table>
 
-      <h3>Badges  <small>标记 - 指示信息、未完成任务等</small></h3>
+      <h3 title="Badges">标记 <small>指示信息、未完成任务等</small></h3>
       <p>介绍：标记用来显示指示信息或未完成任务的小组件。在CRM中往往用在任务处理列表或消息提醒上。</p>
       <table class="table table-bordered table-striped">
         <thead>
@@ -1674,6 +1675,9 @@ Action
           </tr>
         </tbody>
       </table>
+	  
+	  <h3>Easily collapsible</h3>
+	  <p>For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.</p>
 
     </section>
 
