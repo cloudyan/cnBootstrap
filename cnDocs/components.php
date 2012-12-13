@@ -770,15 +770,39 @@ Action
       </div>
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-list"&gt;
-&lt;li class="nav-header"&gt;List header&lt;/li&gt;
-&lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-header"&gt;列表头&lt;/li&gt;
+&lt;li class="active"&gt;&lt;a href="#"&gt;首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;类库&lt;/a&gt;&lt;/li&gt;
 ...
 &lt;/ul&gt;
 </pre>
       <p title='Note For nesting within a nav list, include class="nav nav-list" on any nested &lt;ul&gt;.'>
         <span class="label label-info">小提示</span> 需要嵌套的导航列表，在 <code>&lt;ul&gt;</code> 上添加 <code>class="nav nav-list"</code> 样式即可。</p>
-
+		<h3>使用图标的例子</h3>
+		<p>同样的例子，使用 <code>&lt;i&gt;</code> 标签显示图标。</p>
+		<div class="bs-docs-example">
+			<div class="well" style="max-width: 340px; padding: 8px 0;">
+				  <ul class="nav nav-list">
+						<li class="nav-header" title="List header">列表头</li>
+						<li class="active"><a href="#" title="Home"><i class="icon-white icon-home"></i> 首页</a></li>
+						<li><a href="#" title="Library"><i class="icon-book"></i> 类库</a></li>
+						<li><a href="#" title="Applications"><i class="icon-pencil"></i> 应用</a></li>
+						<li class="nav-header" title="Another list header">另一个列表头</li>
+						<li><a href="#" title="Profile"><i class="icon-user"></i> 介绍</a></li>
+						<li><a href="#" title="Settings"><i class="icon-cog"></i> 设置</a></li>
+						<li class="divider"></li>
+						<li><a href="#" title="Help"><i class="icon-flag"></i> 帮助</a></li>
+				  </ul>
+			</div> <!-- /well -->
+		</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-list"&gt;
+&lt;li class="nav-header"&gt;列表头&lt;/li&gt;
+&lt;li class="active"&gt;&lt;a href="#"&gt;&lt;i class="icon-white icon-home"&gt;&lt;/i&gt; 首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-book"&gt;&lt;/i&gt; 类库&lt;/a&gt;&lt;/li&gt;
+...
+&lt;/ul&gt;
+</pre>
       <h3 title="Horizontal dividers">水平间隔</h3>
       <p title="Add a horizontal divider by creating an empty list item with the class .divider, like so:">应用 <code>.divider</code> 的空列表项会显示为一个水平间隔，如下：</p>
 <pre class="prettyprint linenums">
@@ -1894,20 +1918,20 @@ Action
 </pre>
 
       <h3 title="Dismiss buttons">关闭按钮</h3>
-      <p title='Mobile Safari and Mobile Opera browsers, in addition to the data-dismiss="alert" attribute, require an href="#" for the dismissal of alerts when using an &lt;a&gt; tag.'>移动Safari和移动Opera浏览器，除了 <code>data-dismiss="alert"</code> 属性外，还要添加 <code>href="#"</code> <code>&lt;a&gt;</code> 便签来关闭通知。</p>
+      <p title='Mobile Safari and Mobile Opera browsers, in addition to the data-dismiss="alert" attribute, require an href="#" for the dismissal of alerts when using an &lt;a&gt; tag.'>移动Safari和移动Opera浏览器在使用 <code>&lt;a&gt;</code> 标签时，除了 <code>data-dismiss="alert"</code> 属性外，还要具有 <code>href="#"</code> 属性来支持关闭通知。</p>
       <pre class="prettyprint linenums">&lt;a href="#" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;</pre>
       <p title='Alternatively, you may use a &lt;button&gt; element with the data attribute, which we have opted to do for our docs. When using &lt;button&gt;, you must include type="button" or your forms may not submit.'>或者，也可以使用带有data属性的 <code>&lt;button&gt;</code> 元素，在Bootstrap文档中有使用。当使用 <code>&lt;button&gt;</code> 时，必须应用 <code>type="button"</code> 除非你的表单无需提交。</p>
       <pre class="prettyprint linenums">&lt;button type="button" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;</pre>
 
       <h3 title="Dismiss alerts via javascript">与javascript配合良好</h3>
-      <p>Use the <a href="./javascript.html#alerts">alerts jQuery plugin</a> for quick and easy dismissal of alerts.</p>
+      <p title="Use the alerts jQuery plugin for quick and easy dismissal of alerts.">友好的 <a href="./javascript.html#alerts">jQuery插件</a> 驱动通知消息，方便用户快速地关闭通知。</p>
 
 
       <hr class="bs-docs-separator">
 
 
-      <h2 title="Options">Options</h2>
-      <p title="For longer messages, increase the padding on the top and bottom of the alert wrapper by adding .alert-block.">For longer messages, increase the padding on the top and bottom of the alert wrapper by adding <code>.alert-block</code>.</p>
+      <h2 title="Options">选项</h2>
+      <p title="For longer messages, increase the padding on the top and bottom of the alert wrapper by adding .alert-block.">对于较长的信息，对通知添加 <code>.alert-block</code> 样式来增加上下内间距。</p>
       <div class="bs-docs-example">
         <div class="alert alert-block">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -1927,7 +1951,7 @@ Best check yo self, you're not...
       <hr class="bs-docs-separator">
 
 
-      <h2 title="Contextual alternatives">Contextual alternatives</h2>
+      <h2 title="Contextual alternatives">语境下的强化</h2>
       <p title="Add optional classes to change an alert's connotation.">Add optional classes to change an alert's connotation.</p>
 
       <h3 title="Error or danger"></h3>
@@ -1977,7 +2001,7 @@ Best check yo self, you're not...
     ================================================== -->
     <section id="progress">
       <div class="page-header">
-        <h1 title="Progress bars  For loading, redirecting, or action status">进度条 <small>用于载入，重定向或表示动作状态</small></h1>
+        <h1 title="Progress bars  For loading, redirecting, or action status">进度条 <small>用于载入，重定向或表示进行中的状态</small></h1>
       </div>
 
       <h2 title="Examples and markup">示例及代码</h2>
@@ -2009,7 +2033,7 @@ Best check yo self, you're not...
 </pre>
 
       <h3 title="Animated">动画效果</h3>
-      <p title="Add .active to .progress-striped top animate the stripes right to left. Not available in all versions of IE.">在 <code>.progress-striped</code> 基础上应用 <code>.active</code> 样式实现条纹进度条从右向左的动画效果（不支持IE）</p>
+      <p title="Add .active to .progress-striped top animate the stripes right to left. Not available in all versions of IE.">如果使用 <code>.active</code> ，那么 <code>.progress-striped</code> 导航栏就会呈现自右向左的条纹跑马灯动画效果（不支持IE）。</p>
       <div class="bs-docs-example">
         <div class="progress progress-striped active">
           <div class="bar" style="width: 45%"></div>
@@ -2021,8 +2045,8 @@ Best check yo self, you're not...
 &lt;/div&gt;
 </pre>
 
-      <h3>Stacked</h3>
-      <p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
+      <h3 title="Stacked">进度划分</h3>
+      <p title="Place multiple bars into the same .progress to stack them.">同一个进度条 <code>.progress</code> 内不同的进度划分。</p>
       <div class="bs-docs-example">
         <div class="progress">
           <div class="bar bar-success" style="width: 35%"></div>
@@ -2042,10 +2066,10 @@ Best check yo self, you're not...
       <hr class="bs-docs-separator">
 
 
-      <h2>Options</h2>
+      <h2 title="Options">选项</h2>
 
-      <h3>Additional colors</h3>
-      <p>Progress bars use some of the same button and alert classes for consistent styles.</p>
+      <h3 title="Additional colors">其他颜色</h3>
+      <p title="Progress bars use some of the same button and alert classes for consistent styles.">进度条使用和按钮/警告类相似的样式，提供一致的颜色风格。</p>
       <div class="bs-docs-example">
         <div class="progress progress-info" style="margin-bottom: 9px;">
           <div class="bar" style="width: 20%"></div>
@@ -2075,7 +2099,7 @@ Best check yo self, you're not...
 &lt;/div&gt;
 </pre>
 
-      <h3 title="Striped bars">条纹滚动条</h3>
+      <h3 title="Striped bars">条纹进度条</h3>
       <p title="Similar to the solid colors, we have varied striped progress bars.">与纯色相似，也可以使用多色的条纹进度条。</p>
       <div class="bs-docs-example">
         <div class="progress progress-info progress-striped" style="margin-bottom: 9px;">
@@ -2125,15 +2149,15 @@ Best check yo self, you're not...
           </div>
           <p class="lead" title="Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.">创建各种各类的组件(如：博客评论、微博等)，这些混合富文本一般都采用左或右对齐排版结构。</p>
 
-          <h2>Default example</h2>
-          <p>The default media allow to float a media object (images, video, audio) to the left or right of a content block.</p>
+          <h2 title="Default example">默认示例</h2>
+          <p title="The default media allow to float a media object (images, video, audio) to the left or right of a content block.">默认情况下，是实现媒体对象（图片、视频、音频）浮动到内容的左侧或右侧。</p>
           <div class="bs-docs-example">
             <div class="media">
               <a class="pull-left" href="#">
                 <img class="media-object" data-src="holder.js/64x64">
               </a>
               <div class="media-body">
-                <h4 class="media-heading">Media heading</h4>
+                <h4 class="media-heading" title="Media heading">媒体标题</h4>
                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
             </div>
@@ -2142,14 +2166,14 @@ Best check yo self, you're not...
                 <img class="media-object" data-src="holder.js/64x64">
               </a>
               <div class="media-body">
-                <h4 class="media-heading">Media heading</h4>
+                <h4 class="media-heading" title="Media heading">媒体标题</h4>
                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 <div class="media">
                   <a class="pull-left" href="#">
                     <img class="media-object" data-src="holder.js/64x64">
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Media heading</h4>
+                    <h4 class="media-heading" title="Media heading">媒体标题</h4>
                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                   </div>
                 </div>
@@ -2162,7 +2186,7 @@ Best check yo self, you're not...
     &lt;img class="media-object" data-src="holder.js/64x64"&gt;
   &lt;/a&gt;
   &lt;div class="media-body"&gt;
-    &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+    &lt;h4 class="media-heading"&gt;媒体标题&lt;/h4&gt;
     ...
 
     &lt;!-- Nested media object --&gt;
@@ -2177,8 +2201,8 @@ Best check yo self, you're not...
           <hr class="bs-docs-separator">
 
 
-          <h2>Media list</h2>
-          <p>With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).</p>
+          <h2 title="Medai list">媒体列表</h2>
+          <p title="With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists)."></p>
           <div class="bs-docs-example">
             <ul class="media-list">
               <li class="media">
@@ -2186,7 +2210,7 @@ Best check yo self, you're not...
                   <img class="media-object" data-src="holder.js/64x64">
                 </a>
                 <div class="media-body">
-                  <h4 class="media-heading">Media heading</h4>
+                  <h4 class="media-heading" title="Media heading">媒体标题</h4>
                   <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
                   <!-- Nested media object -->
                   <div class="media">
@@ -2194,7 +2218,7 @@ Best check yo self, you're not...
                       <img class="media-object" data-src="holder.js/64x64">
                     </a>
                     <div class="media-body">
-                      <h4 class="media-heading">Nested media heading</h4>
+                      <h4 class="media-heading" title="Nested media heading">嵌套的媒体列表</h4>
                       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
                       <!-- Nested media object -->
                       <div class="media">
@@ -2202,7 +2226,7 @@ Best check yo self, you're not...
                           <img class="media-object" data-src="holder.js/64x64">
                         </a>
                         <div class="media-body">
-                          <h4 class="media-heading">Nested media heading</h4>
+                          <h4 class="media-heading" title="Nested media heading">嵌套的媒体列表</h4>
                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
                         </div>
                       </div>
@@ -2214,7 +2238,7 @@ Best check yo self, you're not...
                       <img class="media-object" data-src="holder.js/64x64">
                     </a>
                     <div class="media-body">
-                      <h4 class="media-heading">Nested media heading</h4>
+                      <h4 class="media-heading" title="Nested media heading">嵌套的媒体列表</h4>
                       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
                     </div>
                   </div>
@@ -2225,7 +2249,7 @@ Best check yo self, you're not...
                   <img class="media-object" data-src="holder.js/64x64">
                 </a>
                 <div class="media-body">
-                  <h4 class="media-heading">Media heading</h4>
+                  <h4 class="media-heading" title="Media heading">媒体标题</h4>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
                 </div>
               </li>
@@ -2238,7 +2262,7 @@ Best check yo self, you're not...
       &lt;img class="media-object" data-src="holder.js/64x64"&gt;
     &lt;/a&gt;
     &lt;div class="media-body"&gt;
-      &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+      &lt;h4 class="media-heading"&gt;媒体标题&lt;/h4&gt;
       ...
 
       &lt;!-- Nested media object --&gt;
