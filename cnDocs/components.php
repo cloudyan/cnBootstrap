@@ -222,7 +222,7 @@
 
 
       <h4 title="Checkbox and radio flavors">复选和单选形式</h4>
-      <p title="Button groups can also function as radios, where only one button may be active, or checkboxes, where any number of buttons may be active. View the Javascript docs for that.">按钮组也可实现单选和复选功能。单选只有一个按钮可被按下，而多选可以按下多个按钮。详见<a href="./javascript.html#buttons">Javascript插件</a>。</p>
+      <p title="Button groups can also function as radios, where only one button may be active, or checkboxes, where any number of buttons may be active. View the Javascript docs for that.">按钮组也可实现单选和复选功能。单选只有一个按钮可被按下，而多选可以按下多个按钮。详见<a href="./javascript.php#buttons">Javascript插件</a>。</p>
 		<p><a class="btn js-btn" href="./javascript.php#buttons">获取相关的javascript »</a></p>
       <h4 title="Dropdowns in button groups">按钮组中的下拉项</h4>
       <p title="Heads up! Buttons with dropdowns must be individually wrapped in their own .btn-group within a .btn-toolbar for proper rendering."><span class="label label-info">强调!</span> 为了渲染正常，带下拉项的按钮应该被 <code>.btn-group</code> 嵌套，然后再放入 <code>.btn-toolbar</code> 内。</p>
@@ -813,7 +813,7 @@ Action
               <p title="Howdy, I'm in Section 2.">你好，我在第1节</p>
             </div>
             <div class="tab-pane" id="tab3">
-              <p title="What up girl, this is Section 3.">怎么了女孩，这是第3节</p>
+              <p title="What up girl, this is Section 3.">怎么了妹纸，这是第3节</p>
             </div>
           </div>
         </div> <!-- /tabbable -->
@@ -855,7 +855,7 @@ Action
               <p>你好，这是章节B</p>
             </div>
             <div class="tab-pane" id="C">
-              <p>怎么了女孩，这是章节C</p>
+              <p>怎么了妹纸，这是章节C</p>
             </div>
           </div>
           <ul class="nav nav-tabs">
@@ -893,7 +893,7 @@ Action
               <p>你好，这是章节B</p>
             </div>
             <div class="tab-pane" id="lC">
-              <p>怎么了女孩，这是章节C</p>
+              <p>怎么了妹纸，这是章节C</p>
             </div>
           </div>
         </div> <!-- /tabbable -->
@@ -926,7 +926,7 @@ Action
               <p>你好，这是章节B</p>
             </div>
             <div class="tab-pane" id="rC">
-              <p>怎么了女孩，这是章节C</p>
+              <p>怎么了妹纸，这是章节C</p>
             </div>
           </div>
         </div> <!-- /tabbable -->
@@ -1795,7 +1795,7 @@ Action
                   <div class="caption">
                     <h3 title="Thumbnail label">缩略项标签</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                    <p><a href="#" class="btn btn-primary">动作</a> <a href="#" class="btn">动作</a></p>
                   </div>
                 </div>
               </li>
@@ -1879,11 +1879,11 @@ Action
       </div>
 
       <h2 title="Default alert">默认样式</h2>
-      <p title="Wrap any text and an optional dismiss button in .alert for a basic warning alert message.">Wrap any text and an optional dismiss button in <code>.alert</code> for a basic warning alert message.</p>
+      <p title="Wrap any text and an optional dismiss button in .alert for a basic warning alert message.">在任意文本和关闭按钮外嵌套 <code>.alert</code> 样式即实现通知消息的基类，无需嵌套p标签。</p>
       <div class="bs-docs-example">
-        <div class="alert">
+        <div class="alert" title="Warning!  Best check yo self, you're not looking too good.">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Warning!</strong> Best check yo self, you're not looking too good.
+          <strong>警告!</strong> 最好检查一下，你看起来不是很好。
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -1893,21 +1893,21 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h3>Dismiss buttons</h3>
-      <p>Mobile Safari and Mobile Opera browsers, in addition to the <code>data-dismiss="alert"</code> attribute, require an <code>href="#"</code> for the dismissal of alerts when using an <code>&lt;a&gt;</code> tag.</p>
+      <h3 title="Dismiss buttons">关闭按钮</h3>
+      <p title='Mobile Safari and Mobile Opera browsers, in addition to the data-dismiss="alert" attribute, require an href="#" for the dismissal of alerts when using an &lt;a&gt; tag.'>移动Safari和移动Opera浏览器，除了 <code>data-dismiss="alert"</code> 属性外，还要添加 <code>href="#"</code> <code>&lt;a&gt;</code> 便签来关闭通知。</p>
       <pre class="prettyprint linenums">&lt;a href="#" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;</pre>
-      <p>Alternatively, you may use a <code>&lt;button&gt;</code> element with the data attribute, which we have opted to do for our docs. When using <code>&lt;button&gt;</code>, you must include <code>type="button"</code> or your forms may not submit.</p>
+      <p title='Alternatively, you may use a &lt;button&gt; element with the data attribute, which we have opted to do for our docs. When using &lt;button&gt;, you must include type="button" or your forms may not submit.'>或者，也可以使用带有data属性的 <code>&lt;button&gt;</code> 元素，在Bootstrap文档中有使用。当使用 <code>&lt;button&gt;</code> 时，必须应用 <code>type="button"</code> 除非你的表单无需提交。</p>
       <pre class="prettyprint linenums">&lt;button type="button" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;</pre>
 
-      <h3>Dismiss alerts via javascript</h3>
+      <h3 title="Dismiss alerts via javascript">与javascript配合良好</h3>
       <p>Use the <a href="./javascript.html#alerts">alerts jQuery plugin</a> for quick and easy dismissal of alerts.</p>
 
 
       <hr class="bs-docs-separator">
 
 
-      <h2>Options</h2>
-      <p>For longer messages, increase the padding on the top and bottom of the alert wrapper by adding <code>.alert-block</code>.</p>
+      <h2 title="Options">Options</h2>
+      <p title="For longer messages, increase the padding on the top and bottom of the alert wrapper by adding .alert-block.">For longer messages, increase the padding on the top and bottom of the alert wrapper by adding <code>.alert-block</code>.</p>
       <div class="bs-docs-example">
         <div class="alert alert-block">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -1927,10 +1927,10 @@ Best check yo self, you're not...
       <hr class="bs-docs-separator">
 
 
-      <h2>Contextual alternatives</h2>
-      <p>Add optional classes to change an alert's connotation.</p>
+      <h2 title="Contextual alternatives">Contextual alternatives</h2>
+      <p title="Add optional classes to change an alert's connotation.">Add optional classes to change an alert's connotation.</p>
 
-      <h3>Error or danger</h3>
+      <h3 title="Error or danger"></h3>
       <div class="bs-docs-example">
         <div class="alert alert-error">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -1943,7 +1943,7 @@ Best check yo self, you're not...
 &lt;/div&gt;
 </pre>
 
-      <h3>Success</h3>
+      <h3 title="Success">Success</h3>
       <div class="bs-docs-example">
         <div class="alert alert-success">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -1956,7 +1956,7 @@ Best check yo self, you're not...
 &lt;/div&gt;
 </pre>
 
-      <h3>Information</h3>
+      <h3 title="Information">Information</h3>
       <div class="bs-docs-example">
         <div class="alert alert-info">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -1977,13 +1977,13 @@ Best check yo self, you're not...
     ================================================== -->
     <section id="progress">
       <div class="page-header">
-        <h1>Progress bars <small>For loading, redirecting, or action status</small></h1>
+        <h1 title="Progress bars  For loading, redirecting, or action status">进度条 <small>用于载入，重定向或表示动作状态</small></h1>
       </div>
 
-      <h2>Examples and markup</h2>
+      <h2 title="Examples and markup">示例及代码</h2>
 
-      <h3>Basic</h3>
-      <p>Default progress bar with a vertical gradient.</p>
+      <h3 title="Basic">基本效果</h3>
+      <p title="Default progress bar with a vertical gradient.">默认的垂直渐变进度条。</p>
       <div class="bs-docs-example">
         <div class="progress">
           <div class="bar" style="width: 60%;"></div>
@@ -1995,8 +1995,8 @@ Best check yo self, you're not...
 &lt;/div&gt;
 </pre>
 
-      <h3>Striped</h3>
-      <p>Uses a gradient to create a striped effect. Not available in IE7-8.</p>
+      <h3 title="Striped">条纹效果</h3>
+      <p title="Uses a gradient to create a striped effect. Not availabel in IE7-8.">使用渐变创建条纹进度条（不支持IE7-8）</p>
       <div class="bs-docs-example">
         <div class="progress progress-striped">
           <div class="bar" style="width: 20%;"></div>
@@ -2008,8 +2008,8 @@ Best check yo self, you're not...
 &lt;/div&gt;
 </pre>
 
-      <h3>Animated</h3>
-      <p>Add <code>.active</code> to <code>.progress-striped</code> to animate the stripes right to left. Not available in all versions of IE.</p>
+      <h3 title="Animated">动画效果</h3>
+      <p title="Add .active to .progress-striped top animate the stripes right to left. Not available in all versions of IE.">在 <code>.progress-striped</code> 基础上应用 <code>.active</code> 样式实现条纹进度条从右向左的动画效果（不支持IE）</p>
       <div class="bs-docs-example">
         <div class="progress progress-striped active">
           <div class="bar" style="width: 45%"></div>
@@ -2075,8 +2075,8 @@ Best check yo self, you're not...
 &lt;/div&gt;
 </pre>
 
-      <h3>Striped bars</h3>
-      <p>Similar to the solid colors, we have varied striped progress bars.</p>
+      <h3 title="Striped bars">条纹滚动条</h3>
+      <p title="Similar to the solid colors, we have varied striped progress bars.">与纯色相似，也可以使用多色的条纹进度条。</p>
       <div class="bs-docs-example">
         <div class="progress progress-info progress-striped" style="margin-bottom: 9px;">
           <div class="bar" style="width: 20%"></div>
@@ -2110,9 +2110,9 @@ Best check yo self, you're not...
       <hr class="bs-docs-separator">
 
 
-      <h2>Browser support</h2>
-      <p>Progress bars use CSS3 gradients, transitions, and animations to achieve all their effects. These features are not supported in IE7-9 or older versions of Firefox.</p>
-      <p>Versions earlier than Internet Explorer 10 and Opera 12 do not support animations.</p>
+      <h2 title="Browser support">浏览器支持</h2>
+      <p title="Progress bars use CSS3 gradients, transitions, and animations to achieve all their effects. These features are not supported in IE7-9 or older versions of Firefox.">进度条使用CSS3渐变/过渡/动画以实现所有效果。IE7到IE9，以及某些老版本的Firefox还不能完全支持这些特性。</p>
+      <p title="Versions earlier than Internet Explorer 10 and Opera 12 do not support animations.">目前，IE10和Opera12(不包含这两个)之前的版本不支持动画效果。</p>
 
     </section>
 
@@ -2121,9 +2121,9 @@ Best check yo self, you're not...
         ================================================== -->
         <section id="media">
           <div class="page-header">
-            <h1>Media object</h1>
+            <h1 title="Media object">媒体对象</h1>
           </div>
-          <p class="lead">Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.</p>
+          <p class="lead" title="Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.">创建各种各类的组件(如：博客评论、微博等)，这些混合富文本一般都采用左或右对齐排版结构。</p>
 
           <h2>Default example</h2>
           <p>The default media allow to float a media object (images, video, audio) to the left or right of a content block.</p>
@@ -2258,14 +2258,14 @@ Best check yo self, you're not...
     ================================================== -->
     <section id="misc">
       <div class="page-header">
-        <h1>Miscellaneous <small>Lightweight utility components</small></h1>
+        <h1 title="Miscellaneous  Lightweight utility components">杂项 <small>轻量级的工具组件</small></h1>
       </div>
 
-      <h2>Wells</h2>
-      <p>Use the well as a simple effect on an element to give it an inset effect.</p>
+      <h2 title="Wells">消息墙</h2>
+      <p title="Use the well as a simple effect on an element to give it an inset effect.">用来给某个元素添加包框效果。</p>
       <div class="bs-docs-example">
-        <div class="well">
-          Look, I'm in a well!
+        <div class="well" title="Look, I'm in a well!">
+			来看呀来看呀，这就是消息墙！
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -2273,11 +2273,11 @@ Best check yo self, you're not...
 ...
 &lt;/div&gt;
 </pre>
-      <h3>Optional classes</h3>
-      <p>Control padding and rounded corners with two optional modifier classes.</p>
+      <h3 title="Optional classes">可选类</h3>
+      <p title="Control padding and rounded corners with two optional modifier classes.">有两个可选的修饰符的类，分别控制填充和圆角。</p>
       <div class="bs-docs-example">
         <div class="well well-large">
-          Look, I'm in a well!
+			来看呀来看呀，这就是消息墙！
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -2287,7 +2287,7 @@ Best check yo self, you're not...
 </pre>
       <div class="bs-docs-example">
         <div class="well well-small">
-          Look, I'm in a well!
+        	来看呀来看呀，这就是消息墙！
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -2296,17 +2296,17 @@ Best check yo self, you're not...
 &lt;/div&gt;
 </pre>
 
-      <h2>Close icon</h2>
-      <p>Use the generic close icon for dismissing content like modals and alerts.</p>
+      <h2 title="Close icon">关闭图标</h2>
+      <p title="Use the generic close icon for dismissing content like modals and alerts.">像对话框和弹出框一样，用常见的叉叉图标关闭内容。</p>
       <div class="bs-docs-example">
         <p><button class="close" style="float: none;">&times;</button></p>
       </div>
       <pre class="prettyprint linenums">&lt;button class="close"&gt;&amp;times;&lt;/button&gt;</pre>
-      <p>iOS devices require an href="#" for click events if you rather use an anchor.</p>
+      <p title='iOS devices require an href="#" for click events if you rather use an anchor.'>如果你更喜欢用锚点，那么iOS设备需要有 href="#" 支持click事件。</p>
       <pre class="prettyprint linenums">&lt;a class="close" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
 
-      <h2>Helper classes</h2>
-      <p>Simple, focused classes for small display or behavior tweaks.</p>
+      <h2 title="Helper classes">常用帮助/辅助类</h2>
+      <p title="Simple, focused classes for small display or behavior tweaks.">简洁精巧的辅助类对小分辨率或其他操作提供便捷支持。</p>
 
       <h4>.pull-left</h4>
       <p>Float an element left</p>
@@ -2315,7 +2315,7 @@ class="pull-left"
 </pre>
 <pre class="prettyprint linenums">
 .pull-left {
-float: left;
+  float: left;
 }
 </pre>
 
@@ -2326,37 +2326,37 @@ class="pull-right"
 </pre>
 <pre class="prettyprint linenums">
 .pull-right {
-float: right;
+  float: right;
 }
 </pre>
 
       <h4>.muted</h4>
-      <p>Change an element's color to <code>#999</code></p>
+      <p title="Change an element's color to #999">改变元素内容颜色为#999</p>
 <pre class="prettyprint linenums">
 class="muted"
 </pre>
 <pre class="prettyprint linenums">
 .muted {
-color: #999;
+  color: #999;
 }
 </pre>
 
       <h4>.clearfix</h4>
-      <p>Clear the <code>float</code> on any element</p>
+      <p title="Clear the float on any element">清除 <code>float</code> </p>
 <pre class="prettyprint linenums">
 class="clearfix"
 </pre>
 <pre class="prettyprint linenums">
 .clearfix {
-*zoom: 1;
-&:before,
-&:after {
-display: table;
-content: "";
-}
-&:after {
-clear: both;
-}
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
 }
 </pre>
 

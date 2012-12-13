@@ -8,7 +8,7 @@
 <header class="jumbotron subhead" id="overview">
   <div class="container">
     <h1 title="Guide">前端开发指南</h1>
-    <p class="lead" title="">前端手册——使用并掌握它汇集的知识，立即进阶升级。</p>
+    <p class="lead" title="">使用并掌握前端手册，前端技能立即进阶升级。</p>
   </div>
 </header>
 
