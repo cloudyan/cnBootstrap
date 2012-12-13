@@ -1402,10 +1402,11 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2 title="Options">Options</h2>
+      <h2 title="Options">自定义选项</h2>
 
-      <h3>Disabled and active states</h3>
-      <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
+      <h3 title="Disabled and active states">禁用与激活状态</h3>
+      <p title="Links are customizable for different circumstances. Use .disabled for unclickable links and .active to indicate the current page."><p>Bootstrap使用一组样式类定制页码的状态，<code>.disabled</code> 用于不可点击链接，而 <code>.active</code> 用于表示当前页链接。
+      </p>针对不同的情况，页码链接是可定制的。应用 <code>.disabled</code> 禁用一个链接以及 <code>.active</code> 凸显当前页。</p>
       <div class="bs-docs-example">
         <div class="pagination pagination-centered">
           <ul>
@@ -1429,8 +1430,8 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h3>Alignment</h3>
-      <p>Add one of two optional classes to change the alignment of pagination links: <code>.pagination-centered</code> and <code>.pagination-right</code>.</p>
+      <h3 title="Alignment">对齐方式</h3>
+      <p title="Add one of two optional classes to change the alignment of pagination links: .pagination-centered and .pagination-right.">使用 <code>.pagination-centered</code> 和 <code>.pagination-right</code> 可以改变页码的对齐方式，前者居中，后者居右。</p>
       <div class="bs-docs-example">
         <div class="pagination pagination-centered">
           <ul>
@@ -1472,55 +1473,55 @@ Action
       <hr class="bs-docs-separator">
 
 
-      <h2>Pager</h2>
-      <p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
+      <h2 title="Pager">前后页</h2>
+      <p title="Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.">前后页组件是一组简便的分页实现，标记更少，样式更轻，适用于轻量级网站，如博客或网志。</p>
 
-      <h3>Default example</h3>
-      <p>By default, the pager centers links.</p>
+      <h3 title="Default example">默认示例</h3>
+      <p title="By default, the pager centers links.">默认情况下，前后页组件居中。</p>
       <div class="bs-docs-example">
         <ul class="pager">
-          <li><a href="#">Previous</a></li>
-          <li><a href="#">Next</a></li>
+          <li><a href="#" title="previous">上一页</a></li>
+          <li><a href="#" title="next">下一页</a></li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
 &lt;ul class="pager"&gt;
-&lt;li&gt;&lt;a href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;上一页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;下一页&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
 
-      <h3>Aligned links</h3>
-      <p>Alternatively, you can align each link to the sides:</p>
+      <h3 title="Aligned links">居于左右端的链接</h3>
+      <p title="Alternatively, you can align each link to the sides:">另一种情况下，链接分别居于左右端：</p>
       <div class="bs-docs-example">
         <ul class="pager">
-          <li class="previous"><a href="#">&larr; Older</a></li>
-          <li class="next"><a href="#">Newer &rarr;</a></li>
+          <li class="previous"><a href="#" title="&larr; Older">&larr; 过去的</a></li>
+          <li class="next"><a href="#" title="Newer &rarr;">更新的 &rarr;</a></li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
 &lt;ul class="pager"&gt;
 &lt;li class="previous"&gt;
-&lt;a href="#"&gt;&amp;larr; Older&lt;/a&gt;
+&lt;a href="#"&gt;&amp;larr; 过去的&lt;/a&gt;
 &lt;/li&gt;
 &lt;li class="next"&gt;
-&lt;a href="#"&gt;Newer &amp;rarr;&lt;/a&gt;
+&lt;a href="#"&gt;更新的 &amp;rarr;&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
 
-      <h3>Optional disabled state</h3>
-      <p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
+      <h3 title="Optional disabled state">禁用状态</h3>
+      <p title="Pager links also use the general .disabled utility class from the pagination.">前后页链接仍使用 <code>.disabled</code> 设置无效状态。</p>
       <div class="bs-docs-example">
         <ul class="pager">
-          <li class="previous disabled"><a href="#">&larr; Older</a></li>
-          <li class="next"><a href="#">Newer &rarr;</a></li>
+          <li class="previous disabled"><a href="#">&larr; 过去的</a></li>
+          <li class="next"><a href="#">更新的 &rarr;</a></li>
         </ul>
       </div>
 <pre class="prettyprint linenums">
 &lt;ul class="pager"&gt;
 &lt;li class="previous disabled"&gt;
-&lt;a href="#"&gt;&amp;larr; Older&lt;/a&gt;
+&lt;a href="#"&gt;&amp;larr; 过去的&lt;/a&gt;
 &lt;/li&gt;
 ...
 &lt;/ul&gt;
@@ -1587,29 +1588,30 @@ Action
           </tr>
           <tr>
             <td>
-              <span class="label label-inverse" title="Inverse">反相</span>
+              <span class="label label-inverse" title="Inverse">相反</span>
             </td>
             <td>
-              <code>&lt;span class="label label-inverse"&gt;反相&lt;/span&gt;</code>
+              <code>&lt;span class="label label-inverse"&gt;相反&lt;/span&gt;</code>
             </td>
           </tr>
         </tbody>
       </table>
 
-      <h3 title="Badges">标记 <small>指示信息、未完成任务等</small></h3>
-      <p>介绍：标记用来显示指示信息或未完成任务的小组件。在CRM中往往用在任务处理列表或消息提醒上。</p>
+      <h3 title="Badges">标记 <small>标记信息、未完成任务、未读信息等</small></h3>
+      <p>用来显示指示信息或标识某某数量(未完成任务、未读信息等)的简洁小组件。在CRM中往往用在任务处理列表或消息提醒上。</p>
+	  <h3>可用的类</h3>
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Example</th>
-            <th>Markup</th>
+            <th title="Name">名称</th>
+            <th title="Example">例子</th>
+            <th title="Markup">代码</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              Default
+              默认
             </td>
             <td>
               <span class="badge">1</span>
@@ -1620,7 +1622,7 @@ Action
           </tr>
           <tr>
             <td>
-              Success
+              成功
             </td>
             <td>
               <span class="badge badge-success">2</span>
@@ -1631,7 +1633,7 @@ Action
           </tr>
           <tr>
             <td>
-              Warning
+              警告
             </td>
             <td>
               <span class="badge badge-warning">4</span>
@@ -1642,7 +1644,7 @@ Action
           </tr>
           <tr>
             <td>
-              Important
+              重要
             </td>
             <td>
               <span class="badge badge-important">6</span>
@@ -1653,7 +1655,7 @@ Action
           </tr>
           <tr>
             <td>
-              Info
+              信息
             </td>
             <td>
               <span class="badge badge-info">8</span>
@@ -1664,7 +1666,7 @@ Action
           </tr>
           <tr>
             <td>
-              Inverse
+              相反
             </td>
             <td>
               <span class="badge badge-inverse">10</span>
@@ -1687,16 +1689,16 @@ Action
     ================================================== -->
     <section id="typography">
       <div class="page-header">
-        <h1>Typographic components</h1>
+        <h1 title="Typographic components">排版组件 <small>用以分割内容的页标题和主角单元</small></h1>
       </div>
 
-      <h2>Hero unit</h2>
-      <p>A lightweight, flexible component to showcase key content on your site. It works well on marketing and content-heavy sites.</p>
+      <h2 title="Hero unit">主角单元</h2>
+      <p title="A lightweight, flexible component to showcase key content on your site. It works well on marketing and content-heavy sites.">这是一个轻巧灵活的组件，可以用在网站中着重展示内容，被称为“Hero unit”/主角单元。适用于市场类或强调内容的网站。</p>
       <div class="bs-docs-example">
         <div class="hero-unit">
           <h1>Hello, world!</h1>
-          <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <p><a class="btn btn-primary btn-large">Learn more</a></p>
+          <p title="This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.">主角单元Hero Unit是一简单的大屏组件，用于增强内容或信息的吸引力</p>
+          <p><a class="btn btn-primary btn-large" title="Learn More">了解更多</a></p>
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -1711,11 +1713,11 @@ Action
 &lt;/div&gt;
 </pre>
 
-      <h2>Page header</h2>
-      <p>A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code>, element as well most other components (with additional styles).</p>
+      <h2 title="Page header">页面标题</h2>
+      <p title="A simple shell for an h1 to appropriately space out and segment sections of content on a page. It can utilize the h1's default small, element as well most other components (with additional styles)."><p>相当于一个简单的 <code>h1</code> 外壳，它有适当的留白，以便在页面中分割内容片段。还可以在 <code>h1</code> 内嵌入 <code>small</code>，html元素或是其他组件。</p>
       <div class="bs-docs-example">
         <div class="page-header">
-          <h1>Example page header <small>Subtext for header</small></h1>
+          <h1 title="Example page header  Subtext for header">页面标题的例子 <small>子标题文字</small></h1>
         </div>
       </div>
 <pre class="prettyprint linenums">
@@ -1733,11 +1735,11 @@ Action
         ================================================== -->
         <section id="thumbnails">
           <div class="page-header">
-            <h1>Thumbnails <small>Grids of images, videos, text, and more</small></h1>
+            <h1 title="Thumbnails Grids of images, videos, text, and more">缩略项 <small>基于栅格的图象，视频，文字等等</small></h1>
           </div>
 
-          <h2>Default thumbnails</h2>
-          <p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
+          <h2 title="Default thumbnails">默认缩略项</h2>
+          <p title="By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.">默认情况下，Bootstrap的缩略项使用很少的标记来展示链接图象。</p>
           <div class="row-fluid">
             <ul class="thumbnails">
               <li class="span3">
@@ -1763,17 +1765,17 @@ Action
             </ul>
           </div>
 
-          <h2>Highly customizable</h2>
-          <p>With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.</p>
+          <h2 title="Highly customizable">高可定制</h2>
+          <p title="With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.">使用少量其他标记就可以在缩略项中添加任何一种HTML内容，比如标题，段落，或按钮。</p>
           <div class="row-fluid">
             <ul class="thumbnails">
               <li class="span4">
                 <div class="thumbnail">
                   <img data-src="holder.js/300x200" alt="">
                   <div class="caption">
-                    <h3>Thumbnail label</h3>
+                    <h3 title="Thumbnail label">缩略项标签</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                    <p><a href="#" class="btn btn-primary">动作</a> <a href="#" class="btn">动作</a></p>
                   </div>
                 </div>
               </li>
@@ -1781,9 +1783,9 @@ Action
                 <div class="thumbnail">
                   <img data-src="holder.js/300x200" alt="">
                   <div class="caption">
-                    <h3>Thumbnail label</h3>
+                    <h3 title="Thumbnail label">缩略项标签</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                    <p><a href="#" class="btn btn-primary">动作</a> <a href="#" class="btn">动作</a></p>
                   </div>
                 </div>
               </li>
@@ -1791,7 +1793,7 @@ Action
                 <div class="thumbnail">
                   <img data-src="holder.js/300x200" alt="">
                   <div class="caption">
-                    <h3>Thumbnail label</h3>
+                    <h3 title="Thumbnail label">缩略项标签</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
                   </div>
@@ -1800,17 +1802,17 @@ Action
             </ul>
           </div>
 
-          <h3>Why use thumbnails</h3>
-          <p>Thumbnails (previously <code>.media-grid</code> up until v1.4) are great for grids of photos or videos, image search results, retail products, portfolios, and much more. They can be links or static content.</p>
+          <h3 title="Why use thumbnails"></h3>
+          <p title="Thumbnails (previously .media-grid up until v1.4) are great for grids of photos or videos, image search results, retail products, portfolios, and much more. They can be links or static content.">缩略项（1.4版之前使用 <code>.media-grid</code> ）适用于栅格化的图片和视频，图片搜索结果，零售产品，文件夹等等。缩略项可以是链接，也可以是静态内容。</p>
 
-          <h3>Simple, flexible markup</h3>
-          <p>Thumbnail markup is simple&mdash;a <code>ul</code> with any number of <code>li</code> elements is all that is required. It's also super flexible, allowing for any type of content with just a bit more markup to wrap your contents.</p>
+          <h3 title="Simple, flexible markup">简洁灵活的代码</h3>
+          <p title="Thumbnail markup is simple&mdash;a ul with any number of li elements is all that is required. It's also super flexible, allowing for any type of content with just a bit more markup to wrap your contents.">缩略项标记既简单又灵活—只须用一个 <code>ul</code> 嵌套多个 <code>li</code> 元素。缩略项内容可以是任何一种HTML内容，只须少许标记。</p>
 
-          <h3>Uses grid column sizes</h3>
-          <p>Lastly, the thumbnails component uses existing grid system classes&mdash;like <code>.span2</code> or <code>.span3</code>&mdash;for control of thumbnail dimensions.</p>
+          <h3 title="Uses grid column sizes">使用栅格列确定大小</h3>
+          <p title="Lastly, the thumbnails component uses existing grid system classes&mdash;like .span2 or .span3—for control of thumbnail dimensions.">新版本中，缩略项组件使用栅格类—诸如 <code>.span2</code> 或 <code>.span3</code> —确定缩略项的尺寸。</p>
 
-          <h2>Markup</h2>
-          <p>As mentioned previously, the required markup for thumbnails is light and straightforward. Here's a look at the default setup <strong>for linked images</strong>:</p>
+          <h2 title="Markup">代码</h2>
+          <p title="As mentioned previously, the required markup for thumbnails is light and straightforward. Here's a look at the default setup for linked images:">正如之前所提到的，缩略项所需的标记是很少的。下面就是一个 <strong>带链接图象</strong> 的默认设置：</p>
 <pre class="prettyprint linenums">
 &lt;ul class="thumbnails"&gt;
   &lt;li class="span4"&gt;
@@ -1821,7 +1823,7 @@ Action
   ...
 &lt;/ul&gt;
 </pre>
-          <p>For custom HTML content in thumbnails, the markup changes slightly. To allow block level content anywhere, we swap the <code>&lt;a&gt;</code> for a <code>&lt;div&gt;</code> like so:</p>
+          <p title="For custom HTML content in thumbnails, the markup changes slightly. To allow block level content anywhere, we swap the <a> for a <div> like so:">缩略项中的HTML内容仅须更改少许标记。将 <code>&lt;a&gt;</code> 变成 <code>&lt;div&gt;</code> 即可定制块状内容，如下：</p>
 <pre class="prettyprint linenums">
 &lt;ul class="thumbnails"&gt;
   &lt;li class="span4"&gt;
@@ -1835,8 +1837,8 @@ Action
 &lt;/ul&gt;
 </pre>
 
-          <h2>More examples</h2>
-          <p>Explore all your options with the various grid classes available to you. You can also mix and match different sizes.</p>
+          <h2 title="More examples">更多例子</h2>
+          <p title="Explore all your options with the various grid classes available to you. You can also mix and match different sizes.">尝试更多栅格类，混用不同的尺寸。</p>
           <ul class="thumbnails">
             <li class="span4">
               <a href="#" class="thumbnail">
@@ -1873,11 +1875,11 @@ Action
     ================================================== -->
     <section id="alerts">
       <div class="page-header">
-        <h1>Alerts <small>Styles for success, warning, and error messages</small></h1>
+        <h1 title="Alerts  Styles for success, warning, and error messages">通知 <small>给成功、警告及错误消息指定样式</small></h1>
       </div>
 
-      <h2>Default alert</h2>
-      <p>Wrap any text and an optional dismiss button in <code>.alert</code> for a basic warning alert message.</p>
+      <h2 title="Default alert">默认样式</h2>
+      <p title="Wrap any text and an optional dismiss button in .alert for a basic warning alert message.">Wrap any text and an optional dismiss button in <code>.alert</code> for a basic warning alert message.</p>
       <div class="bs-docs-example">
         <div class="alert">
           <button type="button" class="close" data-dismiss="alert">&times;</button>

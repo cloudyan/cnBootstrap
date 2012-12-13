@@ -116,7 +116,7 @@
 			</div>
         </div><!-- //搜素筛选 -->
         <div class="span9"> 
-            <!-- Bugs
+    <!-- Overview
     ================================================== -->
             <section id="overview">
                 <div class="page-header">

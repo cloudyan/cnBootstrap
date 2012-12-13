@@ -53,9 +53,10 @@
                     <li <?php if(isset($page) && $page == 'javascript') echo 'class="active"' ?>> <a href="./javascript.php" title="JavaScript">Javascript插件</a> </li>
                     <li <?php if(isset($page) && $page == 'customize') echo 'class="active"' ?>> <a href="./customize.php" title="Customize">定制</a> </li>
                     <li class="divider-vertical"></li>
-                    <li <?php if(isset($page) && $page == 'bugs-fixed') echo 'class="active"' ?>> <a href="./bugs-and-fixed.php">Bugs - Fixed</a> </li>
-                    <li <?php if(isset($page) && $page == 'project') echo 'class="active"' ?>> <a href="./project.php">Project</a> </li>
-                    <li <?php if(isset($page) && $page == 'update') echo 'class="active"' ?>> <a href="./update-log.php">Update log</a> </li>
+                    <li <?php if(isset($page) && $page == 'bugs-fixed') echo 'class="active"' ?>> <a href="./bugs-and-fixed.php" title="Bugs - Fixed">Bugs - Fixed</a> </li>
+					<li <?php if(isset($page) && $page == 'update') echo 'class="active"' ?>> <a href="./guide.php" title="Guide"> 前端进阶</a> </li>
+                    <li <?php if(isset($page) && $page == 'project') echo 'class="active"' ?>> <a href="./project.php" title="Projects"> 项目</a> </li>
+					<li <?php if(isset($page) && $page == 'update') echo 'class="active"' ?>> <a href="./update-log.php" title="Update log"> 更新日志</a> </li>
                 </ul>
             </div>
         </div>
