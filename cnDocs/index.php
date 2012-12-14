@@ -75,7 +75,7 @@
     <hr class="soften">
 
     <h1 title="Built with Bootstrap.">Bootstrap案例</h1>
-    <p class="marketing-byline" title="For even more sites built with Bootstrap, visit the unofficial Tumblr or browse the examples.">更多案例请查看 <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">非官方Tumblr站</a> 或 <a href="./getting-started.html#examples">浏览例子</a>。</p>
+    <p class="marketing-byline" title="For even more sites built with Bootstrap, visit the unofficial Tumblr or browse the examples.">更多案例请查看 <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">非官方Tumblr站</a> 或 <a href="./getting-started.php#examples">浏览例子</a>。</p>
     <div class="row-fluid">
       <ul class="thumbnails example-sites">
         <li class="span3">

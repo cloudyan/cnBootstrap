@@ -8,7 +8,7 @@
 <header class="jumbotron subhead" id="overview">
 <div class="container">
 <h1 title="组件">组件</h1>
-<p class="lead" title="Dozens of reusable components built to provide navigation, alerts, popovers, and more.">内置几十种高可用的组件，以实现导航栏，通知，弹出框等功能。</p>
+<p class="lead" title="Dozens of reusable components built to provide navigation, alerts, popovers, and more.">内置几十种高可用的组件，以实现导航栏、通知和弹出框等功能。</p>
 </div>
 </header>
 
@@ -47,8 +47,8 @@
         <h1>下拉菜单</h1>
       </div>
 
-      <h2>Example</h2>
-      <p>Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="./javascript.html#dropdowns">dropdown javascript plugin</a>.</p>
+      <h2 title="Example">示例</h2>
+      <p title="Toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown javascript plugin.">可切换的下拉菜单。使用动态效果需要 <a href="./javascript.html#dropdowns">javascript下拉菜单插件</a> 的支持。</p>
       <div class="bs-docs-example">
         <div class="dropdown clearfix">
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
@@ -70,8 +70,8 @@
 &lt;/ul&gt;
 </pre>
 
-      <h2>Markup</h2>
-      <p>Looking at just the dropdown menu, here's the required HTML. You need to wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then just create the menu.</p>
+      <h2 title="Markup">代码</h2>
+      <p title="Looking at just the dropdown menu, here's the required HTML. You need to wrap the dropdown's trigger and the dropdown menu within .dropdown, or another element that declares position: relative;. Then just create the menu.">下拉菜单的代码需要在下拉项之外嵌套 <code>.dropdown</code>，或者针对下拉项使用相对定位。然后创建菜单即可。</p>
 
 <pre class="prettyprint linenums">
 &lt;div class="dropdown"&gt;
@@ -86,19 +86,19 @@
 &lt;/div&gt;
 </pre>
 
-      <h2>Options</h2>
-      <p>Align menus to the right and add include additional levels of dropdowns.</p>
+      <h2 title="Options">选项</h2>
+      <p title="Align menus to the right and add include additional levels of dropdowns.">下拉菜单支持右对齐以及下级菜单。</p>
 
-      <h3>Aligning the menus</h3>
-      <p>Add <code>.pull-right</code> to a <code>.dropdown-menu</code> to right align the dropdown menu.</p>
+      <h3 title="Aligning the menus">对齐方式</h3>
+      <p title="Add .pull-right to a .dropdown-menu to right align the dropdown menu.">添加 <code>.pull-right</code> 到 <code>.dropdown-menu</code> 上可实现下拉菜单的右对齐。</p>
 <pre class="prettyprint linenums">
 &lt;ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel"&gt;
 ...
 &lt;/ul&gt;
 </pre>
 
-      <h3>Sub menus on dropdowns</h3>
-      <p>Add an extra level of dropdown menus, appearing on hover like those of OS X, with some simple markup additions. Add <code>.dropdown-submenu</code> to any <code>li</code> in an existing dropdown menu for automatic styling.</p>
+      <h3 title="Sub menus on dropdowns">二级下拉菜单</h3>
+      <p title="Add an extra level of dropdown menus, appearing on hover like those of OS X, with some simple markup additions. Add .dropdown-submenu to any li in an existing dropdown menu for automatic styling.">实现额外的水平下拉菜单，只需添加少量的代码，并且在实现的li位置添加 <code>.dropdown-submenu</code> 即可。</p>
       <div class="bs-docs-example">
         <div class="dropdown clearfix">
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
@@ -2366,7 +2366,7 @@ class="muted"
 </pre>
 
       <h4>.clearfix</h4>
-      <p title="Clear the float on any element">清除 <code>float</code> </p>
+      <p title="Clear the float on any element">清除 <code>float</code> 浮动</p>
 <pre class="prettyprint linenums">
 class="clearfix"
 </pre>
