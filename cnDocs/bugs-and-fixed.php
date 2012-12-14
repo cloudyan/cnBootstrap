@@ -16,27 +16,26 @@
     <!-- Docs nav
 ================================================== -->
     <div class="row">
-    	
         <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav" style="display:none">
+            <ul class="nav nav-list bs-docs-sidenav">
                 <li><a href="#overview"><i class="icon-chevron-right"></i> 概述</a></li>
                 <li><a href="#tactics"><i class="icon-chevron-right"></i> 策略</a></li>
-                <li class="dropdown-submenu"><a href="#css-hack"><i class="icon-chevron-right"></i> CSS Hack</a>
-                    <ul class="dropdown-menu">
+                <li><!-- class="dropdown-submenu" --><a href="#css-hack"><i class="icon-chevron-right"></i> CSS Hack</a>
+                    <!--<ul class="dropdown-menu">
                         <li><a href="#condition-hack">条件Hack</a></li>
                         <li><a href="#property-hack">属性级Hack</a></li>
                         <li><a href="#selector-hack">选择符级Hack</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
-                <li class="dropdown-submenu"><a href="#ie6png"><i class="icon-chevron-right"></i> 图片</a>
-                    <ul class="dropdown-menu">
+                <li><a href="#ie6png"><i class="icon-chevron-right"></i> 图片</a>
+                    <!--<ul class="dropdown-menu">
                         <li><a href="#ie6png">PNG半透明(IE6)</a></li>
                         <li><a href="#corner-radius">圆角</a></li>
                         <li><a href="#background-flicker">背景闪烁问题</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
-                <li class="dropdown-submenu"><a href="#layout"><i class="icon-chevron-right"></i> 布局</a>
-                    <ul class="dropdown-menu">
+                <li><a href="#layout"><i class="icon-chevron-right"></i> 布局</a>
+                    <!--<ul class="dropdown-menu">
                         <li><a href="#">理解 hasLayout</a></li>
                         <li><a href="#">IE6 盒模型</a></li>
                         <li><a href="#">最小/大高度</a></li>
@@ -50,29 +49,29 @@
                         <li><a href="#">3像素间距bug</a></li>
                         <li><a href="#">IE下z-index的bug</a></li>
                         <li><a href="#">Overflow Bug</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
-                <li class="dropdown-submenu"><a href="#navbar"><i class="icon-chevron-right"></i> 列表</a>
-                    <ul class="dropdown-menu">
+                <li><a href="#navbar"><i class="icon-chevron-right"></i> 列表</a>
+                    <!--<ul class="dropdown-menu">
                         <li><a href="#">横向列表宽度bug</a></li>
                         <li><a href="#">列表阶梯bug</a></li>
                         <li><a href="#">列表间隙bug</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
-                <li class="dropdown-submenu"><a href="#breadcrumbs"><i class="icon-chevron-right"></i> 行为</a>
-                    <ul class="dropdown-menu">
+                <li><a href="#breadcrumbs"><i class="icon-chevron-right"></i> 行为</a>
+                    <!--<ul class="dropdown-menu">
                         <li><a href="#">IE6中的:hover</a></li>
                         <li><a href="#">IE6调整窗口大小的bug</a></li>
                         <li><a href="#">去除各浏览器超链接的虚线</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
                 <li><a href="#pagination"><i class="icon-chevron-right"></i> JavaScript</a></li>
-                <li class="dropdown-submenu"><a href="#labels-badges"><i class="icon-chevron-right"></i> 其他</a>
-                    <ul class="dropdown-menu">
+                <li><a href="#labels-badges"><i class="icon-chevron-right"></i> 其他</a>
+                    <!--<ul class="dropdown-menu">
                         <li><a href="#">文本重复bug</a></li>
                         <li><a href="#">收藏夹图标</a></li>
                         <li><a href="#">IE6中GZip文件Bug</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
                 <li><a href="#typography"><i class="icon-chevron-right"></i> 相关资源</a></li>
                 <li><a href="#htmlchar"><i class="icon-chevron-right"></i> HTML特殊符号对照表</a></li>
@@ -81,7 +80,7 @@
 				 实现功能类似淘宝的筛选
 			-->
 			<!-- 搜素筛选\\ -->
-			<div class="search-filter bs-docs-sidenav">
+			<div class="search-filter bs-docs-sidenav" style="margin-top:450px;">
 				<div class="filter-info clearfix"><span class="result-info">共找到<i id="filter-num">81</i>条结果。</span>
 					<dl id="your-choices" class="your-choices">
 					</dl>
@@ -124,50 +123,14 @@
                 </div>
                 <p>一直想系统的整理下关于浏览器兼容性的各种Bug及解决方法，但一直都很忙没有完成，没有成片的时间，于是我决定每天整理一点，毕竟网上也不少整理的了，虽然不全，但是参考着再补充我和朋友们所遇到的，那么一份齐全的浏览器兼容性bug列表及解决方案也就指日可待了！</p>
                 <p>整理Bugs方案，自然首先要处理更底层的东西，考虑到不同的结构也可能产生影响，所以优先研究css reset以及html结构基础方案，这之后在解决Bugs问题就会减少N多种的情形，如此就能保证更好更统一的解决问题！</p>
-                <p>关于浏览器的Bug解决方案(包含hack技术)，下面列举了28个普通Bug，4个布局Bug，6个可以绕开的Bug:</p>
-                <div class="bugs-list">
-                    <table class="table table-striped table-bordered table-hover table-condensed">
-    <colgroup>
-        <col class="bug-type">
-        <col class="bug-info">
-        <col class="bug-browser">
-        <col class="bug-fixed">
-        <col class="bug-demo">
-    </colgroup>
-    <thead>
-        <tr>
-        	<th>bugs</th>
-            <th>描述</th>
-            <th>涉及版本</th>
-            <th>解决方案</th>
-            <th>bugs-fixed</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>双边距问题</td>
-            <td>当块级元素浮动时，IE6会错误的把浮动方向的margin值双倍计算。</td>
-            <td>（bug重现）IE6（解决方法）</td>
-            <td><a href="http://www.positioniseverything.net/explorer/floatIndent.html" rel="nofollow" target="_blank">Steve Clason</a>给出了解决方法：给元素添加 <code>display:inline;</code> </td>
-            <td>bug重现<br>
-解决方法</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-    
-    </table>
-                </div></section>
+                <p>关于浏览器的Bug解决方案(包含hack技术)，下面列举了一般常见的样式Bug，布局Bug，以及需要设计时需要规避的Bug(目前81个)</p>
+				</section>
 
                 <!-- 问题列表 -->
 
                 <ol class="bugs-list">
                     <li class="bugs-item" data-key="IE6 IE8">
-                        <h3 class="bug-title">Bug简述</h3>
+                        <h3 class="bug-title">Bug简述——列表示例</h3>
                         <div class="question"><span class="link"><a target="_blank" title="Bug重现" href="">Bug</a></span> <i class="browser" title="涉及浏览器">涉及浏览器</i>
                             <p>Bug描述</p>
                         </div>
@@ -794,7 +757,7 @@ cursor的属性值可以是一个序列
                             <p>input和textarea或许会继承父元素的水平的margin，具体请看 http://haslayout.net/css/Form-Control-Double-Margin-Bug </p>
                         </div>
                         <div class="answer"><span class="link"><a target="_blank" title="解决办法" href="">Fixed</a></span>
-                            <p></p>
+                            <p>解决方案</p>
                         </div>
                     </li>
 					<li class="bugs-item" data-key="IE6 IE7 负margin">
