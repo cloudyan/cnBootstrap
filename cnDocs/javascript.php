@@ -113,23 +113,23 @@ $('#myModal').on('show', function (e) {
         ================================================== -->
         <section id="modals">
           <div class="page-header">
-            <h1>Modals <small>bootstrap-modal.js</small></h1>
+            <h1 title="Modals  bootstrap-modal.js">对话框 <small>bootstrap-modal.js</small></h1>
           </div>
 
 
-          <h2>Examples</h2>
-          <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+          <h2 title="Examples">示例</h2>
+          <p title="Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.">类似传统的javascript模态对话框，但更圆滑更灵活，带有最基本的功能和智能默认项。</p>
 
-          <h3>Static example</h3>
-          <p>A rendered modal with header, body, and set of actions in the footer.</p>
+          <h3 title="Static example">静态的例子</h3>
+          <p title="A rendered modal with header, body, and set of actions in the footer.">下面就是一个静态渲染的模态对话框。</p>
           <div class="bs-docs-example" style="background-color: #f5f5f5;">
             <div class="modal" style="position: relative; top: auto; left: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3>Modal header</h3>
+                <h3 title="Modal header">对话框标题</h3>
               </div>
               <div class="modal-body">
-                <p>One fine body&hellip;</p>
+                <p title="One fine body&hellip;">小寒，你好！</p>
               </div>
               <div class="modal-footer">
                 <a href="#" class="btn">Close</a>
@@ -153,8 +153,8 @@ $('#myModal').on('show', function (e) {
 &lt;/div&gt;
 </pre>
 
-          <h3>Live demo</h3>
-          <p>Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
+          <h3 title="Live demo">动态的例子</h3>
+          <p title="Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.">点击下的按钮会通过javascript触发一个模态对话框。对话框从页面顶端滑下的同时逐渐呈现。</p>
           <!-- sample modal content -->
           <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
@@ -188,7 +188,7 @@ $('#myModal').on('show', function (e) {
             </div>
           </div>
           <div class="bs-docs-example" style="padding-bottom: 24px;">
-            <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+            <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large" title="Launch demo modal">点击演示</a>
           </div>
 <pre class="prettyprint linenums">
 &lt!-- Button to trigger modal --&gt;
@@ -210,9 +210,9 @@ $('#myModal').on('show', function (e) {
 &lt;/div&gt;
 </pre>
                 <hr class="bs-docs-separator">
-                <h2>Usage</h2>
-                <h3>Via data attributes</h3>
-                <p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
+                <h2 title="Usage">用法</h2>
+                <h3 title="Via data attributes"></h3>
+                <p title='Activate a modal without writing JavaScript. Set data-toggle="modal" on a controller element, like a button, along with a data-target="#foo" or href="#foo" to target a specific modal to toggle.'>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
                 <p>你可以简单的利用javascript插件实现一个模态窗口，仅需要在HTML标签中配置 <code>data-toggle="modal"</code> 作为触发模态窗口的控制器，同时指定 <code>data-target="#foo"</code> 或者 <code>href="#foo"</code> 来关联要弹出的元素的ID，这些内容将显示在模态对话框中。</p>
                 <p>同时，配置模态窗口的配置项，可以在控制器或者模态窗口的标签上配置一些数据。</p>
                 <pre class="prettyprint linenums">&lt;button type="button" data-toggle="modal" data-target="#myModal"&gt;Launch modal&lt;/button&gt;</pre>

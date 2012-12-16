@@ -8,11 +8,11 @@
     <h1>cnBootstrap</h1>
     <p>Bootstrap中文版——时尚、直观、强大的前端框架<br>使Web开发更快，更容易。</p>
     <p>
-      <a href="https://github.com/xiaohan1219/cnBootstroap" class="btn btn-primary btn-large" title="Download Bootstrap">下载 cnBootstrap<small>(v1.0)</small></a>
+      <a href="https://github.com/xiaohan1219/cnBootstrap" class="btn btn-primary btn-large" title="Download Bootstrap">下载 cnBootstrap<small>(v1.0)</small></a>
     </p>
     <ul class="masthead-links">
       <li>
-        <a href="https://github.com/xiaohan1219/cnBootstroap" title="Github Progect">访问 GitHub 项目</a>
+        <a href="https://github.com/xiaohan1219/cnBootstrap" title="Github Progect">访问 GitHub 项目</a>
       </li>
       <li>
         <a href="./getting-started.php#examples" title="Examples">例子</a>
@@ -39,10 +39,10 @@
         <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=xiaohan1219&repo=cnBootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
       </li>
       <li class="follow-btn">
-        <a href="https://github.com/xiaohan1219/cnBootstroap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @cnBootstrap</a>
+        <a href="https://github.com/xiaohan1219/cnBootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @cnBootstrap</a>
       </li>
       <li class="tweet-btn">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://github.com/xiaohan1219/cnBootstroap" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://github.com/xiaohan1219/cnBootstrap" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
       </li>
     </ul>
   </div>
