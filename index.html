@@ -1,0 +1,152 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>cnBootstrap</title>
+  <meta name="description" content="Bootstrap中文版——时尚、直观、强大的前端框架 使Web开发更快，更容易。">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">cnBootstrap</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Bootstrap中文版——时尚、直观、强大的前端框架 使Web开发更快，更容易。</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/xiaohan1219/cnBootstroap/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/xiaohan1219/cnBootstroap/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/xiaohan1219/cnBootstroap" class="code">View cnBootstrap on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>cnBootstrap</h1>
+
+<p>Bootstrap-中文版——时尚、直观、强大的前端框架使Web开发更快，更容易。</p>
+
+<p>本项目使用Git管理，如果您对Git的使用不甚熟悉，可以参考<a href="https://github.com/xiaohan1219/useGit">useGit使用指南</a>项目，包含详细的Git教程讲解以及Git命令。</p>
+
+<h1>cnBootstrap - 无侵入的Twitter Bootstrap定制版</h1>
+
+<p>版权采用<a href="http://creativecommons.org/licenses/by-nc/2.5/cn/">『 知识共享署名-非商业性使用 2.5 许可协议』</a>进行许可。</p>
+
+<p><a href="https://github.com/Ocode/bootstrap">cnBootstrap</a>是一个基于<a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>（下简称TB）的修改定制版，主要解决了TB的侵入性问题，能使TB更好的与其他前端项目并存以及更好的适应国人需求兼容IE6+等。简言之，cnBootstrap提供TB的所有特性，在其基础上扩展设计更好的支持中文版面了，而这并不会修改你的CSS默认样式。</p>
+
+<p>cnBootstrap将作为<a href="https://github.com/Ocode/bootstrap">cnEngine</a>项目的前端核心框架开源发布，协议采用<a href="http://framework.zend.com/license/new-bsd">New BSD License</a>。</p>
+
+<p>目前cnBootstrap基于Twitter Bootstrap v 2.2.1修改。</p>
+
+<h2>cnBootstrap与Twitter Bootstrap的不同</h2>
+
+<p>技术上来讲，cnBootstrap的实现原理就是在TB有侵入性的代码上加入了一些CSS Class命名空间，所以使用时会与TB有细微的差别，并更好的支持中文以及更广的浏览器兼容性问题处理：</p>
+
+<h3>文本排版</h3>
+
+<p>对于需要文本排版的元素，需要增加一个class .typo:</p>
+
+<p>在Twitter Bootstrap中:</p>
+
+<p><code>&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;</code></p>
+
+<p>在cnBootstrap中:</p>
+
+<p><code>&lt;div class="typo"&gt;&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;</code></p>
+
+<h3>表单</h3>
+
+<p>对于希望采用TB样式的表单，增加一个class .form</p>
+
+<p>在Twitter Bootstrap中:</p>
+
+<p><code>&lt;form&gt;&lt;fieldset&gt;
+...
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></p>
+
+<p>在cBootstrap中:</p>
+
+<p><code>&lt;form class="form"&gt;&lt;fieldset&gt;
+...
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></p>
+
+<h3>移除TB font-face图标</h3>
+
+<p>TB的图标略显简陋，索性完全移除。如果想要使用图标，推荐更全更精致的<a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>，可以对应绝大多数项目需求。</p>
+
+<h2>新功能</h2>
+
+<h3>中文排版</h3>
+
+<p>通过引入<a href="https://github.com/sofish/typo.css">typo.css</a>项目，提供更好的中文排版支持。</p>
+
+<p>对于需要采用中文排版的元素，加上class .typocn</p>
+
+<h3>高级别CSS Reset</h3>
+
+<p>TB的CSS Reset采用的是<a href="http://necolas.github.com/normalize.css/">normalize.css</a>，这种Reset以修复浏览器缺陷为主要目的，在实际项目中往往统一元素的初始状态，所以CSS Reset部分采用了更“高”的Reset，包括了元素样式级别的处理。</p>
+
+<p>整个Reset部分可以选择加载，所以如果你的项目中已经有了Reset，只需引入cnBootstrap-core即可。</p>
+
+<h3>新的LESS文件结构与函数</h3>
+
+<p>将TB的less源文件按功能分类存放，方便查找。同时加入了一些TB中没有包含的便捷LESS函数。</p>
+
+<h3>百分比Grid布局</h3>
+
+<p>作为TB Grid布局的一个补充，引入了一个非常小巧的<a href="http://cssglobe.com/easy-percentage-grid-system-with-html5/">百分比Grid布局</a></p>
+
+<h3>三栏式布局</h3>
+
+<h2>如何使用</h2>
+
+<p>在页面中根据需求引入对应的CSS即可</p>
+
+<ul>
+<li>cnBootstrap-core.css cnBootstrap的核心CSS，不包含Reset，不包含Responsive Layout，无任何侵入性</li>
+<li>cnBootstrap-fixed.css 在cnBootstrap-core的基础上增加了Reset</li>
+<li>cnBootstrap-full.css 在cnBootstrap-fixed.css的基础上增加了Responsive Layout</li>
+</ul><p>更多情况可以直接采用LESS编写，按需求引入LESS源文件即可。</p>
+
+<h2>意见反馈</h2>
+
+<p>请在<a href="http://www.tcrearor.info/cnBootstrap/">Blog</a>留言或在<a href="https://github.com/Ocode/bootstrap">项目页</a>提交BUG</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/xiaohan1219" class="avatar"><img src="https://secure.gravatar.com/avatar/43b86f9c6b6888e5d0418259bdddd40a?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/xiaohan1219">xiaohan1219</a> maintains <a href="https://github.com/xiaohan1219/cnBootstroap">cnBootstrap</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/xiaohan1219/cnBootstroap/tarball/master" class="tar">tar</a><a href="https://github.com/xiaohan1219/cnBootstroap/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
