@@ -1,4 +1,4 @@
-cnBootstroap
+cnBootstrap
 ============
 
 Bootstrap-中文版——时尚、直观、强大的前端框架使Web开发更快，更容易。
