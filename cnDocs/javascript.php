@@ -96,13 +96,13 @@ $('#myModal').on('show', function (e) {
           </div>
           <h3 title="About transitions">关于过渡效果</h3>
           <p title="For simple transition effects, include bootstrap-transition.js once alongside the other JS files. If you're using the compiled (or minified) bootstrap.js, there is no need to include this&mdash;it's already there.">对于简单的转场效果，包含 bootstrap-transition.js 文件即可滑入幻灯片或淡出消息框。需要动画(animation)插件支持</p>
-          <h3 title="">Use cases</h3>
-          <p title="">A few examples of the transition plugin:</p>
+          <h3 title="Use cases">用例</h3>
+          <p title="A few examples of the transition plugin:">使用过渡插件的几个例子：</p>
           <ul>
-            <li>Sliding or fading in modals</li>
-            <li>Fading out tabs</li>
-            <li>Fading out alerts</li>
-            <li>Sliding carousel panes</li>
+            <li title="Sliding or fading in modals">模态窗口的淡入淡出</li>
+            <li title="Fading out tabs">tabs标签的淡入</li>
+            <li title="Fading out alerts">通知的淡出</li>
+            <li title="Sliding carousel panes">轮播插件的窗格化</li>
           </ul>
 
         </section>
@@ -132,8 +132,8 @@ $('#myModal').on('show', function (e) {
                 <p title="One fine body&hellip;">小寒，你好！</p>
               </div>
               <div class="modal-footer">
-                <a href="#" class="btn">Close</a>
-                <a href="#" class="btn btn-primary">Save changes</a>
+                <a href="#" class="btn" title="Close">关闭</a>
+                <a href="#" class="btn btn-primary" title="Save changes">保存更改</a>
               </div>
             </div>
           </div>
@@ -141,14 +141,14 @@ $('#myModal').on('show', function (e) {
 &lt;div class="modal hide fade"&gt;
   &lt;div class="modal-header"&gt;
     &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&amp;times;&lt;/button&gt;
-    &lt;h3&gt;Modal header&lt;/h3&gt;
+    &lt;h3&gt;对话框标题&lt;/h3&gt;
   &lt;/div&gt;
   &lt;div class="modal-body"&gt;
-    &lt;p&gt;One fine body&hellip;&lt;/p&gt;
+    &lt;p&gt;小寒，你好！&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="modal-footer"&gt;
-    &lt;a href="#" class="btn"&gt;Close&lt;/a&gt;
-    &lt;a href="#" class="btn btn-primary"&gt;Save changes&lt;/a&gt;
+    &lt;a href="#" class="btn"&gt;关闭&lt;/a&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;保存更改&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
@@ -159,22 +159,24 @@ $('#myModal').on('show', function (e) {
           <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 id="myModalLabel">Modal Heading</h3>
+              <h3 id="myModalLabel" title="Modal Heading">对话框标题</h3>
             </div>
             <div class="modal-body">
-              <h4>Text in a modal</h4>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+              <h4 title="Text in a modal">老祖宗的老话</h4>
+              <p>夏不睡石，秋不睡板。春不露脐，冬不蒙头。白天多动，夜里少梦。<br>
+			  睡前洗脚，胜吃补药。晚上开窗，一觉都香。贪凉失盖，不病才怪。<br>
+			  早睡早起，怡神爽气，贪房贪睡，添病减岁。夜里磨牙，肚里虫爬。</p>
 
-              <h4>Popover in a modal</h4>
+              <h4 title="Popover in a modal"></h4>
               <p>This <a href="#" role="button" class="btn popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
 
-              <h4>Tooltips in a modal</h4>
+              <h4 title="Tooltips in a modal">对话框中的工具提示</h4>
               <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
 
               <hr>
 
-              <h4>Overflowing text to show optional scrollbar</h4>
-              <p>We set a fixed <code>max-height</code> on the <code>.modal-body</code>. Watch it overflow with all this extra lorem ipsum text we've included.</p>
+              <h4 title="Overflowing text to show optional scrollbar"></h4>
+              <p title="We set a fixed max-height on the .modal-body. Watch it overflow with all this extra lorem ipsum text we've included.">我们对 <code>.modal-body</code> 样式修正了 <code>max-height</code> 。对于超过高度的内容就会显示滚动条。</p>
               <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
               <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -192,23 +194,24 @@ $('#myModal').on('show', function (e) {
           </div>
 <pre class="prettyprint linenums">
 &lt!-- Button to trigger modal --&gt;
-&lt;a href="#myModal" role="button" class="btn" data-toggle="modal"&gt;Launch demo modal&lt;/a&gt;
+&lt;a href="#myModal" role="button" class="btn" data-toggle="modal"&gt;点击演示&lt;/a&gt;
 
 &lt!-- Modal --&gt;
 &lt;div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
   &lt;div class="modal-header"&gt;
     &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
-    &lt;h3 id="myModalLabel"&gt;Modal header&lt;/h3&gt;
+    &lt;h3 id="myModalLabel"&gt;对话框标题&lt;/h3&gt;
   &lt;/div&gt;
   &lt;div class="modal-body"&gt;
-    &lt;p&gt;One fine body&hellip;&lt;/p&gt;
+    &lt;p&gt;小寒，你好！&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="modal-footer"&gt;
-    &lt;button class="btn" data-dismiss="modal" aria-hidden="true"&gt;Close&lt;/button&gt;
-    &lt;button class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+    &lt;button class="btn" data-dismiss="modal" aria-hidden="true"&gt;关闭&lt;/button&gt;
+    &lt;button class="btn btn-primary"&gt;保存更改&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
+				<div class="alert alert-info"><strong>强调！</strong> 实现对话框淡入淡出的动画效果，必须引用 bootstrap-transition.js，再对 <code>.modal</code> 元素应用 <code>.fade</code>。</div>
                 <hr class="bs-docs-separator">
                 <h2 title="Usage">用法</h2>
                 <h3 title="Via data attributes"></h3>
@@ -219,7 +222,7 @@ $('#myModal').on('show', function (e) {
                 <p title="Call a modal with id myModal with a single line of JavaScript:">使用JavaScript调用ID为 <code>myModal</code> 的模态对话框：</p>
                 <pre class="prettyprint linenums">$('#myModal').modal(options)</pre>
                 <h3 title="Options">选项</h3>
-                <p title='Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-backdrop="".'>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
+                <p title='Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-backdrop="".'>选项可以通过data属性或JavaScript设置。对于data属性，只需在选项名称后附加 <code>data-</code>，作为 <code>data-backdrop=""</code>。</p>
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
@@ -274,7 +277,7 @@ $('#myModal').modal({
           <h4>.modal('hide')</h4>
           <p title="Manually hides a modal.">关闭对话框</p>
           <pre class="prettyprint linenums">$('#myModal').modal('hide')</pre>
-          <h3>Events</h3>
+          <h3 title="Events">事件</h3>
           <p title="Bootstrap's modal class exposes a few events for hooking into modal functionality.">Bootstrap的对话框类扩展了一组事件，可以介入对话框的某些功能实现。</p>
           <table class="table table-bordered table-striped">
             <thead>
@@ -503,10 +506,10 @@ $('#myModal').on('hidden', function () {
                 <div class="container" style="width: auto;">
                   <a class="brand" href="#" title="Project Name">项目名称</a>
                   <ul class="nav">
-                    <li><a href="#fat">@fat</a></li>
-                    <li><a href="#mdo">@mdo</a></li>
+                    <li><a href="#yanguo">杨过</a></li>
+                    <li><a href="#zhangwuji">张无忌</a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">情之为何 <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="#one">one</a></li>
                         <li><a href="#two">two</a></li>
@@ -519,18 +522,37 @@ $('#myModal').on('hidden', function () {
               </div>
             </div>
             <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
-              <h4 id="fat">@fat</h4>
-              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
-              <h4 id="mdo">@mdo</h4>
-              <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
-              <h4 id="one">one</h4>
-              <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
-              <h4 id="two">two</h4>
-              <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
-              <h4 id="three">three</h4>
-              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
-              <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
-              </p>
+				<h4 id="yanguo">杨过</h4>
+				<p>杨过和小龙女最终做了神仙眷侣<br>
+			    也许他知道，也许他不知道<br>
+				也许他装作不知道<br>
+				程英和陆无双为他负尽青春抛尽韶华<br>
+				郭襄为他天涯思君念念不忘<br>
+				也许他记得，也许他不记得<br>
+				曾经有一个叫公孙绿萼的姑娘把一生停驻在他一刹那的目光里，<br>
+				而他所能给的，也只能是一曲清箫、三枚金针或者某一刻的眷顾而已。。。。。。</p>
+				<h4 id="zhangwuji">张无忌</h4>
+				<p>张无忌放弃了江湖与江山<br>
+				他把幸福给了赵敏<br>
+				却把牵挂给了小昭<br>
+				把漂泊给了蛛儿<br>
+				把憾恨给了芷若……</p>
+				<h4 id="one">one</h4>
+				<p>杨过与小龙女终成眷属，逍遥于江湖之外，他可记得，还有一个痴心的女子对他天涯思君念念不忘，抛尽韶华，守候一生。他是否会想起，多年前那张天真无邪的面容，是否会想起，初遇时她莞尔一笑，道，我姓郭，单名一个襄字。</p>
+				<p>眷恋的人，给不了你承诺，于是你终于明白，幸福是一件多么可遇不可求的事情。可是为何仍要飞蛾扑火，执着一生？也许就如李莫愁时常低吟的那样：问世间情为何物，直教人生死相许。这世界上最复杂的东西，一个人又如何能想的透彻？</p>
+				<h4 id="two">two</h4>
+				<p>倚天的结局处，周芷若曾这样问过张无忌，在小昭、蛛儿、赵敏和她四个人中，他真正爱的人是哪一个。张无忌一时感慨万千，想起自己也曾扪心自问过，那时只觉得，若能和四位姑娘一起长相厮守，岂不逍遥快活？然而世事变迁,小昭远赴波斯做了教主，表妹蛛儿逝世，芷若误入歧途，只有赵姑娘一直陪在自己身边。虽然期间曾产生过误会，他对赵敏是又爱又恨，但心里从未放下过对她的牵念。然而，芷若的介入总让他内心摇摆不定，始终无法正视自己的情感。直到这一刻，面对赵敏的不辞而别，他终于发现，自己对那鬼灵精怪的小妖女竟这般难以割舍，若是今生再见不了她，自己也决计活不下去了。他终于找到心底的那个答案，对芷若，他是一向敬重，对蛛儿，他是心生感激，对小昭，他是意存怜惜，但对赵敏，却是刻骨铭心的相爱。</p>
+				<p>人有时候，总在失去时才后知后觉，一些人，一些事，以为只是生命中一抹浮云，以为可以从此相忘于江湖，却在别离之际发现，那些过往原来早已扎根在心底，拿不掉，抹不去。</p>
+				<h4 id="three">three</h4>
+				<p>有一个人，教会你如何去爱了，但是，他却不爱你了。<br>
+				有一个人，你一直在等他，他却忘记了你。<br>
+				有一个人，他想离开了，你却没有丝毫挽留，因为你渐渐明白，挽留是没有用的，你能给的，只有自由。</p>
+				<p>你以为只要走的很潇洒，就不会有太多的痛苦，就不会有留恋，可是，为什么在喧闹的人群中会突然沉默下来，为什么听歌听到一半会突然哽咽不止。你不知道自己在期待什么，不知道自己在坚持什么，脑海里挥之不去的，都是过往的倒影。</p>
+				<p>爱你的人，对你的要求很少，可以在很想你的时候看看你，可以在寂寞的时候和你说句话，这就是她所有的幸福。</p>
+				<p>如果因为执念而作出仓促的决定，可以离开，但请不要走远，不要急着为彼此定性，不要急着分清界限， 回头看看，她是否还在。</p>
+				<p>善待爱你的那个人，那个不希望你困扰，所以强颜欢笑、骗你说释怀了的人，那个默默关注你，从不曾离开的人，如果你还彷徨着，如果你还抑制不住的想着她，如果你还在意她的一颦一簇，不妨给她一个可能，也给自己一个可能。</p>
+				<p>在爱情里，如果两人都很被动，一段美好的姻缘不免在时间的摧残下消磨殆尽，并不是两个人不适合，而是双方都习惯于等待，等待对方先主动，没有耐心的人于是选择离开，最后徒留遗憾。</p>
+				<p>所以，爱是有来生的，就像不灭的火种，只需加点干柴，它依旧能发出夺目的火光。</p>
             </div>
           </div>
 
@@ -541,21 +563,20 @@ $('#myModal').on('hidden', function () {
           <h2 title="Usage">用法</h2>
 
           <h3 title="Via data attributes">使用data属性</h3>
-          <p title="">To easily add scrollspy behavior to your topbar navigation, just add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the body) and <code>data-target=".navbar"</code> to select which nav to use. You'll want to use scrollspy with a <code>.nav</code> component.</p>
+          <p title='To easily add scrollspy behavior to your topbar navigation, just add data-spy="scroll" to the element you want to spy on (most typically this would be the body) and data-target=".navbar" to select which nav to use. You'll want to use scrollspy with a .nav component.'>在想侦测的元素(往往是body)上添加 <code>data-spy="scroll"</code> 就很容易在置顶导航条上实现滚动侦测。一般你会在 <code>.nav</code> 使用滚动侦听插件。</p>
           <pre class="prettyprint linenums">&lt;body data-spy="scroll" data-target=".navbar"&gt;...&lt;/body&gt;</pre>
 
           <h3 title="Via JavaScript">使用JavaScript</h3>
-          <p title="">Call the scrollspy via JavaScript:</p>
+          <p title="Call the scrollspy via JavaScript:">通过javascript调用滚动侦测：</p>
           <pre class="prettyprint linenums">$('#navbar').scrollspy()</pre>
 
-          <div class="alert alert-info" title="">
-            <strong>Heads up!</strong>
-            Navbar links must have resolvable id targets. For example, a <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> must correspond to something in the dom like <code>&lt;div id="home"&gt;&lt;/div&gt;</code>.
+          <div class="alert alert-info" title='Heads up!  Navbar links must have resolvable id targets. For example, a &lt;a href="#home"&gt;home&lt;/a&gt; must correspond to something in the dom like &lt;div id="home"&gt;&lt;/div&gt;.'>
+		  <strong>强调!</strong> 导航条链接必须指向一个可解析的元素id。举个例子，导航中的 <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> 必须对应着dom中一个真实存在的id='home'元素，比如 <code>&lt;div id="home"&gt;&lt;/div&gt;</code> 。
           </div>
 
           <h3 title="Mothods">方法</h3>
           <h4>.scrollspy('refresh')</h4>
-          <p title="">When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:</p>
+          <p title="When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:">当使用滚动侦听且结合DOM节点的添加删除操作时，需要调用refresh方法，如下：</p>
 <pre class="prettyprint linenums">
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
@@ -563,27 +584,27 @@ $('[data-spy="scroll"]').each(function () {
 </pre>
 
           <h3 title="Options">选项</h3>
-          <p title=''>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset=""</code>.</p>
+		  <p title='Options can be passed via data attributes or JavaScript. For data attributes, append the option name to data-, as in data-offset="".'>选项可以通过data属性或JavaScript设置。对于data属性，只需在选项名称后附加 <code>data-</code>，作为 <code>data-offset=""</code>。</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 100px;">Name</th>
-               <th style="width: 100px;">type</th>
-               <th style="width: 50px;">default</th>
+               <th style="width: 100px;" title="Name">名称</th>
+               <th style="width: 100px;" title="type">类型</th>
+               <th style="width: 50px;" title="default">默认值</th>
                <th title="Description">描述</th>
              </tr>
             </thead>
             <tbody>
              <tr>
                <td>offset</td>
-               <td>number</td>
+               <td>数字</td>
                <td>10</td>
-               <td>Pixels to offset from top when calculating position of scroll.</td>
+               <td title="Pixels to offset from top when calculating position of scroll.">计算滚动位置时相对顶端的偏移量</td>
              </tr>
             </tbody>
           </table>
 
-          <h3>Events</h3>
+          <h3 title="Events">事件</h3>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
@@ -594,7 +615,7 @@ $('[data-spy="scroll"]').each(function () {
             <tbody>
              <tr>
                <td>activate</td>
-               <td>This event fires whenever a new item becomes activated by the scrollspy.</td>
+               <td title="This event fires whenever a new item becomes activated by the scrollspy.">此事件将触发一个新的项目激活滚动侦听功能。</td>
             </tr>
             </tbody>
           </table>
@@ -611,31 +632,50 @@ $('[data-spy="scroll"]').each(function () {
 
 
           <h2 title="Example tabs">标签页示例</h2>
-          <p title="">Add quick, dynamic tab functionality to transiton through panes of local content, even via dropdown menus.</p>
+          <p title="Add quick, dynamic tab functionality to transiton through panes of local content, even via dropdown menus.">该插件通过点击标签页和胶囊链接切换显示不同容器中的内容。</p>
           <div class="bs-docs-example">
             <ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li class="active"><a href="#home" data-toggle="tab">周星驰</a></li>
+              <li><a href="#profile" data-toggle="tab">至尊宝</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">爱情 <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
-                  <li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+                  <li><a href="#dropdown1" data-toggle="tab">感情</a></li>
+                  <li><a href="#dropdown2" data-toggle="tab">幸福</a></li>
                 </ul>
               </li>
             </ul>
             <div id="myTabContent" class="tab-content">
-              <div class="tab-pane fade in active" id="home">
-                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-              </div>
-              <div class="tab-pane fade" id="profile">
-                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-              </div>
-              <div class="tab-pane fade" id="dropdown1">
-                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
-              </div>
-              <div class="tab-pane fade" id="dropdown2">
-                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+				<div class="tab-pane fade in active" id="home">
+					<p>这世上有一个被说滥的故事，叫大话西游。<br>
+					这世上有一句被说滥的情话，“曾经有一份真挚的爱情摆在我面前，......”<br>
+					十年前，一群青春浪漫的孩子，在街头小影院，被周星驰逗得前仰马翻。<br>
+					十年后，一个人，两张碟，突然就看懂了，开头孙悟空为什么放弃西天取经：才华横溢的年轻人不愿意被条条框框所束缚。<br>
+					这是一种有趣的对比，十年前的我们青春年少，逃课躲在小影院，疯狂迷恋周星驰，仿佛开头不愿取经的孙悟空，十年后的我们为人父母，规规矩矩，任你有再大的本事翻不出生活的五指山，如同带上紧箍咒的至尊宝，走上西天之路。<br>
+					这是一个关于宿命的故事，十年前我们看出了笑声，十年后却看出了眼泪，前生，今世，轮回，体制，爱情，从开头到结尾，从大战观音到毅然走上取经之路，不到三个小时；而我们从年少懵懂到老于世故却走了整整二十年，一部电影浓缩了人的一生，大话西游应该得奥斯卡。</p>
+				</div>
+                <div class="tab-pane fade" id="profile">
+					<p>
+					紫霞说：谁拔出我的紫青宝剑，谁就是我的如意郎君。<br>晶晶爱了弃她而去的悟空五百年，五百年后看见跟悟空一模一样的至尊宝时仍然念念不忘，原来恨一个人可以这么久。<br>
+					晶晶说：你不怕我杀了你吗？<br>
+					至尊宝：怕，不过没办法，我不想你看着我的时候心里却想着另外一个人。</p>
+					<p>至尊宝爱上了晶晶，为了救晶晶，又遇见了紫霞，当他发现紫霞才是最爱的时候，又放不下晶晶，爱情有时不是两个人的事，而是三个人的事，爱情方程千古难解，命运永远在跟至尊宝开着愚人的玩笑，他只有变成孙悟空才能救紫霞，而变成孙悟空就不能对紫霞再有半点情欲，有时候可以选择也是一种痛苦。</p>
+                </div>
+				<div class="tab-pane fade" id="dropdown1">
+					<p>几米说：
+					当你喜欢我的时候，我不喜欢你<br>
+					当你爱上我的时候，我喜欢上你<br>
+					当你离开我的时候，我却爱上你<br>
+					是你走的太快，还是我跟不上你的脚步？<br>
+					我们错过了诺亚方舟，错过了泰坦尼克号，错过了一切惊险与不惊险，我们还要继续错过...</p>
+				</div>
+				<div class="tab-pane fade" id="dropdown2">
+					<p>但是，请允许我说这样自私的话<br>
+					多年后<br>
+					你若未嫁<br>
+					我若未娶<br>
+					那我们能不能在一起？？？<br>
+					记住你欠我的幸福!!</p>
               </div>
             </div>
           </div>
@@ -645,13 +685,13 @@ $('[data-spy="scroll"]').each(function () {
 
 
           <h2 title="Usage">用法</h2>
-          <p title="">Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+          <p title="Enable tabbable tabs via JavaScript (each tab needs to be activated individually):">通过JavaScript启用tab标签功能(每个tab选项卡需要分别激活)</p>
 <pre class="prettyprint linenums">
 $('#myTab a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 })</pre>
-          <p>You can activate individual tabs in several ways:</p>
+          <p title="You can activate individual tabs in several ways:">支持的JavaScript激活方式</p>
 <pre class="prettyprint linenums">
 $('#myTab a[href="#profile"]').tab('show'); // Select tab by name
 $('#myTab a:first').tab('show'); // Select first tab
@@ -660,20 +700,18 @@ $('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
 </pre>
 
           <h3 title="Markup">标记</h3>
-          <p title="">You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle="tab"</code> or <code>data-toggle="pill"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap tab styling.</p>
+          <p title='You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Adding the nav and nav-tabs classes to the tab ul will apply the Bootstrap tab styling.'>在某个元素上设置 <code>data-toggle="tab"</code> 或 <code>data-toggle="pill"</code> 而无须编写javascript，就可以激活标签页或是胶囊链接。</p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-tabs"&gt;
-  &lt;li&gt;&lt;a href="#home" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#profile" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#messages" data-toggle="tab"&gt;Messages&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#settings" data-toggle="tab"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#home" data-toggle="tab"&gt;首页&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile" data-toggle="tab"&gt;介绍&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#messages" data-toggle="tab"&gt;消息&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#settings" data-toggle="tab"&gt;设置&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</pre>
 
           <h3 title="Mothods">方法</h3>
           <h4>$().tab</h4>
-          <p title="">
-            Activates a tab element and content container. Tab should have either a <code>data-target</code> or an <code>href</code> targeting a container node in the DOM.
-          </p>
+          <p title="Activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM.">激活一个标签页元素和内容容器。标签页应该含有 <code>data-target='#id'</code> 或 <code>href='#id'</code> 属性以指向dom中的某个容器节点。</p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-tabs" id="myTab"&gt;
   &lt;li class="active"&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -707,11 +745,11 @@ $('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
             <tbody>
              <tr>
                <td>show</td>
-               <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+               <td title="This event fires on tab show, but before the new tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.">该事件在标签开始展示时（尚未渲染完之前）触发。<code>event.target</code> 指向要激活的标签，<code>event.relatedTarget</code> 提向之前已激活的标签（如果有的话）。</td>
             </tr>
             <tr>
                <td>shown</td>
-               <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+               <td title="This event fires on tab show after a tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.">该事件在标签已经呈现后（已渲染完成）触发。<code>event.target</code> 指向要激活的标签，<code>event.relatedTarget</code> 提向之前已激活的标签（如果有的话）。</td>
              </tr>
             </tbody>
           </table>
@@ -755,7 +793,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
 
           <h2 title="Usage">用法</h2>
-          <p title="">Trigger the tooltip via JavaScript:</p>
+          <p title="Trigger the tooltip via JavaScript:">通过javascript触发工具提示：</p>
           <pre class="prettyprint linenums">$('#example').tooltip(options)</pre>
 
           <h3 title="Options">选项</h3>
@@ -774,73 +812,73 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
                <td>animation</td>
                <td title="boolean">布尔值</td>
                <td>true</td>
-               <td>apply a css fade transition to the tooltip</td>
+               <td title="apply a css fade transition to the tooltip">为工具提示添加一个淡入的过渡效果。</td>
              </tr>
              <tr>
                <td>html</td>
                <td title="boolean">布尔值</td>
                <td>false</td>
-               <td>Insert html into the tooltip. If false, jquery's <code>text</code> method will be used to insert content into the dom. Use text if you're worried about XSS attacks.</td>
+               <td title="Insert html into the tooltip. If false, jquery's text method will be used to insert content into the dom. Use text if you're worried about XSS attacks."></td>
              </tr>
              <tr>
                <td>placement</td>
                <td title="string|function">字符串或函数</td>
                <td>'top'</td>
-               <td>how to position the tooltip - top | bottom | left | right</td>
+               <td title="how to position the tooltip - top | bottom | left | right">工具提示的位置：top | bottom | left | right。</td>
              </tr>
              <tr>
                <td>selector</td>
                <td title="string">字符串</td>
                <td>false</td>
-               <td>If a selector is provided, tooltip objects will be delegated to the specified targets.</td>
+               <td title="If a selector is provided, tooltip objects will be delegated to the specified targets.">如果提供了selector，将对符合条件的某个或多个元素启用工具提示。</td>
              </tr>
              <tr>
                <td>title</td>
                <td title="string|function">字符串或函数</td>
                <td>''</td>
-               <td>default title value if `title` tag isn't present</td>
+               <td title="default title value if `title` tag isn't present">如果'title'属性不存在的话，就使用该值做为默认的标题。</td>
              </tr>
              <tr>
                <td>trigger</td>
                <td title="string">字符串</td>
                <td>'hover'</td>
-               <td>how tooltip is triggered - click | hover | focus | manual</td>
+               <td title="how tooltip is triggered - click | hover | focus | manual">工具提示的触发方式：点击(click) | 鼠标经过(hover) | 获得焦点(focus) | 手动触发(manual)</td>
              </tr>
              <tr>
                <td>delay</td>
                <td title="number|object">数字或对象</td>
                <td>0</td>
                <td>
-                <p>delay showing and hiding the tooltip (ms) - does not apply to manual trigger type</p>
-                <p>If a number is supplied, delay is applied to both hide/show</p>
-                <p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
+                <p title="delay showing and hiding the tooltip (ms) - does not apply to manual trigger type">显示和隐藏时的延迟时间(以毫秒计)</p>
+                <p title="If a number is supplied, delay is applied to both hide/show">如果提供的是一个数字，延迟就会同时被应用到显示和隐藏。</p>
+                <p title="Object structure is: delay: { show: 500, hide: 100 }">如果是一个对象，其结构就是: <code>delay: { show: 500, hide: 100 }</code></p>
                </td>
              </tr>
             </tbody>
           </table>
-          <div class="alert alert-info">
-            <strong>Heads up!</strong>
-            Options for individual tooltips can alternatively be specified through the use of data attributes.
+          <div class="alert alert-info" title="Heads up!  Options for individual tooltips can alternatively be specified through the use of data attributes.">
+            <strong>强调!</strong>
+            每个工具提示都可以单独通过设置data-属性以实现与javascript调用同样的功能
           </div>
 
           <h3 title="Markup">标记</h3>
-          <p title="">For performance reasons, the Tooltip and Popover data-apis are opt in. If you would like to use them just specify a selector option.</p>
+          <p title="For performance reasons, the Tooltip and Popover data-apis are opt in. If you would like to use them just specify a selector option.">出于性能的考虑，在使用工具提示和弹出提示时建议利用data-属性，再指定一个selector选项即可。</p>
           <pre class="prettyprint linenums">&lt;a href="#" rel="tooltip" title="first tooltip"&gt;hover over me&lt;/a&gt;</pre>
 
           <h3 title="Mothods">方法</h3>
           <h4>$().tooltip(options)</h4>
-          <p title="">Attaches a tooltip handler to an element collection.</p>
+          <p title="Attaches a tooltip handler to an element collection.">对某个元素集合添加工具提示的处理。</p>
           <h4>.tooltip('show')</h4>
-          <p title="">Reveals an element's tooltip.</p>
+          <p title="Reveals an element's tooltip.">显示某个元素的工具提示。</p>
           <pre class="prettyprint linenums">$('#element').tooltip('show')</pre>
           <h4>.tooltip('hide')</h4>
-          <p title="">Hides an element's tooltip.</p>
+          <p title="Hides an element's tooltip.">隐藏某个元素的工具提示。</p>
           <pre class="prettyprint linenums">$('#element').tooltip('hide')</pre>
           <h4>.tooltip('toggle')</h4>
-          <p title="">Toggles an element's tooltip.</p>
+          <p title="Toggles an element's tooltip.">切换某个元素的工具提示的隐藏和显示状态。</p>
           <pre class="prettyprint linenums">$('#element').tooltip('toggle')</pre>
           <h4>.tooltip('destroy')</h4>
-          <p title="">Hides and destroys an element's tooltip.</p>
+          <p title="Hides and destroys an element's tooltip.">隐藏和销毁某个元素的工具提示。</p>
           <pre class="prettyprint linenums">$('#element').tooltip('destroy')</pre>
         </section>
 
@@ -856,8 +894,8 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
         <h2 title="Examples">示例</h2>
         <p title="Add small overlays of content, like those on the iPad, to any element for housing secondary information. Hover over the button to trigger the popover. Requires Tooltip to be included.">与iPad上的效果类似，把存放输助信息的元素显示为弹出框提示。Hover over the button to trigger the popover. <strong>需要包含 <a href="#tooltips">Tooltip</a>。</strong></p>
 
-        <h3 title="">Static popover</h3>
-        <p title="">Four options are available: top, right, bottom, and left aligned.</p>
+        <h3 title="Static popover">静态的弹出提示</h3>
+        <p title="Four options are available: top, right, bottom, and left aligned.">支持四个方向的弹出提示：top, right, bottom 和 left。</p>
         <div class="bs-docs-example bs-docs-example-popover">
           <div class="popover top">
             <div class="arrow"></div>
@@ -895,7 +933,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
         </div>
         <p>No markup shown as popovers are generated from JavaScript and content within a <code>data</code> attribute.</p>
 
-        <h3>Live demo</h3>
+        <h3 title="Live demo">动态的例子</h3>
         <div class="bs-docs-example" style="padding-bottom: 24px;">
           <a href="#" class="btn btn-large btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Click to toggle popover</a>
         </div>
@@ -915,7 +953,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
 
         <h2 title="Usage">用法</h2>
-        <p title="">Enable popovers via JavaScript:</p>
+        <p title="Enable popovers via JavaScript:">使用javascript启用弹出提示：</p>
         <pre class="prettyprint linenums">$('#example').popover(options)</pre>
 
         <h3 title="Options">选项</h3>
@@ -923,9 +961,9 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
         <table class="table table-bordered table-striped">
           <thead>
            <tr>
-             <th style="width: 100px;">Name</th>
-             <th style="width: 100px;">type</th>
-             <th style="width: 50px;">default</th>
+             <th style="width: 100px;" title="Name">名称</th>
+             <th style="width: 100px;" title="type">类型</th>
+             <th style="width: 50px;" title="default">默认值</th>
              <th title="Description">描述</th>
            </tr>
           </thead>
@@ -934,7 +972,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
              <td>animation</td>
              <td title="boolean">布尔值</td>
              <td>true</td>
-             <td>apply a css fade transition to the tooltip</td>
+             <td title="apply a css fade transition to the tooltip">为弹出提示添加一个淡入的过渡效果。</td>
            </tr>
            <tr>
              <td>html</td>
@@ -1340,7 +1378,7 @@ $('#myCollapsible').collapse({
             <h4>.collapse('hide')</h4>
             <p>Hides a collapsible element.</p>
 
-            <h3>Events</h3>
+            <h3 title="Events">事件</h3>
             <p>Bootstrap's collapse class exposes a few events for hooking into collapse functionality.</p>
             <table class="table table-bordered table-striped">
               <thead>
