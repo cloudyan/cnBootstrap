@@ -33,10 +33,10 @@
   <div class="container">
     <ul class="bs-docs-social-buttons">
       <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=xiaohan1219&repo=cnBootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=xiaohan1219&repo=cnBootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px" style="vertical-align: middle;"></iframe>
       </li>
       <li>
-        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=xiaohan1219&repo=cnBootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=xiaohan1219&repo=cnBootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px" style="vertical-align: middle;"></iframe>
       </li>
       <li class="follow-btn">
         <a href="https://github.com/xiaohan1219/cnBootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @cnBootstrap</a>
