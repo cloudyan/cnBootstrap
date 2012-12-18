@@ -1148,7 +1148,7 @@ $('#my-alert').bind('closed', function () {
             <h4 title="Single toggle">单独开关</h4>
             <p title='Add data-toggle="button" to activate toggling on a single button.'>添加 data-toggle="button" 属性将激活按钮的单独开关状态。</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
-              <button type="button" class="btn btn-primary" data-toggle="button">Single Toggle</button>
+              <button type="button" class="btn btn-primary" data-toggle="button" title="Single Toggle">单独开关</button>
             </div>
             <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-toggle="button"&gt;Single Toggle&lt;/button&gt;</pre>
 
@@ -1156,16 +1156,16 @@ $('#my-alert').bind('closed', function () {
             <p title='Add data-toggle="buttons-checkbox" for checkbox style toggling on btn-group.'>添加 data-toggle="buttons-checkbox" 属性将激活按钮组的复选状态。</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
               <div class="btn-group" data-toggle="buttons-checkbox">
-                <button type="button" class="btn btn-primary">Left</button>
-                <button type="button" class="btn btn-primary">Middle</button>
-                <button type="button" class="btn btn-primary">Right</button>
+                <button type="button" class="btn btn-primary">左</button>
+                <button type="button" class="btn btn-primary">中</button>
+                <button type="button" class="btn btn-primary">右</button>
               </div>
             </div>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group" data-toggle="buttons-checkbox"&gt;
-  &lt;button type="button" class="btn"&gt;Left&lt;/button&gt;
-  &lt;button type="button" class="btn"&gt;Middle&lt;/button&gt;
-  &lt;button type="button" class="btn"&gt;Right&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;左&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;中&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;右&lt;/button&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1173,16 +1173,16 @@ $('#my-alert').bind('closed', function () {
             <p title='Add data-toggle="buttons-radio" for radio style toggling on btn-group.'>添加 data-toggle="buttons-radio" 属性将激活按钮组的单选状态。</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
               <div class="btn-group" data-toggle="buttons-radio">
-                <button type="button" class="btn btn-primary">Left</button>
-                <button type="button" class="btn btn-primary">Middle</button>
-                <button type="button" class="btn btn-primary">Right</button>
+                <button type="button" class="btn btn-primary">左</button>
+                <button type="button" class="btn btn-primary">中</button>
+                <button type="button" class="btn btn-primary">右</button>
               </div>
             </div>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group" data-toggle="buttons-radio"&gt;
-  &lt;button type="button" class="btn"&gt;Left&lt;/button&gt;
-  &lt;button type="button" class="btn"&gt;Middle&lt;/button&gt;
-  &lt;button type="button" class="btn"&gt;Right&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;左&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;中&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;右&lt;/button&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1328,8 +1328,10 @@ $('#my-alert').bind('closed', function () {
             <h2 title="Usage">用法</h2>
 
             <h3 title="Via data attributes">使用data属性</h3>
-            <p title="">Just add <code>data-toggle="collapse"</code> and a <code>data-target</code> to element to automatically assign control of a collapsible element. The <code>data-target</code> attribute accepts a css selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If you'd like it to default open, add the additional class <code>in</code>.</p>
-            <p title="">To add accordion-like group management to a collapsible control, add the data attribute <code>data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
+            <p title="Just add data-toggle='collapse' and a data-target to element to automatically assign control of a collapsible element. The data-target attribute accepts a css selector to apply the collapse to. Be sure to add the class collapse to the collapsible element. If you'd like it to default open, add the additional class in.">只要在元素上添加 <code>data-toggle="collapse"</code> 和 <code>data-target</code> 就能自动变成可折叠的。
+	     <code>data-target</code> 属性接受一个css选择器，以选取元素添加折叠。
+	     一定要在折叠元素上添加 <code>.collapse</code> 。如果要默认某折叠元素是打开的，只要添加 <code>.in</code>。</p>
+            <p title='To add accordion-like group management to a collapsible control, add the data attribute data-parent="#selector". Refer to the demo to see this in action.'>若要对某个折叠控件添加手风琴风格的分组管理，就要添加 <code>data-parent="#selector"</code>。详见上面的演示。</p>
 
             <h3 title="Via JavaScript">使用JavaScript</h3>
             <p title="">Enable manually with:</p>
@@ -1340,9 +1342,9 @@ $('#my-alert').bind('closed', function () {
             <table class="table table-bordered table-striped">
               <thead>
                <tr>
-                 <th style="width: 100px;">Name</th>
-                 <th style="width: 50px;">type</th>
-                 <th style="width: 50px;">default</th>
+                 <th style="width: 100px;" title="Name">名称</th>
+                 <th style="width: 50px;" title="type">类型</th>
+                 <th style="width: 50px;" title="default">默认值</th>
                  <th title="Description">描述</th>
                </tr>
               </thead>
