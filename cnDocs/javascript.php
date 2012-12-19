@@ -1334,7 +1334,7 @@ $('#my-alert').bind('closed', function () {
             <p title='To add accordion-like group management to a collapsible control, add the data attribute data-parent="#selector". Refer to the demo to see this in action.'>若要对某个折叠控件添加手风琴风格的分组管理，就要添加 <code>data-parent="#selector"</code>。详见上面的演示。</p>
 
             <h3 title="Via JavaScript">使用JavaScript</h3>
-            <p title="">Enable manually with:</p>
+            <p title="Enable manually with:">手动调用：</p>
             <pre class="prettyprint linenums">$(".collapse").collapse()</pre>
 
             <h3 title="Options">选项</h3>
@@ -1351,15 +1351,15 @@ $('#my-alert').bind('closed', function () {
               <tbody>
                <tr>
                  <td>parent</td>
-                 <td>selector</td>
+                 <td title="selector">选择器</td>
                  <td>false</td>
-                 <td>If selector then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior)</td>
+                 <td title="If selector then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior)">如果指定了选择器，那么在显示折叠顶时，所有被选取的元素集合中的可折叠项都被关闭（与传统的手风琴应用相似）。</td>
                </tr>
                <tr>
                  <td>toggle</td>
                  <td title="boolean">布尔值</td>
                  <td>true</td>
-                 <td>Toggles the collapsible element on invocation</td>
+                 <td title="Toggles the collapsible element on invocation">切换可折叠元素</td>
                </tr>
               </tbody>
             </table>
@@ -1392,27 +1392,26 @@ $('#myCollapsible').collapse({
               <tbody>
                <tr>
                  <td>show</td>
-                 <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+                 <td title="This event fires immediately when the show instance method is called.">该事件在调用 <code>show</code> 实例方法时立刻触发。</td>
                </tr>
                <tr>
                  <td>shown</td>
-                 <td>This event is fired when a collapse element has been made visible to the user (will wait for css transitions to complete).</td>
+                 <td title="This event is fired when a collapse element has been made visible to the user (will wait for css transitions to complete).">该事件在可折叠元素已经呈现给用户后触发（等待CSS过渡效果完成）。</td>
                </tr>
                <tr>
                  <td>hide</td>
-                 <td>
-                  This event is fired immediately when the <code>hide</code> method has been called.
-                 </td>
+                 <td title="This event is fired immediately when the hide method has been called.">
+                  该事件在调用 <code>hide</code> 方法时立刻触发。</td>
                </tr>
                <tr>
                  <td>hidden</td>
-                 <td>This event is fired when a collapse element has been hidden from the user (will wait for css transitions to complete).</td>
+                 <td title="This event is fired when a collapse element has been hidden from the user (will wait for css transitions to complete).">该事件在可折叠元素已经在用户面前完全隐藏后触发（等待CSS过渡效果完成）。</td>
                </tr>
               </tbody>
             </table>
 <pre class="prettyprint linenums">
 $('#myCollapsible').on('hidden', function () {
-  // do something…
+  //  做点hidden之后的事情…
 })</pre>
           </section>
 
@@ -1485,7 +1484,7 @@ $('#myCollapsible').on('hidden', function () {
             <p>...</p>
 
             <h3 title="Via JavaScript">使用JavaScript</h3>
-            <p title="">Call carousel manually with:</p>
+            <p title="Call carousel manually with:">通用javascript调用：</p>
             <pre class="prettyprint linenums">$('.carousel').carousel()</pre>
 
             <h3 title="Options">选项</h3>
@@ -1493,22 +1492,22 @@ $('#myCollapsible').on('hidden', function () {
             <table class="table table-bordered table-striped">
               <thead>
                <tr>
-                 <th style="width: 100px;">Name</th>
-                 <th style="width: 50px;">type</th>
-                 <th style="width: 50px;">default</th>
+                 <th style="width: 100px;" title="Name">名称</th>
+                 <th style="width: 50px;" title="type">类型</th>
+                 <th style="width: 50px;" title="default">默认值</th>
                  <th title="Description">描述</th>
                </tr>
               </thead>
               <tbody>
                <tr>
                  <td>interval</td>
-                 <td>number</td>
+                 <td title="number">数字</td>
                  <td>5000</td>
                  <td>The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.</td>
                </tr>
                <tr>
                  <td>pause</td>
-                 <td>string</td>
+                 <td title="string">字符串</td>
                  <td>"hover"</td>
                  <td>Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.</td>
                </tr>
@@ -1517,22 +1516,22 @@ $('#myCollapsible').on('hidden', function () {
 
             <h3 title="Mothods">方法</h3>
             <h4>.carousel(options)</h4>
-            <p title="">Initializes the carousel with an optional options <code>object</code> and starts cycling through items.</p>
+            <p title="Initializes the carousel with an optional options object and starts cycling through items.">初始化轮播组件，接受一个 <code>object</code> 做为可选参数并开始循环播环。</p>
 <pre class="prettyprint linenums">
 $('.carousel').carousel({
   interval: 2000
 })
 </pre>
             <h4>.carousel('cycle')</h4>
-            <p>Cycles through the carousel items from left to right.</p>
+            <p title="Cycles through the carousel items from left to right.">从左向右循环播放。</p>
             <h4>.carousel('pause')</h4>
-            <p>Stops the carousel from cycling through items.</p>
+            <p title="Stops the carousel from cycling through items.">中止播放。</p>
             <h4>.carousel(number)</h4>
-            <p>Cycles the carousel to a particular frame (0 based, similar to an array).</p>
+            <p title="Cycles the carousel to a particular frame (0 based, similar to an array).">播放到某个特定的帧(与数组类似，从0开始计数)。</p>
             <h4>.carousel('prev')</h4>
-            <p>Cycles to the previous item.</p>
+            <p title="Cycles to the previous item.">回到上一帧。</p>
             <h4>.carousel('next')</h4>
-            <p>Cycles to the next item.</p>
+            <p title="Cycles to the next item.">回到下一帧。</p>
 
             <h3 title="Events">事件</h3>
             <p title="">Bootstrap's carousel class exposes two events for hooking into carousel functionality.</p>
@@ -1546,11 +1545,11 @@ $('.carousel').carousel({
               <tbody>
                <tr>
                  <td>slide</td>
-                 <td>This event fires immediately when the <code>slide</code> instance method is invoked.</td>
+                 <td title="This event fires immediately when the slide instance method is invoked.">该事件在调用 <code>slide</code> 实例方法时立刻触发。</td>
                </tr>
                <tr>
                  <td>slid</td>
-                 <td>This event is fired when the carousel has completed its slide transition.</td>
+                 <td title="This event is fired when the carousel has completed its slide transition.">该事件在轮播项切换效果完成之后触发。</td>
                </tr>
               </tbody>
             </table>
@@ -1564,10 +1563,10 @@ $('.carousel').carousel({
             <div class="page-header">
               <h1 title="Typeahead">输入提醒 <small>bootstrap-typeahead.js</small></h1>
             </div>
-
+			
 
             <h2 title="Example">示例</h2>
-            <p title="A basic, easily extended plugin for quickly creating elegant typeaheads with any form text input.">简单，易于拓展，可迅速地为表单中的文本输入框创建优雅的提醒。</p>
+            <p title="A basic, easily extended plugin for quickly creating elegant typeaheads with any form text input.">简单，易于拓展，可迅速地为表单中的文本输入框创建优雅的提醒。如下：</p>
             <div class="bs-docs-example" style="background-color: #f5f5f5;">
               <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
             </div>
@@ -1591,61 +1590,61 @@ $('.carousel').carousel({
             <table class="table table-bordered table-striped">
               <thead>
                <tr>
-                 <th style="width: 100px;">Name</th>
-                 <th style="width: 50px;">type</th>
-                 <th style="width: 100px;">default</th>
+                 <th style="width: 100px;" title="Name">名称</th>
+                 <th style="width: 50px;" title="type">类型</th>
+                 <th style="width: 100px;" title="default">默认值</th>
                  <th title="Description">描述</th>
                </tr>
               </thead>
               <tbody>
                 <tr>
                  <td>source</td>
-                 <td>array, function</td>
+                 <td title="array, function">数组,函数</td>
                  <td>[ ]</td>
-                 <td>The data source to query against. May be an array of strings or a function. The function is passed two arguments, the <code>query</code> value in the input field and the <code>process</code> callback. The function may be used synchronously by returning the data source directly or asynchronously via the <code>process</code> callback's single argument.</td>
+                 <td title="The data source to query against. May be an array of strings or a function. The function is passed two arguments, the query value in the input field and the process callback. The function may be used synchronously by returning the data source directly or asynchronously via the process callback's single argument.">用于查询的数据源。May be an array of strings or a function. The function is passed two arguments, the <code>query</code> value in the input field and the <code>process</code> callback. The function may be used synchronously by returning the data source directly or asynchronously via the <code>process</code> callback's single argument.</td>
                </tr>
                <tr>
                  <td>items</td>
-                 <td>number</td>
+                 <td title="number">数字</td>
                  <td>8</td>
-                 <td>The max number of items to display in the dropdown.</td>
+                 <td title="The max number of items to display in the dropdown.">下拉列表中的最多显示个数。</td>
                </tr>
                <tr>
                  <td>minLength</td>
-                 <td>number</td>
+                 <td title="number">数字</td>
                  <td>1</td>
-                 <td>The minimum character length needed before triggering autocomplete suggestions</td>
+                 <td title="The minimum character length needed before triggering autocomplete suggestions">触发自动完成插件所需要的最小字符数。</td>
                </tr>
                <tr>
                  <td>matcher</td>
-                 <td>function</td>
-                 <td>case insensitive</td>
-                 <td>The method used to determine if a query matches an item. Accepts a single argument, the <code>item</code> against which to test the query. Access the current query with <code>this.query</code>. Return a boolean <code>true</code> if query is a match.</td>
+                 <td title="function">函数</td>
+                 <td title="case insensitive">不区分大小写</td>
+                 <td title="The method used to determine if a query matches an item. Accepts a single argument, the item against which to test the query. Access the current query with this.query. Return a boolean true if query is a match.">该matcher函数用于决定某个查询是否匹配某个项。它接受唯一一个参数， <code>item</code> ，用于测试是否符合查询。通过 <code>this.query</code> 访问当前查询，如果匹配查询，就返回一个布尔值 <code>true</code>。</td>
                </tr>
                <tr>
                  <td>sorter</td>
-                 <td>function</td>
-                 <td>exact match,<br> case sensitive,<br> case insensitive</td>
-                 <td>Method used to sort autocomplete results. Accepts a single argument <code>items</code> and has the scope of the typeahead instance. Reference the current query with <code>this.query</code>.</td>
+                 <td title="function">函数</td>
+                 <td title="exact match, case sensitive, case insensitive">精确匹配，<br>区分大小写，<br>不区分大小写</td>
+                 <td title="Method used to sort autocomplete results. Accepts a single argument items and has the scope of the typeahead instance. Reference the current query with this.query.">该函数用来排序自动完成的结果。它接受唯一一个参数 <code>items</code> ，还拥有输入提醒的范围。使用 <code>this.query</code> 引用当前查询。</td>
                </tr>
                <tr>
                  <td>updater</td>
-                 <td>function</td>
-                 <td>returns selected item</td>
-                 <td>The method used to return selected item. Accepts a single argument, the <code>item</code> and has the scope of the typeahead instance.</td>
+                 <td title="function">函数</td>
+                 <td title="returns selected item">返回选定的项目</td>
+                 <td title="The method used to return selected item. Accepts a single argument, the item and has the scope of the typeahead instance.">该方法用于返回选定的项目。接受一个参数，实现该项的输入提醒的限定范围。</td>
                </tr>
                <tr>
                  <td>highlighter</td>
-                 <td>function</td>
-                 <td>highlights all default matches</td>
-                 <td>Method used to highlight autocomplete results. Accepts a single argument <code>item</code> and has the scope of the typeahead instance. Should return html.</td>
+                 <td title="function">函数</td>
+                 <td title="highlights all default matches">高亮所有默认的匹配</td>
+                 <td title="Method used to highlight autocomplete results. Accepts a single argument item and has the scope of the typeahead instance. Should return html.">该函数用来高亮自动完成的结果。它接受唯一一个参数 <code>items</code> ，还拥有输入提醒的范围。应该返回html。</td>
                </tr>
               </tbody>
             </table>
 
             <h3 title="Mothods">方法</h3>
             <h4>.typeahead(options)</h4>
-            <p title="">Initializes an input with a typeahead.</p>
+            <p title="Initializes an input with a typeahead.">使用输入提醒初始化一个输入框。</p>
           </section>
 
 
