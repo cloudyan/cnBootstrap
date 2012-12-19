@@ -7,8 +7,10 @@
 <meta name="description" content="<?php echo $description; ?>">
 
 <meta name="author" content="Authors of Bootstrap">
+<!--
 <link href="assets/css/reset.css" rel="stylesheet">
 <link href="assets/css/common.css" rel="stylesheet">
+-->
 <!-- Le styles -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
