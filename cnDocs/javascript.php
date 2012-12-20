@@ -1082,7 +1082,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
 
         <h2 title="Usage">用法</h2>
-        <p title="">Enable dismissal of an alert via JavaScript:</p>
+        <p title="Enable dismissal of an alert via JavaScript:">通过javascript触发通知：</p>
         <pre class="prettyprint linenums">$(".alert").alert()</pre>
 
         <h3 title="Markup">标记</h3>
@@ -1109,11 +1109,11 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
           <tbody>
            <tr>
              <td>close</td>
-             <td>This event fires immediately when the <code>close</code> instance method is called.</td>
+             <td title="This event fires immediately when the close instance method is called.">在调用 <code>close</code> 方法时立刻触发。</td>
            </tr>
            <tr>
              <td>closed</td>
-             <td>This event is fired when the alert has been closed (will wait for css transitions to complete).</td>
+             <td title="This event is fired when the alert has been closed (will wait for css transitions to complete).">在通知已经关闭后（等待css过渡效果完成）触发。</td>
            </tr>
           </tbody>
         </table>
@@ -1202,24 +1202,24 @@ $('#my-alert').bind('closed', function () {
 
             <h3 title="Mothods">方法</h3>
             <h4>$().button('toggle')</h4>
-            <p title="">Toggles push state. Gives the button the appearance that it has been activated.</p>
-            <div class="alert alert-info">
-              <strong>Heads up!</strong>
-              You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.
+            <p title="Toggles push state. Gives the button the appearance that it has been activated.">Toggles push state. Gives the button the appearance that it has been activated.</p>
+            <div class="alert alert-info" title="Heads up!  You can enable auto toggling of a button by using the data-toggle attribute.">
+              <strong>强调!</strong>
+               可以使用 data-toggle 属性自动设置按钮状态。
             </div>
             <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-toggle="button" &gt;…&lt;/button&gt;</pre>
             <h4>$().button('loading')</h4>
-            <p title="">Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute <code>data-loading-text</code>.
+            <p title="Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute data-loading-text.">设置按钮为载入状态 - 按钮无效且将文本变成载入文本 载入文本应该设置在按钮的 <code>data-loading-text</code> 的属性中。
             </p>
             <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-loading-text="loading stuff..." &gt;...&lt;/button&gt;</pre>
-            <div class="alert alert-info">
-              <strong>Heads up!</strong>
-              <a href="https://github.com/twitter/bootstrap/issues/793">Firefox persists the disabled state across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>.
+            <div class="alert alert-info" title='Firefox persists the disabled state across page loads. A workaround for this is to use autocomplete="off".'>
+              <strong>强调!</strong> 
+              <a href="https://github.com/twitter/bootstrap/issues/793">Firefox在页面载入时会保持按钮无效状态</a>。变通方案是在按钮上应用 <code>autocomplete="off"</code>。
             </div>
             <h4>$().button('reset')</h4>
-            <p>Resets button state - swaps text to original text.</p>
+            <p title="Resets button state - swaps text to original text.">重置按钮状态 - 将按钮文字复原。</p>
             <h4>$().button(string)</h4>
-            <p>Resets button state - swaps text to any data defined text state.</p>
+            <p title="Resets button state - swaps text to any data defined text state.">重置按钮状态 - 将按钮文字变成为指定的文字。</p>
 <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-complete-text="finished!" &gt;...&lt;/button&gt;
 &lt;script&gt;
   $('.btn').button('complete')
