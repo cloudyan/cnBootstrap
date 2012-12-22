@@ -104,8 +104,8 @@
 				For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
                 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
-&lt;div class="span4"&gt;...&lt;/div&gt;
-&lt;div class="span8"&gt;...&lt;/div&gt;
+  &lt;div class="span4"&gt;...&lt;/div&gt;
+  &lt;div class="span8"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
                 <p>Given this example, we have <code>.span4</code> and <code>.span8</code>, making for 12 total columns and a complete row.</p>
@@ -126,8 +126,8 @@
                 </div>
                 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
-&lt;div class="span4"&gt;...&lt;/div&gt;
-&lt;div class="span3 offset2"&gt;...&lt;/div&gt;
+  &lt;div class="span4"&gt;...&lt;/div&gt;
+  &lt;div class="span3 offset2"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
                 <h2>Nesting columns</h2>
@@ -235,13 +235,21 @@
 </pre>
 
           <h2>Fluid nesting</h2>
-          <p>Nesting with fluid grids is a bit different: the number of nested columns should not match the parent's number of columns. Instead, each level of nested columns are reset because each row takes up 100% of the parent column.</p>
+          <p>Fluid grids utilize nesting differently: each nested level of columns should add up to 12 columns. This is because the fluid grid uses percentages, not pixels, for setting widths.</p>
           <div class="row-fluid show-grid">
             <div class="span12">
               Fluid 12
               <div class="row-fluid show-grid">
                 <div class="span6">
                   Fluid 6
+                  <div class="row-fluid show-grid">
+                    <div class="span6">
+                      Fluid 6
+                    </div>
+                    <div class="span6">
+                      Fluid 6
+                    </div>
+                  </div>
                 </div>
                 <div class="span6">
                   Fluid 6
@@ -254,7 +262,13 @@
   &lt;div class="span12"&gt;
     Fluid 12
     &lt;div class="row-fluid"&gt;
-      &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
+      &lt;div class="span6"&gt;
+        Fluid 6
+        &lt;div class="row-fluid"&gt;
+          &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
+          &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
       &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -262,6 +276,9 @@
 </pre>
             </section>
             
+
+
+
             <!-- Layouts (Default and fluid)
     ================================================== -->
             <section id="layouts">
@@ -276,9 +293,9 @@
                 </div>
                 <pre class="prettyprint linenums">
 &lt;body&gt;
-&lt;div class="container"&gt;
-...
-&lt;/div&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
 &lt;/body&gt;
 </pre>
                 <h2>Fluid layout</h2>
