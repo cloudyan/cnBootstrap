@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "cnDocs/build/package.json",
+        "docs/build/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
